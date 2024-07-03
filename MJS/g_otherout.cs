@@ -12,11 +12,15 @@ using System.Data.SqlClient;
 using System.Runtime.InteropServices;
 using System.Globalization;
 using OfficeOpenXml.ConditionalFormatting;
+using OfficeOpenXml.FormulaParsing.Excel.Functions.Text;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace MJS
 {
     public partial class g_otherout :Form
     {
+       
+
         [DllImport("wininet.dll")]
         private extern static bool InternetGetConnectedState(out int Description, int ReservedValue);
 
@@ -44,7 +48,8 @@ namespace MJS
             string datevalue = "";
             con.Open();
             /*sql = "SELECT Date FROM reg_gold ORDER BY Date DESC";*/
-            sql = $"SELECT Date FROM other_out WHERE Shop = @shoped ORDER BY Date DESC";
+            sql = $"SELECT Date FROM other_out WHERE Shop = @shoped ORDER BY ID DESC";
+            
             cmd = new SqlCommand(sql, con);
             cmd.Parameters.AddWithValue("@shoped", shopvalue);
             SqlDataReader dr = cmd.ExecuteReader();
@@ -252,7 +257,7 @@ namespace MJS
 
 
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("success");
+                    /*MessageBox.Show("success");*/
 
                 }
 
@@ -262,7 +267,7 @@ namespace MJS
             {
                 MessageBox.Show(ex.Message);
             }
-            /*MessageBox.Show("success");*/
+            MessageBox.Show("success");
         }
 
         public void show()
@@ -334,7 +339,7 @@ namespace MJS
                 }*/
                 string shopvalue = txt_shop.Text;
                 con.Open();
-                sql = $"SELECT OutVoucher_No FROM other_out WHERE Shop = @shoped ORDER BY OutVoucher_No DESC";
+                sql = $"SELECT OutVoucher_No FROM other_out WHERE Shop = @shoped ORDER BY ID DESC";
                 cmd = new SqlCommand(sql, con);
                 cmd.Parameters.AddWithValue("@shoped", shopvalue);
                 var maxid = cmd.ExecuteScalar() as string;
@@ -356,7 +361,7 @@ namespace MJS
                     SqlCommand cmd = new SqlCommand();
                     SqlDataReader sr = null;
                     cmd.Connection = con;
-                    cmd.CommandText = $"SELECT OutVoucher_No FROM other_out WHERE Shop = @shoped ORDER BY OutVoucher_No DESC";
+                    cmd.CommandText = $"SELECT OutVoucher_No FROM other_out WHERE Shop = @shoped ORDER BY ID DESC";
                     cmd.Parameters.AddWithValue("@shoped", shopvalue);
                     sr = cmd.ExecuteReader();
                     if (sr.Read())
@@ -401,7 +406,8 @@ namespace MJS
 
         private void ico_add_btn_Click(object sender, EventArgs e)
         {
-           
+            string texttosent = txt_date.Text;
+            textBox1.Text= texttosent;
 
         }
 
@@ -434,16 +440,14 @@ namespace MJS
 
         public static string other = "";
 
-        public string ReceivedText { get; private set; }
 
         private void btn_review_Click(object sender, EventArgs e)
         {
-            string texttosent = txt_form.Text;
 
-            Form formbackground = new Form();
+           /* Form formbackground = new Form();
             try
             {
-                using (preview frm = new preview())
+                using (preview frm = new preview(txt_form.Text))
                 {
                     formbackground.StartPosition = FormStartPosition.Manual;
                     formbackground.FormBorderStyle = FormBorderStyle.None;
@@ -454,9 +458,9 @@ namespace MJS
                     formbackground.Location = this.Location;
                     formbackground.ShowInTaskbar = false;
                     formbackground.Show();
-
+                   
                     frm.Owner = formbackground;
-                    ReceivedText = texttosent;
+
                     frm.ShowDialog();
 
                     formbackground.Dispose();
@@ -467,7 +471,7 @@ namespace MJS
             {
                 MessageBox.Show(ex.Message);
             }
-            finally { formbackground.Dispose(); }
+            finally { formbackground.Dispose(); }*/
 
         }
 
@@ -601,13 +605,16 @@ namespace MJS
             g_Otherout.show();
         }
         
+
+        
         private void preview_btn_Click(object sender, EventArgs e)
         {
-            string texttosent = txt_form.Text;
+            
             
             Form formbackground = new Form();
             try
             {
+
                 using (preview frm = new preview())
                 {
                     formbackground.StartPosition = FormStartPosition.Manual;
@@ -619,11 +626,9 @@ namespace MJS
                     formbackground.Location = this.Location;
                     formbackground.ShowInTaskbar = false;
                     formbackground.Show();
-
-                    frm.Owner = formbackground;
-                    ReceivedText = texttosent;
+                    frm.stdname = txt_form.Text;
+                    frm.Owner = formbackground;                
                     frm.ShowDialog();
-
                     formbackground.Dispose();
                 }
 

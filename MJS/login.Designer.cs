@@ -48,8 +48,8 @@ namespace MJS
             this.hide_pass = new System.Windows.Forms.PictureBox();
             this.unhide_pass = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hide_pass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.unhide_pass)).BeginInit();
@@ -61,10 +61,9 @@ namespace MJS
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Pyidaungsu", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(122)))), ((int)(((byte)(173)))));
-            this.label6.Location = new System.Drawing.Point(64, 247);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(48, 201);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(81, 29);
+            this.label6.Size = new System.Drawing.Size(62, 22);
             this.label6.TabIndex = 9;
             this.label6.Text = "Password";
             // 
@@ -73,10 +72,9 @@ namespace MJS
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Pyidaungsu", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(122)))), ((int)(((byte)(173)))));
-            this.label5.Location = new System.Drawing.Point(65, 169);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(49, 137);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(87, 29);
+            this.label5.Size = new System.Drawing.Size(66, 22);
             this.label5.TabIndex = 8;
             this.label5.Text = "UserName";
             // 
@@ -85,10 +83,9 @@ namespace MJS
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Pyidaungsu", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(122)))), ((int)(((byte)(173)))));
-            this.label4.Location = new System.Drawing.Point(68, 94);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(51, 76);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 29);
+            this.label4.Size = new System.Drawing.Size(38, 22);
             this.label4.TabIndex = 7;
             this.label4.Text = "Shop";
             // 
@@ -97,10 +94,10 @@ namespace MJS
             this.combo_shop.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.combo_shop.Font = new System.Drawing.Font("Pyidaungsu", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.combo_shop.FormattingEnabled = true;
-            this.combo_shop.Location = new System.Drawing.Point(64, 125);
-            this.combo_shop.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.combo_shop.Location = new System.Drawing.Point(48, 102);
+            this.combo_shop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.combo_shop.Name = "combo_shop";
-            this.combo_shop.Size = new System.Drawing.Size(135, 34);
+            this.combo_shop.Size = new System.Drawing.Size(102, 30);
             this.combo_shop.TabIndex = 1;
             this.combo_shop.SelectedIndexChanged += new System.EventHandler(this.combo_shop_SelectedIndexChanged);
             // 
@@ -109,10 +106,9 @@ namespace MJS
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Pyidaungsu", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(122)))), ((int)(((byte)(173)))));
-            this.label3.Location = new System.Drawing.Point(65, 407);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(49, 331);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(215, 29);
+            this.label3.Size = new System.Drawing.Size(167, 22);
             this.label3.TabIndex = 5;
             this.label3.Text = "If  You Don\'t  Have Account?";
             // 
@@ -122,10 +118,9 @@ namespace MJS
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label2.Font = new System.Drawing.Font("Pyidaungsu", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(297, 407);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(223, 331);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 29);
+            this.label2.Size = new System.Drawing.Size(53, 22);
             this.label2.TabIndex = 5;
             this.label2.Text = "Sign Up";
             // 
@@ -133,10 +128,10 @@ namespace MJS
             // 
             this.button1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(91)))), ((int)(((byte)(184)))));
-            this.button1.Location = new System.Drawing.Point(61, 349);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.button1.Location = new System.Drawing.Point(46, 284);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(400, 43);
+            this.button1.Size = new System.Drawing.Size(300, 35);
             this.button1.TabIndex = 4;
             this.button1.Text = "Login";
             this.button1.UseVisualStyleBackColor = true;
@@ -145,22 +140,22 @@ namespace MJS
             // txt_password
             // 
             this.txt_password.Font = new System.Drawing.Font("Pyidaungsu", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_password.Location = new System.Drawing.Point(61, 281);
-            this.txt_password.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.txt_password.Location = new System.Drawing.Point(46, 228);
+            this.txt_password.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_password.Multiline = true;
             this.txt_password.Name = "txt_password";
             this.txt_password.PasswordChar = '#';
-            this.txt_password.Size = new System.Drawing.Size(400, 41);
+            this.txt_password.Size = new System.Drawing.Size(301, 34);
             this.txt_password.TabIndex = 3;
             // 
             // txt_username
             // 
             this.txt_username.Font = new System.Drawing.Font("Pyidaungsu", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_username.Location = new System.Drawing.Point(61, 204);
-            this.txt_username.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.txt_username.Location = new System.Drawing.Point(46, 166);
+            this.txt_username.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_username.Multiline = true;
             this.txt_username.Name = "txt_username";
-            this.txt_username.Size = new System.Drawing.Size(400, 41);
+            this.txt_username.Size = new System.Drawing.Size(301, 34);
             this.txt_username.TabIndex = 2;
             // 
             // label1
@@ -168,10 +163,9 @@ namespace MJS
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Pyidaungsu", 26.25F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(91)))), ((int)(((byte)(184)))));
-            this.label1.Location = new System.Drawing.Point(20, 17);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(15, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(441, 73);
+            this.label1.Size = new System.Drawing.Size(339, 60);
             this.label1.TabIndex = 0;
             this.label1.Text = "LOGIN TO CONTINUE";
             // 
@@ -195,21 +189,20 @@ namespace MJS
             this.groupBox1.Controls.Add(this.txt_username);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Location = new System.Drawing.Point(871, 46);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.groupBox1.Location = new System.Drawing.Point(653, 37);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.groupBox1.Size = new System.Drawing.Size(515, 451);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(386, 366);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             // 
             // hide_pass
             // 
             this.hide_pass.Image = ((System.Drawing.Image)(resources.GetObject("hide_pass.Image")));
-            this.hide_pass.Location = new System.Drawing.Point(412, 285);
-            this.hide_pass.Margin = new System.Windows.Forms.Padding(4);
+            this.hide_pass.Location = new System.Drawing.Point(309, 232);
             this.hide_pass.Name = "hide_pass";
-            this.hide_pass.Size = new System.Drawing.Size(41, 32);
+            this.hide_pass.Size = new System.Drawing.Size(31, 26);
             this.hide_pass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.hide_pass.TabIndex = 13;
             this.hide_pass.TabStop = false;
@@ -218,10 +211,9 @@ namespace MJS
             // unhide_pass
             // 
             this.unhide_pass.Image = ((System.Drawing.Image)(resources.GetObject("unhide_pass.Image")));
-            this.unhide_pass.Location = new System.Drawing.Point(411, 285);
-            this.unhide_pass.Margin = new System.Windows.Forms.Padding(4);
+            this.unhide_pass.Location = new System.Drawing.Point(308, 232);
             this.unhide_pass.Name = "unhide_pass";
-            this.unhide_pass.Size = new System.Drawing.Size(41, 32);
+            this.unhide_pass.Size = new System.Drawing.Size(31, 26);
             this.unhide_pass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.unhide_pass.TabIndex = 12;
             this.unhide_pass.TabStop = false;
@@ -235,45 +227,50 @@ namespace MJS
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Location = new System.Drawing.Point(1, 1);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(333, 548);
+            this.panel1.Size = new System.Drawing.Size(250, 445);
             this.panel1.TabIndex = 13;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(11, 8);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(306, 139);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "MJS";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(34, 139);
+            this.label8.Location = new System.Drawing.Point(26, 113);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(237, 25);
+            this.label8.Size = new System.Drawing.Size(190, 20);
             this.label8.TabIndex = 14;
             this.label8.Text = "Modern Jawellry Software";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Arial", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(8, 6);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(243, 111);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "MJS";
+            // 
             // login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1848, 543);
+            this.ClientSize = new System.Drawing.Size(1386, 441);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.HelpButton = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "login";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.login_FormClosed);
             this.Load += new System.EventHandler(this.login_Load);

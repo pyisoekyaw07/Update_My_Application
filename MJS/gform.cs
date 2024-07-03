@@ -460,7 +460,7 @@ namespace MJS
                  }*/
                 string shopvalue = txt_shop.Text;
                 con.Open();
-                sql = $"SELECT ProductID FROM reg_gold WHERE Shop = @shoped ORDER BY ProductID DESC";
+                sql = $"SELECT ProductID FROM reg_gold WHERE Shop = @shoped ORDER BY ID DESC";
                 cmd = new SqlCommand(sql, con);
                 cmd.Parameters.AddWithValue("@shoped", shopvalue);
                 /* cmd = new SqlCommand(sql, Con1);*/
@@ -1218,20 +1218,7 @@ namespace MJS
             }
             catch { }
         }
-        private void btn_add_Click(object sender, EventArgs e)/*Add Button*/
 
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)/*Save Button*/
-        {
-       
-
-           
-
-
-        }
         private void btn_add_photo_Click_1(object sender, EventArgs e)/*Add Photo*/
         {
             OpenFileDialog open = new OpenFileDialog();
@@ -1248,15 +1235,6 @@ namespace MJS
         public static int parentX, parentY;
 
         public static string registerform = "";
-        private void btn_review_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void btn_cancel_Click(object sender, EventArgs e)
-
-        {
-        }
 
         private void txt_YP_TextChanged(object sender, EventArgs e)
         {
@@ -1422,10 +1400,9 @@ namespace MJS
             cmb_gt.Enabled = true;
         }
 
+
         private void btn_reg_preview_Click(object sender, EventArgs e)
         {
-
-            string texttosent = textBox2.Text;
 
             Form formbackground = new Form();
             try
@@ -1441,11 +1418,9 @@ namespace MJS
                     formbackground.Location = this.Location;
                     formbackground.ShowInTaskbar = false;
                     formbackground.Show();
-
+                    frm.stdname = textBox2.Text;
                     frm.Owner = formbackground;
-                    ReceivedText = texttosent;
                     frm.ShowDialog();
-
                     formbackground.Dispose();
                 }
 
@@ -1598,10 +1573,6 @@ namespace MJS
 
         }
 
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void pictureBox_Click(object sender, EventArgs e)
         {

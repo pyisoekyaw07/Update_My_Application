@@ -3,40 +3,36 @@
   "WorkspaceRootPath": "D:\\Update_My_Application\\MJS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|d:\\update_my_application\\mjs\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|d:\\update_my_application\\mjs\\g_sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|solutionrelative:g_sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|D:\\Update_My_Application\\MJS\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|D:\\Update_My_Application\\MJS\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|solutionrelative:home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|D:\\Update_My_Application\\MJS\\gform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|solutionrelative:gform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|D:\\Update_My_Application\\MJS\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|solutionrelative:home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|D:\\Update_My_Application\\MJS\\gform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|solutionrelative:gform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|D:\\Update_My_Application\\MJS\\gform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|solutionrelative:gform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|D:\\Update_My_Application\\MJS\\g_otherout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|solutionrelative:g_otherout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|D:\\Update_My_Application\\MJS\\g_otherout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|solutionrelative:g_otherout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|D:\\Update_My_Application\\MJS\\g_otherout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|solutionrelative:g_otherout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|D:\\Update_My_Application\\MJS\\preview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|solutionrelative:preview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|D:\\Update_My_Application\\MJS\\preview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|solutionrelative:preview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|D:\\Update_My_Application\\MJS\\gform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|solutionrelative:gform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|D:\\Update_My_Application\\MJS\\gform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|solutionrelative:gform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|D:\\Update_My_Application\\MJS\\gform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|solutionrelative:gform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,96 +50,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "login.cs",
-              "DocumentMoniker": "D:\\Update_My_Application\\MJS\\login.cs",
-              "RelativeDocumentMoniker": "login.cs",
-              "ToolTip": "D:\\Update_My_Application\\MJS\\login.cs",
-              "RelativeToolTip": "login.cs",
-              "ViewState": "AQIAAFoAAAAAAAAAAAAiwGoAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T22:57:41.147Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "login.cs [Design]",
-              "DocumentMoniker": "D:\\Update_My_Application\\MJS\\login.cs",
-              "RelativeDocumentMoniker": "login.cs",
-              "ToolTip": "D:\\Update_My_Application\\MJS\\login.cs [Design]",
-              "RelativeToolTip": "login.cs [Design]",
+              "Title": "g_sale.cs [Design]",
+              "DocumentMoniker": "D:\\Update_My_Application\\MJS\\g_sale.cs",
+              "RelativeDocumentMoniker": "g_sale.cs",
+              "ToolTip": "D:\\Update_My_Application\\MJS\\g_sale.cs [Design]",
+              "RelativeToolTip": "g_sale.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T22:57:30.791Z",
+              "WhenOpened": "2024-07-03T17:37:30.74Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Home.cs [Design]",
-              "DocumentMoniker": "D:\\Update_My_Application\\MJS\\Home.cs",
-              "RelativeDocumentMoniker": "Home.cs",
-              "ToolTip": "E:\\Update_My_App\\MJS\\Home.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T22:35:29.452Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "g_otherout.cs",
-              "DocumentMoniker": "D:\\Update_My_Application\\MJS\\g_otherout.cs",
-              "RelativeDocumentMoniker": "g_otherout.cs",
-              "ToolTip": "D:\\Update_My_Application\\MJS\\g_otherout.cs",
-              "RelativeToolTip": "g_otherout.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T21:13:11.653Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Home.cs",
-              "DocumentMoniker": "D:\\Update_My_Application\\MJS\\Home.cs",
-              "RelativeDocumentMoniker": "Home.cs",
-              "ToolTip": "D:\\Update_My_Application\\MJS\\Home.cs",
-              "RelativeToolTip": "Home.cs",
-              "ViewState": "AQIAAIAAAAAAAAAAAAAuwHsAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T21:15:16.195Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "g_otherout.cs [Design]",
-              "DocumentMoniker": "D:\\Update_My_Application\\MJS\\g_otherout.cs",
-              "RelativeDocumentMoniker": "g_otherout.cs",
-              "ToolTip": "E:\\Update_My_App\\MJS\\g_otherout.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T19:49:52.983Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "gform.Designer.cs",
-              "DocumentMoniker": "D:\\Update_My_Application\\MJS\\gform.Designer.cs",
-              "RelativeDocumentMoniker": "gform.Designer.cs",
-              "ToolTip": "D:\\Update_My_Application\\MJS\\gform.Designer.cs",
-              "RelativeToolTip": "gform.Designer.cs",
-              "ViewState": "AQIAANkCAAAAAAAAAAAEwOgCAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-27T22:40:19.742Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "gform.cs",
               "DocumentMoniker": "D:\\Update_My_Application\\MJS\\gform.cs",
               "RelativeDocumentMoniker": "gform.cs",
               "ToolTip": "D:\\Update_My_Application\\MJS\\gform.cs",
               "RelativeToolTip": "gform.cs",
-              "ViewState": "AQIAAGsFAAAAAAAAAAA6wG0FAAAuAAAA",
+              "ViewState": "AQIAAHkFAAAAAAAAAIAwwI8FAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T22:31:31.426Z"
+              "WhenOpened": "2024-07-03T21:34:51.609Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -151,9 +79,74 @@
               "Title": "gform.cs [Design]",
               "DocumentMoniker": "D:\\Update_My_Application\\MJS\\gform.cs",
               "RelativeDocumentMoniker": "gform.cs",
-              "ToolTip": "E:\\Update_My_App\\MJS\\gform.cs [Design]",
+              "ToolTip": "D:\\Update_My_Application\\MJS\\gform.cs [Design]",
+              "RelativeToolTip": "gform.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T22:29:30.107Z"
+              "WhenOpened": "2024-07-03T21:34:39.779Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "preview.cs",
+              "DocumentMoniker": "D:\\Update_My_Application\\MJS\\preview.cs",
+              "RelativeDocumentMoniker": "preview.cs",
+              "ToolTip": "D:\\Update_My_Application\\MJS\\preview.cs",
+              "RelativeToolTip": "preview.cs",
+              "ViewState": "AQIAAGcAAAAAAAAAAIAwwHcAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T20:51:47.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "preview.cs [Design]",
+              "DocumentMoniker": "D:\\Update_My_Application\\MJS\\preview.cs",
+              "RelativeDocumentMoniker": "preview.cs",
+              "ToolTip": "D:\\Update_My_Application\\MJS\\preview.cs [Design]",
+              "RelativeToolTip": "preview.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T20:51:43.053Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "g_otherout.cs",
+              "DocumentMoniker": "D:\\Update_My_Application\\MJS\\g_otherout.cs",
+              "RelativeDocumentMoniker": "g_otherout.cs",
+              "ToolTip": "D:\\Update_My_Application\\MJS\\g_otherout.cs",
+              "RelativeToolTip": "g_otherout.cs",
+              "ViewState": "AQIAAGICAAAAAAAAAAD4v3YCAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T20:52:31.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "g_otherout.cs [Design]",
+              "DocumentMoniker": "D:\\Update_My_Application\\MJS\\g_otherout.cs",
+              "RelativeDocumentMoniker": "g_otherout.cs",
+              "ToolTip": "D:\\Update_My_Application\\MJS\\g_otherout.cs [Design]",
+              "RelativeToolTip": "g_otherout.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T19:49:52.983Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "gform.Designer.cs",
+              "DocumentMoniker": "D:\\Update_My_Application\\MJS\\gform.Designer.cs",
+              "RelativeDocumentMoniker": "gform.Designer.cs",
+              "ToolTip": "D:\\Update_My_Application\\MJS\\gform.Designer.cs",
+              "RelativeToolTip": "gform.Designer.cs",
+              "ViewState": "AQIAAI4BAAAAAAAAAAAkwJwBAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T22:40:19.742Z",
+              "EditorCaption": ""
             }
           ]
         }

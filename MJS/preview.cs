@@ -18,24 +18,22 @@ namespace MJS
 {
     public partial class preview : Form
     {
-        public string ReceivedText { get; set; }
-
+       
         SqlConnection con = new SqlConnection("Data Source=sql.bsite.net\\MSSQL2016;User ID=pyisoekyaw_;Password=pyisoe@#101215");
 
 
         public preview()
         {
-            InitializeComponent();
+            InitializeComponent();  
         }
 
-       
+        public string stdname { get; set; }
         private void preview_Load(object sender, EventArgs e)
         {
             txt_shop_preview.Text = login.shopvalue;
-            txt_form_perview.Text = ReceivedText;
+            txt_form_perview.Text = stdname;
             txt_searchbox.Text = "Search ProductID";
-            txt_searchbox.ForeColor = Color.LightGray;
-           
+            txt_searchbox.ForeColor = Color.LightGray;         
            
         }
 

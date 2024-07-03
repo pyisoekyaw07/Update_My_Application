@@ -33,11 +33,11 @@ namespace MJS
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(gform));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btn_add_photo = new System.Windows.Forms.Button();
             this.cmb_itemname = new System.Windows.Forms.ComboBox();
             this.cmb_item = new System.Windows.Forms.ComboBox();
@@ -186,10 +186,10 @@ namespace MJS
             // 
             this.btn_add_photo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_add_photo.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.btn_add_photo.Location = new System.Drawing.Point(392, 72);
-            this.btn_add_photo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_add_photo.Location = new System.Drawing.Point(490, 90);
+            this.btn_add_photo.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.btn_add_photo.Name = "btn_add_photo";
-            this.btn_add_photo.Size = new System.Drawing.Size(107, 29);
+            this.btn_add_photo.Size = new System.Drawing.Size(134, 36);
             this.btn_add_photo.TabIndex = 14;
             this.btn_add_photo.Text = "ပုံထည့်သွင်းရန်";
             this.btn_add_photo.UseVisualStyleBackColor = true;
@@ -201,10 +201,10 @@ namespace MJS
             this.cmb_itemname.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
             this.cmb_itemname.FormattingEnabled = true;
             this.cmb_itemname.IntegralHeight = false;
-            this.cmb_itemname.Location = new System.Drawing.Point(157, 223);
-            this.cmb_itemname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmb_itemname.Location = new System.Drawing.Point(196, 279);
+            this.cmb_itemname.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.cmb_itemname.Name = "cmb_itemname";
-            this.cmb_itemname.Size = new System.Drawing.Size(330, 30);
+            this.cmb_itemname.Size = new System.Drawing.Size(412, 34);
             this.cmb_itemname.TabIndex = 5;
             this.cmb_itemname.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
             // 
@@ -215,10 +215,10 @@ namespace MJS
             this.cmb_item.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
             this.cmb_item.FormattingEnabled = true;
             this.cmb_item.IntegralHeight = false;
-            this.cmb_item.Location = new System.Drawing.Point(157, 178);
-            this.cmb_item.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmb_item.Location = new System.Drawing.Point(196, 222);
+            this.cmb_item.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.cmb_item.Name = "cmb_item";
-            this.cmb_item.Size = new System.Drawing.Size(330, 30);
+            this.cmb_item.Size = new System.Drawing.Size(412, 34);
             this.cmb_item.TabIndex = 4;
             this.cmb_item.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             this.cmb_item.Click += new System.EventHandler(this.comboBox3_Click);
@@ -229,10 +229,10 @@ namespace MJS
             this.cmb_gt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_gt.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
             this.cmb_gt.FormattingEnabled = true;
-            this.cmb_gt.Location = new System.Drawing.Point(356, 134);
-            this.cmb_gt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmb_gt.Location = new System.Drawing.Point(445, 168);
+            this.cmb_gt.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.cmb_gt.Name = "cmb_gt";
-            this.cmb_gt.Size = new System.Drawing.Size(131, 30);
+            this.cmb_gt.Size = new System.Drawing.Size(163, 34);
             this.cmb_gt.TabIndex = 3;
             this.cmb_gt.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             this.cmb_gt.Click += new System.EventHandler(this.comboBox2_Click);
@@ -245,10 +245,10 @@ namespace MJS
             this.cmb_remark.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
             this.cmb_remark.FormattingEnabled = true;
             this.cmb_remark.IntegralHeight = false;
-            this.cmb_remark.Location = new System.Drawing.Point(157, 94);
-            this.cmb_remark.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmb_remark.Location = new System.Drawing.Point(196, 118);
+            this.cmb_remark.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.cmb_remark.Name = "cmb_remark";
-            this.cmb_remark.Size = new System.Drawing.Size(330, 30);
+            this.cmb_remark.Size = new System.Drawing.Size(412, 34);
             this.cmb_remark.TabIndex = 2;
             this.cmb_remark.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             this.cmb_remark.Click += new System.EventHandler(this.comboBox1_Click);
@@ -259,10 +259,10 @@ namespace MJS
             this.pictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox.Image")));
-            this.pictureBox.Location = new System.Drawing.Point(56, 17);
-            this.pictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox.Location = new System.Drawing.Point(70, 21);
+            this.pictureBox.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(79, 53);
+            this.pictureBox.Size = new System.Drawing.Size(98, 65);
             this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox.TabIndex = 117;
             this.pictureBox.TabStop = false;
@@ -272,9 +272,10 @@ namespace MJS
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label19.Location = new System.Drawing.Point(27, 566);
+            this.label19.Location = new System.Drawing.Point(34, 708);
+            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(90, 22);
+            this.label19.Size = new System.Drawing.Size(124, 29);
             this.label19.TabIndex = 115;
             this.label19.Text = "စုစုပေါင်းတန်ဖိုး";
             // 
@@ -282,9 +283,10 @@ namespace MJS
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label18.Location = new System.Drawing.Point(28, 521);
+            this.label18.Location = new System.Drawing.Point(35, 651);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(100, 22);
+            this.label18.Size = new System.Drawing.Size(138, 29);
             this.label18.TabIndex = 114;
             this.label18.Text = "ပြန်လဲအရှုံးတန်ဖိုး";
             // 
@@ -292,9 +294,10 @@ namespace MJS
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label17.Location = new System.Drawing.Point(27, 479);
+            this.label17.Location = new System.Drawing.Point(34, 599);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(46, 22);
+            this.label17.Size = new System.Drawing.Size(62, 29);
             this.label17.TabIndex = 113;
             this.label17.Text = "လက်ခ";
             // 
@@ -302,9 +305,10 @@ namespace MJS
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label16.Location = new System.Drawing.Point(27, 430);
+            this.label16.Location = new System.Drawing.Point(34, 538);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(90, 22);
+            this.label16.Size = new System.Drawing.Size(122, 29);
             this.label16.TabIndex = 112;
             this.label16.Text = "စုစုပေါင်းရွှေချိန်";
             // 
@@ -312,9 +316,10 @@ namespace MJS
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label15.Location = new System.Drawing.Point(561, 134);
+            this.label15.Location = new System.Drawing.Point(701, 168);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(87, 22);
+            this.label15.Size = new System.Drawing.Size(120, 29);
             this.label15.TabIndex = 111;
             this.label15.Text = "ဘားကုဒ်နံပါတ်";
             // 
@@ -322,9 +327,10 @@ namespace MJS
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label14.Location = new System.Drawing.Point(561, 54);
+            this.label14.Location = new System.Drawing.Point(701, 68);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(112, 22);
+            this.label14.Size = new System.Drawing.Size(151, 29);
             this.label14.TabIndex = 110;
             this.label14.Text = "အရောင်းကောင်တာ";
             // 
@@ -332,9 +338,10 @@ namespace MJS
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label12.Location = new System.Drawing.Point(18, 59);
+            this.label12.Location = new System.Drawing.Point(22, 74);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(133, 22);
+            this.label12.Size = new System.Drawing.Size(181, 29);
             this.label12.TabIndex = 108;
             this.label12.Text = "အ၀ယ်ဘောက်ချာနံပါတ်";
             // 
@@ -343,9 +350,10 @@ namespace MJS
             this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label11.Location = new System.Drawing.Point(-468, 22);
+            this.label11.Location = new System.Drawing.Point(-585, 28);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(0, 22);
+            this.label11.Size = new System.Drawing.Size(0, 29);
             this.label11.TabIndex = 107;
             // 
             // btn_review
@@ -356,23 +364,24 @@ namespace MJS
             this.btn_review.ForeColor = System.Drawing.Color.White;
             this.btn_review.Image = ((System.Drawing.Image)(resources.GetObject("btn_review.Image")));
             this.btn_review.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_review.Location = new System.Drawing.Point(882, 781);
-            this.btn_review.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_review.Location = new System.Drawing.Point(1102, 976);
+            this.btn_review.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.btn_review.Name = "btn_review";
-            this.btn_review.Size = new System.Drawing.Size(156, 47);
+            this.btn_review.Size = new System.Drawing.Size(195, 59);
             this.btn_review.TabIndex = 106;
             this.btn_review.Text = "&Preview";
             this.btn_review.UseVisualStyleBackColor = false;
             this.btn_review.Visible = false;
-            this.btn_review.Click += new System.EventHandler(this.btn_review_Click);
+            
             // 
             // label23
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label23.Location = new System.Drawing.Point(561, 17);
+            this.label23.Location = new System.Drawing.Point(701, 21);
+            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(121, 22);
+            this.label23.Size = new System.Drawing.Size(164, 29);
             this.label23.TabIndex = 128;
             this.label23.Text = "စက်ဘောက်ချာနံပါတ်";
             // 
@@ -393,15 +402,15 @@ namespace MJS
             this.btn_cancel.ForeColor = System.Drawing.Color.White;
             this.btn_cancel.Image = ((System.Drawing.Image)(resources.GetObject("btn_cancel.Image")));
             this.btn_cancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_cancel.Location = new System.Drawing.Point(720, 781);
-            this.btn_cancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_cancel.Location = new System.Drawing.Point(900, 976);
+            this.btn_cancel.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.btn_cancel.Name = "btn_cancel";
-            this.btn_cancel.Size = new System.Drawing.Size(156, 47);
+            this.btn_cancel.Size = new System.Drawing.Size(195, 59);
             this.btn_cancel.TabIndex = 105;
             this.btn_cancel.Text = "&Cancel";
             this.btn_cancel.UseVisualStyleBackColor = false;
             this.btn_cancel.Visible = false;
-            this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
+            
             // 
             // btn_save
             // 
@@ -412,23 +421,23 @@ namespace MJS
             this.btn_save.ForeColor = System.Drawing.Color.White;
             this.btn_save.Image = ((System.Drawing.Image)(resources.GetObject("btn_save.Image")));
             this.btn_save.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_save.Location = new System.Drawing.Point(558, 781);
-            this.btn_save.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_save.Location = new System.Drawing.Point(698, 976);
+            this.btn_save.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(156, 47);
+            this.btn_save.Size = new System.Drawing.Size(195, 59);
             this.btn_save.TabIndex = 104;
             this.btn_save.Text = "&Save";
             this.btn_save.UseVisualStyleBackColor = false;
             this.btn_save.Visible = false;
-           
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label10.Location = new System.Drawing.Point(19, 186);
+            this.label10.Location = new System.Drawing.Point(24, 232);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(102, 22);
+            this.label10.Size = new System.Drawing.Size(140, 29);
             this.label10.TabIndex = 103;
             this.label10.Text = "ပစ္စည်းအမျိုးအစား";
             // 
@@ -438,12 +447,12 @@ namespace MJS
             this.txt_barcode.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_barcode.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
             this.txt_barcode.ForeColor = System.Drawing.Color.Black;
-            this.txt_barcode.Location = new System.Drawing.Point(711, 134);
-            this.txt_barcode.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_barcode.Location = new System.Drawing.Point(889, 168);
+            this.txt_barcode.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txt_barcode.Multiline = true;
             this.txt_barcode.Name = "txt_barcode";
             this.txt_barcode.ReadOnly = true;
-            this.txt_barcode.Size = new System.Drawing.Size(183, 30);
+            this.txt_barcode.Size = new System.Drawing.Size(229, 38);
             this.txt_barcode.TabIndex = 102;
             this.txt_barcode.TabStop = false;
             // 
@@ -453,22 +462,22 @@ namespace MJS
             this.txt_counter.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_counter.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
             this.txt_counter.ForeColor = System.Drawing.Color.Black;
-            this.txt_counter.Location = new System.Drawing.Point(711, 54);
-            this.txt_counter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_counter.Location = new System.Drawing.Point(889, 68);
+            this.txt_counter.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txt_counter.Multiline = true;
             this.txt_counter.Name = "txt_counter";
             this.txt_counter.ReadOnly = true;
-            this.txt_counter.Size = new System.Drawing.Size(183, 30);
+            this.txt_counter.Size = new System.Drawing.Size(229, 38);
             this.txt_counter.TabIndex = 100;
             this.txt_counter.TabStop = false;
             // 
             // txt_pur_no
             // 
             this.txt_pur_no.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_pur_no.Location = new System.Drawing.Point(157, 51);
-            this.txt_pur_no.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_pur_no.Location = new System.Drawing.Point(196, 64);
+            this.txt_pur_no.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txt_pur_no.Name = "txt_pur_no";
-            this.txt_pur_no.Size = new System.Drawing.Size(175, 30);
+            this.txt_pur_no.Size = new System.Drawing.Size(218, 34);
             this.txt_pur_no.TabIndex = 1;
             // 
             // txt_voucher
@@ -477,12 +486,12 @@ namespace MJS
             this.txt_voucher.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_voucher.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
             this.txt_voucher.ForeColor = System.Drawing.Color.Black;
-            this.txt_voucher.Location = new System.Drawing.Point(711, 16);
-            this.txt_voucher.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_voucher.Location = new System.Drawing.Point(889, 20);
+            this.txt_voucher.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txt_voucher.Multiline = true;
             this.txt_voucher.Name = "txt_voucher";
             this.txt_voucher.ReadOnly = true;
-            this.txt_voucher.Size = new System.Drawing.Size(183, 30);
+            this.txt_voucher.Size = new System.Drawing.Size(229, 38);
             this.txt_voucher.TabIndex = 98;
             this.txt_voucher.TabStop = false;
             // 
@@ -491,21 +500,21 @@ namespace MJS
             this.txt_totalamt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
             this.txt_totalamt.Enabled = false;
             this.txt_totalamt.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_totalamt.Location = new System.Drawing.Point(157, 563);
-            this.txt_totalamt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_totalamt.Location = new System.Drawing.Point(196, 704);
+            this.txt_totalamt.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txt_totalamt.Multiline = true;
             this.txt_totalamt.Name = "txt_totalamt";
-            this.txt_totalamt.Size = new System.Drawing.Size(189, 30);
+            this.txt_totalamt.Size = new System.Drawing.Size(235, 36);
             this.txt_totalamt.TabIndex = 96;
             this.txt_totalamt.TabStop = false;
             // 
             // txt_rep
             // 
             this.txt_rep.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_rep.Location = new System.Drawing.Point(158, 518);
-            this.txt_rep.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_rep.Location = new System.Drawing.Point(198, 648);
+            this.txt_rep.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txt_rep.Name = "txt_rep";
-            this.txt_rep.Size = new System.Drawing.Size(189, 30);
+            this.txt_rep.Size = new System.Drawing.Size(235, 34);
             this.txt_rep.TabIndex = 12;
             this.txt_rep.TextChanged += new System.EventHandler(this.txt_rep_TextChanged);
             this.txt_rep.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_rep_KeyPress);
@@ -514,10 +523,10 @@ namespace MJS
             // txt_mcost
             // 
             this.txt_mcost.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_mcost.Location = new System.Drawing.Point(158, 474);
-            this.txt_mcost.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_mcost.Location = new System.Drawing.Point(198, 592);
+            this.txt_mcost.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txt_mcost.Name = "txt_mcost";
-            this.txt_mcost.Size = new System.Drawing.Size(189, 30);
+            this.txt_mcost.Size = new System.Drawing.Size(235, 34);
             this.txt_mcost.TabIndex = 11;
             this.txt_mcost.TextChanged += new System.EventHandler(this.txt_mcost_TextChanged);
             this.txt_mcost.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_mcost_KeyPress);
@@ -527,12 +536,12 @@ namespace MJS
             // 
             this.total_S.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
             this.total_S.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.total_S.Location = new System.Drawing.Point(355, 429);
-            this.total_S.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.total_S.Location = new System.Drawing.Point(444, 536);
+            this.total_S.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.total_S.Multiline = true;
             this.total_S.Name = "total_S";
             this.total_S.ReadOnly = true;
-            this.total_S.Size = new System.Drawing.Size(59, 30);
+            this.total_S.Size = new System.Drawing.Size(73, 36);
             this.total_S.TabIndex = 93;
             this.total_S.TabStop = false;
             this.total_S.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -541,12 +550,12 @@ namespace MJS
             // 
             this.total_Y.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
             this.total_Y.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.total_Y.Location = new System.Drawing.Point(290, 428);
-            this.total_Y.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.total_Y.Location = new System.Drawing.Point(362, 535);
+            this.total_Y.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.total_Y.Multiline = true;
             this.total_Y.Name = "total_Y";
             this.total_Y.ReadOnly = true;
-            this.total_Y.Size = new System.Drawing.Size(59, 30);
+            this.total_Y.Size = new System.Drawing.Size(73, 36);
             this.total_Y.TabIndex = 92;
             this.total_Y.TabStop = false;
             this.total_Y.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -555,12 +564,12 @@ namespace MJS
             // 
             this.total_P.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
             this.total_P.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.total_P.Location = new System.Drawing.Point(224, 428);
-            this.total_P.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.total_P.Location = new System.Drawing.Point(280, 535);
+            this.total_P.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.total_P.Multiline = true;
             this.total_P.Name = "total_P";
             this.total_P.ReadOnly = true;
-            this.total_P.Size = new System.Drawing.Size(59, 30);
+            this.total_P.Size = new System.Drawing.Size(73, 36);
             this.total_P.TabIndex = 91;
             this.total_P.TabStop = false;
             this.total_P.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -569,12 +578,12 @@ namespace MJS
             // 
             this.total_K.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
             this.total_K.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.total_K.Location = new System.Drawing.Point(158, 428);
-            this.total_K.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.total_K.Location = new System.Drawing.Point(198, 535);
+            this.total_K.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.total_K.Multiline = true;
             this.total_K.Name = "total_K";
             this.total_K.ReadOnly = true;
-            this.total_K.Size = new System.Drawing.Size(59, 30);
+            this.total_K.Size = new System.Drawing.Size(73, 36);
             this.total_K.TabIndex = 90;
             this.total_K.TabStop = false;
             this.total_K.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -582,10 +591,10 @@ namespace MJS
             // txt_WC
             // 
             this.txt_WC.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_WC.Location = new System.Drawing.Point(354, 388);
-            this.txt_WC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_WC.Location = new System.Drawing.Point(442, 485);
+            this.txt_WC.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txt_WC.Name = "txt_WC";
-            this.txt_WC.Size = new System.Drawing.Size(59, 30);
+            this.txt_WC.Size = new System.Drawing.Size(73, 34);
             this.txt_WC.TabIndex = 10;
             this.txt_WC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_WC.TextChanged += new System.EventHandler(this.txt_YC_TextChanged);
@@ -595,10 +604,10 @@ namespace MJS
             // txt_WY
             // 
             this.txt_WY.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_WY.Location = new System.Drawing.Point(289, 388);
-            this.txt_WY.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_WY.Location = new System.Drawing.Point(361, 485);
+            this.txt_WY.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txt_WY.Name = "txt_WY";
-            this.txt_WY.Size = new System.Drawing.Size(59, 30);
+            this.txt_WY.Size = new System.Drawing.Size(73, 34);
             this.txt_WY.TabIndex = 9;
             this.txt_WY.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_WY.TextChanged += new System.EventHandler(this.txt_YY_TextChanged);
@@ -608,10 +617,10 @@ namespace MJS
             // txt_WP
             // 
             this.txt_WP.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_WP.Location = new System.Drawing.Point(223, 388);
-            this.txt_WP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_WP.Location = new System.Drawing.Point(279, 485);
+            this.txt_WP.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txt_WP.Name = "txt_WP";
-            this.txt_WP.Size = new System.Drawing.Size(59, 30);
+            this.txt_WP.Size = new System.Drawing.Size(73, 34);
             this.txt_WP.TabIndex = 8;
             this.txt_WP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_WP.TextChanged += new System.EventHandler(this.txt_YP_TextChanged);
@@ -621,10 +630,10 @@ namespace MJS
             // txt_WK
             // 
             this.txt_WK.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_WK.Location = new System.Drawing.Point(157, 388);
-            this.txt_WK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_WK.Location = new System.Drawing.Point(196, 485);
+            this.txt_WK.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txt_WK.Name = "txt_WK";
-            this.txt_WK.Size = new System.Drawing.Size(59, 30);
+            this.txt_WK.Size = new System.Drawing.Size(73, 34);
             this.txt_WK.TabIndex = 7;
             this.txt_WK.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_WK.TextChanged += new System.EventHandler(this.txt_YK_TextChanged);
@@ -635,12 +644,12 @@ namespace MJS
             // 
             this.txt_s.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
             this.txt_s.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_s.Location = new System.Drawing.Point(352, 347);
-            this.txt_s.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_s.Location = new System.Drawing.Point(440, 434);
+            this.txt_s.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txt_s.Multiline = true;
             this.txt_s.Name = "txt_s";
             this.txt_s.ReadOnly = true;
-            this.txt_s.Size = new System.Drawing.Size(59, 30);
+            this.txt_s.Size = new System.Drawing.Size(73, 36);
             this.txt_s.TabIndex = 85;
             this.txt_s.TabStop = false;
             this.txt_s.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -649,12 +658,12 @@ namespace MJS
             // 
             this.txt_y.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
             this.txt_y.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_y.Location = new System.Drawing.Point(288, 347);
-            this.txt_y.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_y.Location = new System.Drawing.Point(360, 434);
+            this.txt_y.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txt_y.Multiline = true;
             this.txt_y.Name = "txt_y";
             this.txt_y.ReadOnly = true;
-            this.txt_y.Size = new System.Drawing.Size(59, 30);
+            this.txt_y.Size = new System.Drawing.Size(73, 36);
             this.txt_y.TabIndex = 84;
             this.txt_y.TabStop = false;
             this.txt_y.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -663,12 +672,12 @@ namespace MJS
             // 
             this.txt_p.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
             this.txt_p.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_p.Location = new System.Drawing.Point(223, 347);
-            this.txt_p.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_p.Location = new System.Drawing.Point(279, 434);
+            this.txt_p.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txt_p.Multiline = true;
             this.txt_p.Name = "txt_p";
             this.txt_p.ReadOnly = true;
-            this.txt_p.Size = new System.Drawing.Size(59, 30);
+            this.txt_p.Size = new System.Drawing.Size(73, 36);
             this.txt_p.TabIndex = 83;
             this.txt_p.TabStop = false;
             this.txt_p.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -677,9 +686,10 @@ namespace MJS
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label3.Location = new System.Drawing.Point(19, 100);
+            this.label3.Location = new System.Drawing.Point(24, 125);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(118, 22);
+            this.label3.Size = new System.Drawing.Size(161, 29);
             this.label3.TabIndex = 82;
             this.label3.Text = "အ၀င်စာရင်းမှတ်ချက်";
             // 
@@ -688,12 +698,12 @@ namespace MJS
             this.txt_goldprice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
             this.txt_goldprice.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
             this.txt_goldprice.ForeColor = System.Drawing.Color.Black;
-            this.txt_goldprice.Location = new System.Drawing.Point(157, 134);
-            this.txt_goldprice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_goldprice.Location = new System.Drawing.Point(196, 168);
+            this.txt_goldprice.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txt_goldprice.Multiline = true;
             this.txt_goldprice.Name = "txt_goldprice";
             this.txt_goldprice.ReadOnly = true;
-            this.txt_goldprice.Size = new System.Drawing.Size(126, 30);
+            this.txt_goldprice.Size = new System.Drawing.Size(156, 36);
             this.txt_goldprice.TabIndex = 200;
             this.txt_goldprice.TabStop = false;
             // 
@@ -701,9 +711,10 @@ namespace MJS
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label8.Location = new System.Drawing.Point(18, 142);
+            this.label8.Location = new System.Drawing.Point(22, 178);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(48, 22);
+            this.label8.Size = new System.Drawing.Size(63, 29);
             this.label8.TabIndex = 80;
             this.label8.Text = "ရွှေစျေး";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -712,9 +723,10 @@ namespace MJS
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label9.Location = new System.Drawing.Point(301, 142);
+            this.label9.Location = new System.Drawing.Point(376, 178);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(47, 22);
+            this.label9.Size = new System.Drawing.Size(63, 29);
             this.label9.TabIndex = 79;
             this.label9.Text = "ရွှေရည်";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -723,12 +735,12 @@ namespace MJS
             // 
             this.txt_k.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
             this.txt_k.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_k.Location = new System.Drawing.Point(157, 347);
-            this.txt_k.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_k.Location = new System.Drawing.Point(196, 434);
+            this.txt_k.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txt_k.Multiline = true;
             this.txt_k.Name = "txt_k";
             this.txt_k.ReadOnly = true;
-            this.txt_k.Size = new System.Drawing.Size(59, 30);
+            this.txt_k.Size = new System.Drawing.Size(73, 36);
             this.txt_k.TabIndex = 78;
             this.txt_k.TabStop = false;
             this.txt_k.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -737,20 +749,20 @@ namespace MJS
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label7.Location = new System.Drawing.Point(27, 391);
+            this.label7.Location = new System.Drawing.Point(34, 489);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(80, 22);
+            this.label7.Size = new System.Drawing.Size(107, 29);
             this.label7.TabIndex = 77;
             this.label7.Text = "အလျော့တွက်";
-          
             // 
             // txt_gm
             // 
             this.txt_gm.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_gm.Location = new System.Drawing.Point(157, 268);
-            this.txt_gm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_gm.Location = new System.Drawing.Point(196, 335);
+            this.txt_gm.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txt_gm.Name = "txt_gm";
-            this.txt_gm.Size = new System.Drawing.Size(125, 30);
+            this.txt_gm.Size = new System.Drawing.Size(155, 34);
             this.txt_gm.TabIndex = 6;
             this.txt_gm.TextChanged += new System.EventHandler(this.txt_gm_TextChanged);
             this.txt_gm.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_gm_KeyPress);
@@ -760,9 +772,10 @@ namespace MJS
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label6.Location = new System.Drawing.Point(27, 350);
+            this.label6.Location = new System.Drawing.Point(34, 438);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(83, 22);
+            this.label6.Size = new System.Drawing.Size(113, 29);
             this.label6.TabIndex = 75;
             this.label6.Text = "ရွှေအသားတင်";
             // 
@@ -770,9 +783,10 @@ namespace MJS
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label5.Location = new System.Drawing.Point(27, 276);
+            this.label5.Location = new System.Drawing.Point(34, 345);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 22);
+            this.label5.Size = new System.Drawing.Size(133, 29);
             this.label5.TabIndex = 74;
             this.label5.Text = "အလေးချိန်(ဂရမ်)";
             // 
@@ -780,9 +794,10 @@ namespace MJS
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label4.Location = new System.Drawing.Point(21, 231);
+            this.label4.Location = new System.Drawing.Point(26, 289);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(105, 22);
+            this.label4.Size = new System.Drawing.Size(144, 29);
             this.label4.TabIndex = 73;
             this.label4.Text = "ပစ္စည်းအမျိုးအမည်";
             // 
@@ -792,12 +807,12 @@ namespace MJS
             this.txt_time.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_time.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
             this.txt_time.ForeColor = System.Drawing.Color.Black;
-            this.txt_time.Location = new System.Drawing.Point(353, 9);
-            this.txt_time.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_time.Location = new System.Drawing.Point(441, 11);
+            this.txt_time.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txt_time.Multiline = true;
             this.txt_time.Name = "txt_time";
             this.txt_time.ReadOnly = true;
-            this.txt_time.Size = new System.Drawing.Size(134, 30);
+            this.txt_time.Size = new System.Drawing.Size(167, 37);
             this.txt_time.TabIndex = 72;
             this.txt_time.TabStop = false;
             // 
@@ -805,9 +820,10 @@ namespace MJS
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label2.Location = new System.Drawing.Point(301, 17);
+            this.label2.Location = new System.Drawing.Point(376, 21);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 22);
+            this.label2.Size = new System.Drawing.Size(54, 29);
             this.label2.TabIndex = 71;
             this.label2.Text = "အချိန်";
             // 
@@ -817,12 +833,12 @@ namespace MJS
             this.txt_date.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_date.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
             this.txt_date.ForeColor = System.Drawing.Color.Black;
-            this.txt_date.Location = new System.Drawing.Point(157, 9);
-            this.txt_date.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_date.Location = new System.Drawing.Point(196, 11);
+            this.txt_date.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txt_date.Multiline = true;
             this.txt_date.Name = "txt_date";
             this.txt_date.ReadOnly = true;
-            this.txt_date.Size = new System.Drawing.Size(126, 30);
+            this.txt_date.Size = new System.Drawing.Size(157, 37);
             this.txt_date.TabIndex = 70;
             this.txt_date.TabStop = false;
             // 
@@ -830,9 +846,10 @@ namespace MJS
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label1.Location = new System.Drawing.Point(19, 17);
+            this.label1.Location = new System.Drawing.Point(24, 21);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 22);
+            this.label1.Size = new System.Drawing.Size(54, 29);
             this.label1.TabIndex = 69;
             this.label1.Text = "ရက်စွဲ";
             // 
@@ -855,11 +872,11 @@ namespace MJS
             this.groupBox1.Controls.Add(this.txt_temparay_pid);
             this.groupBox1.Controls.Add(this.txt_result_pid);
             this.groupBox1.Controls.Add(this.txt_Dece_pid);
-            this.groupBox1.Location = new System.Drawing.Point(558, 632);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Location = new System.Drawing.Point(698, 790);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(531, 127);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.groupBox1.Size = new System.Drawing.Size(664, 159);
             this.groupBox1.TabIndex = 130;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "requirment for calculation";
@@ -867,44 +884,44 @@ namespace MJS
             // 
             // txt_incre_pid
             // 
-            this.txt_incre_pid.Location = new System.Drawing.Point(265, 90);
-            this.txt_incre_pid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_incre_pid.Location = new System.Drawing.Point(331, 112);
+            this.txt_incre_pid.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txt_incre_pid.Name = "txt_incre_pid";
-            this.txt_incre_pid.Size = new System.Drawing.Size(100, 20);
+            this.txt_incre_pid.Size = new System.Drawing.Size(124, 22);
             this.txt_incre_pid.TabIndex = 152;
             // 
             // txt_edit_check
             // 
-            this.txt_edit_check.Location = new System.Drawing.Point(432, 17);
-            this.txt_edit_check.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_edit_check.Location = new System.Drawing.Point(540, 21);
+            this.txt_edit_check.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txt_edit_check.Name = "txt_edit_check";
-            this.txt_edit_check.Size = new System.Drawing.Size(54, 20);
+            this.txt_edit_check.Size = new System.Drawing.Size(66, 22);
             this.txt_edit_check.TabIndex = 213;
             this.txt_edit_check.Text = "0";
             this.txt_edit_check.Visible = false;
             // 
             // txt_temparray_proid
             // 
-            this.txt_temparray_proid.Location = new System.Drawing.Point(152, 90);
-            this.txt_temparray_proid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_temparray_proid.Location = new System.Drawing.Point(190, 112);
+            this.txt_temparray_proid.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txt_temparray_proid.Name = "txt_temparray_proid";
-            this.txt_temparray_proid.Size = new System.Drawing.Size(107, 20);
+            this.txt_temparray_proid.Size = new System.Drawing.Size(133, 22);
             this.txt_temparray_proid.TabIndex = 151;
             // 
             // txt_ince_proid
             // 
-            this.txt_ince_proid.Location = new System.Drawing.Point(86, 90);
-            this.txt_ince_proid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_ince_proid.Location = new System.Drawing.Point(108, 112);
+            this.txt_ince_proid.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txt_ince_proid.Name = "txt_ince_proid";
-            this.txt_ince_proid.Size = new System.Drawing.Size(57, 20);
+            this.txt_ince_proid.Size = new System.Drawing.Size(70, 22);
             this.txt_ince_proid.TabIndex = 150;
             // 
             // check_language
             // 
-            this.check_language.Location = new System.Drawing.Point(417, 44);
-            this.check_language.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.check_language.Location = new System.Drawing.Point(521, 55);
+            this.check_language.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.check_language.Name = "check_language";
-            this.check_language.Size = new System.Drawing.Size(100, 20);
+            this.check_language.Size = new System.Drawing.Size(124, 22);
             this.check_language.TabIndex = 149;
             this.check_language.Text = "myanmar";
             this.check_language.Visible = false;
@@ -912,116 +929,121 @@ namespace MJS
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(18, 62);
+            this.label28.Location = new System.Drawing.Point(22, 78);
+            this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(60, 13);
+            this.label28.Size = new System.Drawing.Size(73, 16);
             this.label28.TabIndex = 148;
             this.label28.Text = "product No";
             // 
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(18, 32);
+            this.label27.Location = new System.Drawing.Point(22, 40);
+            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(58, 13);
+            this.label27.Size = new System.Drawing.Size(71, 16);
             this.label27.TabIndex = 147;
             this.label27.Text = "invoice No";
             // 
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(264, 15);
+            this.label26.Location = new System.Drawing.Point(330, 19);
+            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(53, 13);
+            this.label26.Size = new System.Drawing.Size(68, 16);
             this.label26.TabIndex = 146;
             this.label26.Text = "temparray";
             // 
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(152, 15);
+            this.label24.Location = new System.Drawing.Point(190, 19);
+            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(44, 13);
+            this.label24.Size = new System.Drawing.Size(53, 16);
             this.label24.TabIndex = 145;
             this.label24.Text = "result Id";
             // 
             // txt_temparay
             // 
-            this.txt_temparay.Location = new System.Drawing.Point(264, 32);
-            this.txt_temparay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_temparay.Location = new System.Drawing.Point(330, 40);
+            this.txt_temparay.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txt_temparay.Name = "txt_temparay";
-            this.txt_temparay.Size = new System.Drawing.Size(100, 20);
+            this.txt_temparay.Size = new System.Drawing.Size(124, 22);
             this.txt_temparay.TabIndex = 144;
             // 
             // txt_result_id
             // 
-            this.txt_result_id.Location = new System.Drawing.Point(151, 32);
-            this.txt_result_id.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_result_id.Location = new System.Drawing.Point(189, 40);
+            this.txt_result_id.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txt_result_id.Name = "txt_result_id";
-            this.txt_result_id.Size = new System.Drawing.Size(107, 20);
+            this.txt_result_id.Size = new System.Drawing.Size(133, 22);
             this.txt_result_id.TabIndex = 143;
             // 
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(86, 15);
+            this.label25.Location = new System.Drawing.Point(108, 19);
+            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(48, 13);
+            this.label25.Size = new System.Drawing.Size(58, 16);
             this.label25.TabIndex = 141;
             this.label25.Text = "Decre Id";
             // 
             // txt_Dece
             // 
-            this.txt_Dece.Location = new System.Drawing.Point(88, 31);
-            this.txt_Dece.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_Dece.Location = new System.Drawing.Point(110, 39);
+            this.txt_Dece.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txt_Dece.Name = "txt_Dece";
-            this.txt_Dece.Size = new System.Drawing.Size(57, 20);
+            this.txt_Dece.Size = new System.Drawing.Size(70, 22);
             this.txt_Dece.TabIndex = 139;
             // 
             // txt_temparay_pid
             // 
-            this.txt_temparay_pid.Location = new System.Drawing.Point(264, 58);
-            this.txt_temparay_pid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_temparay_pid.Location = new System.Drawing.Point(330, 72);
+            this.txt_temparay_pid.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txt_temparay_pid.Name = "txt_temparay_pid";
-            this.txt_temparay_pid.Size = new System.Drawing.Size(100, 20);
+            this.txt_temparay_pid.Size = new System.Drawing.Size(124, 22);
             this.txt_temparay_pid.TabIndex = 138;
             // 
             // txt_result_pid
             // 
-            this.txt_result_pid.Location = new System.Drawing.Point(152, 58);
-            this.txt_result_pid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_result_pid.Location = new System.Drawing.Point(190, 72);
+            this.txt_result_pid.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txt_result_pid.Name = "txt_result_pid";
-            this.txt_result_pid.Size = new System.Drawing.Size(106, 20);
+            this.txt_result_pid.Size = new System.Drawing.Size(132, 22);
             this.txt_result_pid.TabIndex = 137;
             // 
             // txt_Dece_pid
             // 
-            this.txt_Dece_pid.Location = new System.Drawing.Point(88, 58);
-            this.txt_Dece_pid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_Dece_pid.Location = new System.Drawing.Point(110, 72);
+            this.txt_Dece_pid.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txt_Dece_pid.Name = "txt_Dece_pid";
-            this.txt_Dece_pid.Size = new System.Drawing.Size(57, 20);
+            this.txt_Dece_pid.Size = new System.Drawing.Size(70, 22);
             this.txt_Dece_pid.TabIndex = 136;
             // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.SteelBlue;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(122)))), ((int)(((byte)(173)))));
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Pyidaungsu", 9F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(47)))), ((int)(((byte)(81)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Pyidaungsu", 9F);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(47)))), ((int)(((byte)(81)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.image,
@@ -1057,32 +1079,33 @@ namespace MJS
             this.Form,
             this.type,
             this.coledit});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridView1.Location = new System.Drawing.Point(565, 232);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle9;
+            this.dataGridView1.Location = new System.Drawing.Point(706, 290);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Pyidaungsu", 9F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Pyidaungsu", 9F);
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dataGridView1.RowTemplate.Height = 30;
-            this.dataGridView1.Size = new System.Drawing.Size(852, 311);
+            this.dataGridView1.Size = new System.Drawing.Size(1065, 389);
             this.dataGridView1.TabIndex = 201;
             this.dataGridView1.TabStop = false;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // image
             // 
@@ -1291,40 +1314,48 @@ namespace MJS
             // shop
             // 
             this.shop.HeaderText = "ဆိုင်အမှတ်";
+            this.shop.MinimumWidth = 6;
             this.shop.Name = "shop";
+            this.shop.Width = 125;
             // 
             // Form
             // 
             this.Form.HeaderText = "အသုံးပြုသည့်ဖောင်";
+            this.Form.MinimumWidth = 6;
             this.Form.Name = "Form";
+            this.Form.Width = 125;
             // 
             // type
             // 
             this.type.HeaderText = "အရောင်းကောင်တာ";
+            this.type.MinimumWidth = 6;
             this.type.Name = "type";
+            this.type.Width = 125;
             // 
             // coledit
             // 
             this.coledit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle3.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle3.NullValue")));
-            this.coledit.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle8.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle8.NullValue")));
+            this.coledit.DefaultCellStyle = dataGridViewCellStyle8;
             this.coledit.Description = "Edit";
             this.coledit.HeaderText = "";
             this.coledit.Image = ((System.Drawing.Image)(resources.GetObject("coledit.Image")));
             this.coledit.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
+            this.coledit.MinimumWidth = 6;
             this.coledit.Name = "coledit";
-            this.coledit.Width = 5;
+            this.coledit.Width = 6;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label13.Location = new System.Drawing.Point(169, 314);
+            this.label13.Location = new System.Drawing.Point(211, 392);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(34, 22);
+            this.label13.Size = new System.Drawing.Size(45, 29);
             this.label13.TabIndex = 202;
             this.label13.Text = "ကျပ်";
             // 
@@ -1333,9 +1364,10 @@ namespace MJS
             this.label29.AutoSize = true;
             this.label29.BackColor = System.Drawing.Color.Transparent;
             this.label29.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label29.Location = new System.Drawing.Point(242, 314);
+            this.label29.Location = new System.Drawing.Point(302, 392);
+            this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(18, 22);
+            this.label29.Size = new System.Drawing.Size(24, 29);
             this.label29.TabIndex = 203;
             this.label29.Text = "ပဲ";
             // 
@@ -1344,9 +1376,10 @@ namespace MJS
             this.label30.AutoSize = true;
             this.label30.BackColor = System.Drawing.Color.Transparent;
             this.label30.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label30.Location = new System.Drawing.Point(301, 314);
+            this.label30.Location = new System.Drawing.Point(376, 392);
+            this.label30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(30, 22);
+            this.label30.Size = new System.Drawing.Size(40, 29);
             this.label30.TabIndex = 204;
             this.label30.Text = "ရွေး";
             // 
@@ -1355,9 +1388,10 @@ namespace MJS
             this.label31.AutoSize = true;
             this.label31.BackColor = System.Drawing.Color.Transparent;
             this.label31.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label31.Location = new System.Drawing.Point(365, 315);
+            this.label31.Location = new System.Drawing.Point(456, 394);
+            this.label31.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(32, 22);
+            this.label31.Size = new System.Drawing.Size(43, 29);
             this.label31.TabIndex = 205;
             this.label31.Text = "စိတ်";
             // 
@@ -1366,9 +1400,10 @@ namespace MJS
             this.lbl_totalgm.BackColor = System.Drawing.Color.White;
             this.lbl_totalgm.Font = new System.Drawing.Font("Pyidaungsu", 9.75F, System.Drawing.FontStyle.Bold);
             this.lbl_totalgm.ForeColor = System.Drawing.Color.Black;
-            this.lbl_totalgm.Location = new System.Drawing.Point(137, 54);
+            this.lbl_totalgm.Location = new System.Drawing.Point(171, 68);
+            this.lbl_totalgm.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_totalgm.Name = "lbl_totalgm";
-            this.lbl_totalgm.Size = new System.Drawing.Size(118, 17);
+            this.lbl_totalgm.Size = new System.Drawing.Size(148, 21);
             this.lbl_totalgm.TabIndex = 124;
             this.lbl_totalgm.Text = "0";
             this.lbl_totalgm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1378,9 +1413,10 @@ namespace MJS
             this.lbl_totalamt.BackColor = System.Drawing.Color.White;
             this.lbl_totalamt.Font = new System.Drawing.Font("Pyidaungsu", 9.75F, System.Drawing.FontStyle.Bold);
             this.lbl_totalamt.ForeColor = System.Drawing.Color.Black;
-            this.lbl_totalamt.Location = new System.Drawing.Point(137, 20);
+            this.lbl_totalamt.Location = new System.Drawing.Point(171, 25);
+            this.lbl_totalamt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_totalamt.Name = "lbl_totalamt";
-            this.lbl_totalamt.Size = new System.Drawing.Size(118, 18);
+            this.lbl_totalamt.Size = new System.Drawing.Size(148, 22);
             this.lbl_totalamt.TabIndex = 124;
             this.lbl_totalamt.Text = "0";
             this.lbl_totalamt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1398,12 +1434,12 @@ namespace MJS
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
             this.textBox2.ForeColor = System.Drawing.Color.Black;
-            this.textBox2.Location = new System.Drawing.Point(711, 95);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox2.Location = new System.Drawing.Point(889, 119);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(183, 30);
+            this.textBox2.Size = new System.Drawing.Size(229, 38);
             this.textBox2.TabIndex = 214;
             this.textBox2.TabStop = false;
             this.textBox2.Text = "Gold Register";
@@ -1414,12 +1450,12 @@ namespace MJS
             this.txt_shop.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_shop.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
             this.txt_shop.ForeColor = System.Drawing.Color.Black;
-            this.txt_shop.Location = new System.Drawing.Point(711, 175);
-            this.txt_shop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_shop.Location = new System.Drawing.Point(889, 219);
+            this.txt_shop.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txt_shop.Multiline = true;
             this.txt_shop.Name = "txt_shop";
             this.txt_shop.ReadOnly = true;
-            this.txt_shop.Size = new System.Drawing.Size(183, 30);
+            this.txt_shop.Size = new System.Drawing.Size(229, 38);
             this.txt_shop.TabIndex = 213;
             this.txt_shop.TabStop = false;
             // 
@@ -1427,9 +1463,10 @@ namespace MJS
             // 
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label32.Location = new System.Drawing.Point(561, 94);
+            this.label32.Location = new System.Drawing.Point(701, 118);
+            this.label32.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(108, 22);
+            this.label32.Size = new System.Drawing.Size(147, 29);
             this.label32.TabIndex = 212;
             this.label32.Text = "အသုံးပြုသည့်ဖောင်";
             // 
@@ -1437,9 +1474,10 @@ namespace MJS
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label22.Location = new System.Drawing.Point(561, 178);
+            this.label22.Location = new System.Drawing.Point(701, 222);
+            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(65, 22);
+            this.label22.Size = new System.Drawing.Size(89, 29);
             this.label22.TabIndex = 211;
             this.label22.Text = "ဆိုင်အမှတ်";
             // 
@@ -1451,31 +1489,32 @@ namespace MJS
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label20.Location = new System.Drawing.Point(27, 737);
+            this.label20.Location = new System.Drawing.Point(34, 921);
+            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(56, 22);
+            this.label20.Size = new System.Drawing.Size(75, 29);
             this.label20.TabIndex = 212;
             this.label20.Text = "မှတ်ချက်";
             // 
             // txt_remark
             // 
             this.txt_remark.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_remark.Location = new System.Drawing.Point(156, 712);
-            this.txt_remark.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_remark.Location = new System.Drawing.Point(195, 890);
+            this.txt_remark.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txt_remark.Multiline = true;
             this.txt_remark.Name = "txt_remark";
-            this.txt_remark.Size = new System.Drawing.Size(193, 56);
+            this.txt_remark.Size = new System.Drawing.Size(240, 69);
             this.txt_remark.TabIndex = 14;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.pictureBox);
             this.groupBox2.ForeColor = System.Drawing.Color.Black;
-            this.groupBox2.Location = new System.Drawing.Point(157, 610);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox2.Location = new System.Drawing.Point(196, 762);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Size = new System.Drawing.Size(191, 82);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.groupBox2.Size = new System.Drawing.Size(239, 102);
             this.groupBox2.TabIndex = 55;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Image";
@@ -1484,9 +1523,10 @@ namespace MJS
             // 
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label34.Location = new System.Drawing.Point(25, 632);
+            this.label34.Location = new System.Drawing.Point(31, 790);
+            this.label34.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(42, 22);
+            this.label34.Size = new System.Drawing.Size(58, 29);
             this.label34.TabIndex = 217;
             this.label34.Text = "ဓါတ်ပုံ";
             // 
@@ -1495,9 +1535,10 @@ namespace MJS
             this.lbl_qty.BackColor = System.Drawing.Color.White;
             this.lbl_qty.Font = new System.Drawing.Font("Pyidaungsu", 9.75F, System.Drawing.FontStyle.Bold);
             this.lbl_qty.ForeColor = System.Drawing.Color.Black;
-            this.lbl_qty.Location = new System.Drawing.Point(137, 89);
+            this.lbl_qty.Location = new System.Drawing.Point(171, 111);
+            this.lbl_qty.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_qty.Name = "lbl_qty";
-            this.lbl_qty.Size = new System.Drawing.Size(118, 17);
+            this.lbl_qty.Size = new System.Drawing.Size(148, 21);
             this.lbl_qty.TabIndex = 220;
             this.lbl_qty.Text = "0";
             this.lbl_qty.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1510,11 +1551,11 @@ namespace MJS
             this.groupBox3.Controls.Add(this.label38);
             this.groupBox3.Controls.Add(this.lbl_totalgm);
             this.groupBox3.Controls.Add(this.lbl_totalamt);
-            this.groupBox3.Location = new System.Drawing.Point(1016, 36);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox3.Location = new System.Drawing.Point(1270, 45);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox3.Size = new System.Drawing.Size(271, 120);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.groupBox3.Size = new System.Drawing.Size(339, 150);
             this.groupBox3.TabIndex = 290;
             this.groupBox3.TabStop = false;
             // 
@@ -1522,9 +1563,10 @@ namespace MJS
             // 
             this.label35.AutoSize = true;
             this.label35.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label35.Location = new System.Drawing.Point(33, 22);
+            this.label35.Location = new System.Drawing.Point(41, 28);
+            this.label35.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(92, 13);
+            this.label35.Size = new System.Drawing.Size(113, 16);
             this.label35.TabIndex = 286;
             this.label35.Text = "TOTAL AMOUNT";
             // 
@@ -1532,9 +1574,10 @@ namespace MJS
             // 
             this.label37.AutoSize = true;
             this.label37.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label37.Location = new System.Drawing.Point(33, 91);
+            this.label37.Location = new System.Drawing.Point(41, 114);
+            this.label37.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(64, 13);
+            this.label37.Size = new System.Drawing.Size(79, 16);
             this.label37.TabIndex = 288;
             this.label37.Text = "TOTALQTY";
             // 
@@ -1542,18 +1585,20 @@ namespace MJS
             // 
             this.label38.AutoSize = true;
             this.label38.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label38.Location = new System.Drawing.Point(33, 56);
+            this.label38.Location = new System.Drawing.Point(41, 70);
+            this.label38.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(62, 13);
+            this.label38.Size = new System.Drawing.Size(75, 16);
             this.label38.TabIndex = 287;
             this.label38.Text = "TOTAL GM";
             // 
             // btn_cart
             // 
             this.btn_cart.ButtonStyle = Krypton.Toolkit.ButtonStyle.Alternate;
-            this.btn_cart.Location = new System.Drawing.Point(156, 788);
+            this.btn_cart.Location = new System.Drawing.Point(195, 985);
+            this.btn_cart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_cart.Name = "btn_cart";
-            this.btn_cart.Size = new System.Drawing.Size(193, 40);
+            this.btn_cart.Size = new System.Drawing.Size(241, 50);
             this.btn_cart.TabIndex = 293;
             this.btn_cart.Values.Text = "Add To Cart";
             this.btn_cart.Click += new System.EventHandler(this.btn_cart_Click);
@@ -1561,9 +1606,10 @@ namespace MJS
             // btn_reg_save
             // 
             this.btn_reg_save.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_reg_save.Location = new System.Drawing.Point(864, 563);
+            this.btn_reg_save.Location = new System.Drawing.Point(1080, 704);
+            this.btn_reg_save.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_reg_save.Name = "btn_reg_save";
-            this.btn_reg_save.Size = new System.Drawing.Size(170, 35);
+            this.btn_reg_save.Size = new System.Drawing.Size(212, 44);
             this.btn_reg_save.TabIndex = 294;
             this.btn_reg_save.Values.Text = "&Save";
             this.btn_reg_save.Click += new System.EventHandler(this.btn_reg_save_Click);
@@ -1571,9 +1617,10 @@ namespace MJS
             // btn_reg_cancel
             // 
             this.btn_reg_cancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_reg_cancel.Location = new System.Drawing.Point(1057, 563);
+            this.btn_reg_cancel.Location = new System.Drawing.Point(1321, 704);
+            this.btn_reg_cancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_reg_cancel.Name = "btn_reg_cancel";
-            this.btn_reg_cancel.Size = new System.Drawing.Size(170, 35);
+            this.btn_reg_cancel.Size = new System.Drawing.Size(212, 44);
             this.btn_reg_cancel.TabIndex = 295;
             this.btn_reg_cancel.Values.Text = "&Cancel";
             this.btn_reg_cancel.Click += new System.EventHandler(this.btn_reg_cancel_Click);
@@ -1581,73 +1628,80 @@ namespace MJS
             // btn_reg_preview
             // 
             this.btn_reg_preview.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_reg_preview.Location = new System.Drawing.Point(1248, 563);
+            this.btn_reg_preview.Location = new System.Drawing.Point(1560, 704);
+            this.btn_reg_preview.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_reg_preview.Name = "btn_reg_preview";
-            this.btn_reg_preview.Size = new System.Drawing.Size(170, 35);
+            this.btn_reg_preview.Size = new System.Drawing.Size(212, 44);
             this.btn_reg_preview.TabIndex = 296;
             this.btn_reg_preview.Values.Text = "&Preview";
             this.btn_reg_preview.Click += new System.EventHandler(this.btn_reg_preview_Click);
             // 
             // label21
             // 
-            this.label21.Location = new System.Drawing.Point(160, 834);
+            this.label21.Location = new System.Drawing.Point(200, 1042);
+            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(100, 20);
+            this.label21.Size = new System.Drawing.Size(125, 25);
             this.label21.TabIndex = 297;
             // 
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(687, 21);
+            this.label33.Location = new System.Drawing.Point(859, 26);
+            this.label33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(10, 13);
+            this.label33.Size = new System.Drawing.Size(11, 16);
             this.label33.TabIndex = 298;
             this.label33.Text = "-";
             // 
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(687, 58);
+            this.label36.Location = new System.Drawing.Point(859, 72);
+            this.label36.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(10, 13);
+            this.label36.Size = new System.Drawing.Size(11, 16);
             this.label36.TabIndex = 299;
             this.label36.Text = "-";
             // 
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(687, 98);
+            this.label39.Location = new System.Drawing.Point(859, 122);
+            this.label39.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(10, 13);
+            this.label39.Size = new System.Drawing.Size(11, 16);
             this.label39.TabIndex = 300;
             this.label39.Text = "-";
             // 
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(687, 138);
+            this.label40.Location = new System.Drawing.Point(859, 172);
+            this.label40.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(10, 13);
+            this.label40.Size = new System.Drawing.Size(11, 16);
             this.label40.TabIndex = 301;
             this.label40.Text = "-";
             // 
             // label41
             // 
             this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(687, 179);
+            this.label41.Location = new System.Drawing.Point(859, 224);
+            this.label41.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(10, 13);
+            this.label41.Size = new System.Drawing.Size(11, 16);
             this.label41.TabIndex = 302;
             this.label41.Text = "-";
             // 
             // gform
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1428, 868);
+            this.ClientSize = new System.Drawing.Size(1785, 1085);
             this.Controls.Add(this.label41);
             this.Controls.Add(this.label40);
             this.Controls.Add(this.label39);
@@ -1724,7 +1778,7 @@ namespace MJS
             this.Controls.Add(this.label31);
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.Name = "gform";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "gform";

@@ -33,7 +33,6 @@ namespace MJS
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.pan_rep = new System.Windows.Forms.Panel();
             this.ico_rep = new FontAwesome.Sharp.IconPictureBox();
             this.lbl_report = new System.Windows.Forms.Label();
@@ -42,11 +41,11 @@ namespace MJS
             this.ico_master = new FontAwesome.Sharp.IconPictureBox();
             this.lbl_master = new System.Windows.Forms.Label();
             this.pan_line_master = new System.Windows.Forms.Panel();
-            this.pan_line_home = new System.Windows.Forms.Panel();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.pan_home = new System.Windows.Forms.Panel();
             this.ico_home = new FontAwesome.Sharp.IconPictureBox();
             this.lbl_Home = new System.Windows.Forms.Label();
+            this.pan_line_home = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
@@ -87,8 +86,7 @@ namespace MJS
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(47)))), ((int)(((byte)(81)))));
-            this.panel2.Controls.Add(this.radioButton3);
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(91)))), ((int)(((byte)(184)))));
             this.panel2.Controls.Add(this.pan_rep);
             this.panel2.Controls.Add(this.pan_master);
             this.panel2.Controls.Add(this.radioButton1);
@@ -106,20 +104,6 @@ namespace MJS
             this.panel2.Size = new System.Drawing.Size(1443, 63);
             this.panel2.TabIndex = 2;
             // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Checked = true;
-            this.radioButton3.Location = new System.Drawing.Point(972, 16);
-            this.radioButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(85, 17);
-            this.radioButton3.TabIndex = 32;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "radioButton3";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            this.radioButton3.Visible = false;
-            // 
             // pan_rep
             // 
             this.pan_rep.Controls.Add(this.ico_rep);
@@ -133,7 +117,7 @@ namespace MJS
             // 
             // ico_rep
             // 
-            this.ico_rep.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(47)))), ((int)(((byte)(81)))));
+            this.ico_rep.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(91)))), ((int)(((byte)(184)))));
             this.ico_rep.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(167)))), ((int)(((byte)(167)))));
             this.ico_rep.IconChar = FontAwesome.Sharp.IconChar.File;
             this.ico_rep.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(167)))), ((int)(((byte)(167)))));
@@ -182,7 +166,7 @@ namespace MJS
             // 
             // ico_master
             // 
-            this.ico_master.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(47)))), ((int)(((byte)(81)))));
+            this.ico_master.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(91)))), ((int)(((byte)(184)))));
             this.ico_master.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(167)))), ((int)(((byte)(167)))));
             this.ico_master.IconChar = FontAwesome.Sharp.IconChar.Database;
             this.ico_master.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(167)))), ((int)(((byte)(167)))));
@@ -218,16 +202,6 @@ namespace MJS
             this.pan_line_master.TabIndex = 23;
             this.pan_line_master.Visible = false;
             // 
-            // pan_line_home
-            // 
-            this.pan_line_home.BackColor = System.Drawing.Color.White;
-            this.pan_line_home.ForeColor = System.Drawing.Color.White;
-            this.pan_line_home.Location = new System.Drawing.Point(0, 34);
-            this.pan_line_home.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pan_line_home.Name = "pan_line_home";
-            this.pan_line_home.Size = new System.Drawing.Size(104, 2);
-            this.pan_line_home.TabIndex = 24;
-            // 
             // radioButton1
             // 
             this.radioButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -255,7 +229,7 @@ namespace MJS
             // 
             // ico_home
             // 
-            this.ico_home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(47)))), ((int)(((byte)(81)))));
+            this.ico_home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(91)))), ((int)(((byte)(184)))));
             this.ico_home.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ico_home.IconChar = FontAwesome.Sharp.IconChar.HomeLg;
             this.ico_home.IconColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -281,6 +255,16 @@ namespace MJS
             this.lbl_Home.Text = "Home";
             this.lbl_Home.Click += new System.EventHandler(this.lbl_Home_Click);
             // 
+            // pan_line_home
+            // 
+            this.pan_line_home.BackColor = System.Drawing.Color.White;
+            this.pan_line_home.ForeColor = System.Drawing.Color.White;
+            this.pan_line_home.Location = new System.Drawing.Point(0, 34);
+            this.pan_line_home.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pan_line_home.Name = "pan_line_home";
+            this.pan_line_home.Size = new System.Drawing.Size(104, 2);
+            this.pan_line_home.TabIndex = 24;
+            // 
             // panel3
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -298,7 +282,7 @@ namespace MJS
             // 
             // iconPictureBox5
             // 
-            this.iconPictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(47)))), ((int)(((byte)(81)))));
+            this.iconPictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(91)))), ((int)(((byte)(184)))));
             this.iconPictureBox5.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
             this.iconPictureBox5.IconColor = System.Drawing.Color.White;
             this.iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -313,7 +297,7 @@ namespace MJS
             // 
             // iconPictureBox1
             // 
-            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(47)))), ((int)(((byte)(81)))));
+            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(91)))), ((int)(((byte)(184)))));
             this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
             this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -359,7 +343,7 @@ namespace MJS
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Pyidaungsu", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(147, 28);
+            this.label2.Location = new System.Drawing.Point(151, 28);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(158, 22);
             this.label2.TabIndex = 2;
@@ -505,7 +489,7 @@ namespace MJS
             // closingStockToolStripMenuItem
             // 
             this.closingStockToolStripMenuItem.Name = "closingStockToolStripMenuItem";
-            this.closingStockToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.closingStockToolStripMenuItem.Size = new System.Drawing.Size(153, 26);
             this.closingStockToolStripMenuItem.Text = "Closing Stock";
             this.closingStockToolStripMenuItem.Click += new System.EventHandler(this.closingStockToolStripMenuItem_Click);
             // 
@@ -530,6 +514,7 @@ namespace MJS
             this.Controls.Add(this.mainpanel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form2";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -595,7 +580,6 @@ namespace MJS
         private Panel pan_master;
         private ToolStripMenuItem reportToolStripMenuItem;
         private ToolStripMenuItem closingStockToolStripMenuItem;
-        private RadioButton radioButton3;
         private ToolStripMenuItem otherOutToolStripMenuItem;
         private ToolStripMenuItem saleToolStripMenuItem;
     }
