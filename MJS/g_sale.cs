@@ -8,8 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using CrystalDecisions.CrystalReports.Engine;
 using System.IO;
+
 
 
 namespace MJS
@@ -21,6 +21,7 @@ namespace MJS
         public g_sale()
         {
             InitializeComponent();
+            
         }
         private void g_sale_Load(object sender, EventArgs e)
         {
@@ -195,28 +196,346 @@ namespace MJS
             printPreviewDialog1.ShowDialog();
         }
 
-        ReportDocument rd;
-        private void iconButton2_Click(object sender, EventArgs e)
-        {
-            DialogResult rel=MessageBox.Show("Do you want to print?","Voucher Print",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
-            if (rel == DialogResult.Yes)
-            {
-                try 
-                {
-                    rd=new ReportDocument();
-                    rd.Load(Application.StartupPath+ "//Reports//test.rpt");
-                    /*crystalreportvi*/
-                    /*rd.SetDataSource()*/
-                
-                }catch { }
-            
-            }
-        }
-
         private void iconButton2_Click_1(object sender, EventArgs e)
         {
             outvoucher outvoucher = new outvoucher();
             outvoucher.ShowDialog();
         }
+        public void calculategm()/*function claculation TOTAL AMOUNT*/
+        {
+            double intk, intp, inty, ints, tk, tp, ty, ts, totalK, totalP, totalY, totalS, resultP, resultP2, resultP3, resultP4,
+                resultY, resultY2, resultY3, resultY4, resultS, resultS2, resultS3, resultS4, T_wastageK, T_wastageP,
+                T_wastageY, T_wastageS, wastageamount, mcost, reploss, totalamt,bbamt,include_bbamt,percent,percentamt,include_percentamt,dicountamt,totalcost = 0;
+            string chks = "0";
+            string svalue = "0";
+            double gm = 0;
+            /*---------------------- Gm To KPY Method------------------------*/
+            if (txt_gm.Text == "")
+            {
+                txt_s.Text = "0";
+                txt_gm.Text = "0";
+                txt_gm.SelectionStart = 0;
+                txt_gm.SelectionLength = txt_gm.Text.Length;
+            }
+            if (txt_mcost.Text == "")
+            {
+                txt_mcost.Text = "0";
+                txt_mcost.SelectionStart = 0;
+                txt_mcost.SelectionLength = txt_mcost.Text.Length;
+            }
+            if (txt_rep.Text == "")
+            {
+                txt_rep.Text = "0";
+                txt_rep.SelectionStart = 0;
+                txt_rep.SelectionLength = txt_rep.Text.Length;
+            }
+            if (txt_WK.Text == "")
+            {
+                txt_WK.Text = "0";
+                txt_WK.SelectionStart = 0;
+                txt_WK.SelectionLength = txt_WK.Text.Length;
+            }
+            if (txt_WP.Text == "")
+            {
+                txt_WP.Text = "0";
+                txt_WP.SelectionStart = 0;
+                txt_WP.SelectionLength = txt_WP.Text.Length;
+            }
+            if (txt_WY.Text == "")
+            {
+                txt_WY.Text = "0";
+                txt_WY.SelectionStart = 0;
+                txt_WY.SelectionLength = txt_WY.Text.Length;
+            }
+            if (txt_WC.Text == "")
+            {
+                txt_WC.Text = "0";
+                txt_WC.SelectionStart = 0;
+                txt_WC.SelectionLength = txt_WC.Text.Length;
+            }
+            if (txt_percent_amt.Text == "")
+            {
+                txt_percent_amt.Text = "0";
+                txt_percent_amt.SelectionStart = 0;
+                txt_percent_amt.SelectionLength = txt_percent_amt.Text.Length;
+            }
+            if (txt_pernumber.Text == "")
+            {
+                txt_pernumber.Text = "0";
+                txt_pernumber.SelectionStart = 0;
+                txt_pernumber.SelectionLength = txt_pernumber.Text.Length;
+
+            }
+            if (txt_discount.Text == "")
+            {
+                txt_discount.Text = "0";
+                txt_discount.SelectionStart = 0;
+                txt_discount.SelectionLength = txt_discount.Text.Length;
+            }
+            
+            intk = Math.Floor(double.Parse(txt_gm.Text) / double.Parse("16.6"));
+            tk = double.Parse(txt_gm.Text) / double.Parse("16.6");
+            txt_k.Text = intk.ToString();
+
+            tp = (tk - intk) * 16;
+            intp = Math.Floor((tk - intk) * 16);
+            txt_p.Text = intp.ToString();
+
+            ty = (tp - intp) * 8;
+            inty = Math.Floor((tp - intp) * 8);
+            txt_y.Text = inty.ToString();
+
+            ts = ty - inty;
+            chks = ts.ToString("0.##");
+            if (double.Parse(chks) >= 0.25 && double.Parse(chks) <= 0.49)
+            {
+                txt_s.Text = "1";
+
+            }
+            else if (double.Parse(chks) >= 0.50 && double.Parse(chks) <= 0.74)
+            {
+                txt_s.Text = "2";
+
+            }
+            else if (double.Parse(chks) >= 0.75 && double.Parse(chks) <= 0.9)
+            {
+                txt_s.Text = "3";
+
+            }
+            else if (double.Parse(chks) >= 0.9 && double.Parse(chks) <= 1)
+            {
+                txt_s.Text = "0";
+                txt_y.Text = (inty + 1).ToString();
+            }
+            else
+            {
+                if (double.Parse(chks) < 0.25)
+                {
+                    txt_s.Text = "0";
+
+                }
+            }
+            /*---------------------- Total KPYS Method------------------------*/
+
+            if (txt_WK.Text != "" || txt_WK.Text != "0" || txt_WP.Text != "" || txt_WP.Text != "0" || txt_WY.Text != "" || txt_WY.Text != "0" || txt_WC.Text != "" || txt_WC.Text != "0")
+            {
+                if (txt_WK.Text != "")
+                {
+                    double sumK1 = double.Parse(txt_k.Text);
+                    double sumK2 = double.Parse(txt_WK.Text);
+                    totalK = sumK1 + sumK2;
+                    total_K.Text = totalK.ToString();
+                    T_wastageK = double.Parse(total_K.Text);
+                }
+
+                if (txt_WP.Text != "")
+                {
+                    totalP = double.Parse(txt_p.Text) + double.Parse(txt_WP.Text);
+                    if (totalP >= 16)
+                    {
+                        resultP = Math.Floor(totalP / 16);
+                        resultP2 = totalP / 16;
+                        resultP3 = Math.Floor((resultP2 - resultP) * 16);
+                        resultP4 = double.Parse(total_K.Text) + resultP;
+                        total_P.Text = resultP3.ToString();
+                        total_K.Text = resultP4.ToString();
+                        T_wastageP = double.Parse(total_P.Text);
+                        T_wastageK = double.Parse(total_K.Text);
+                    }
+                    else
+                    {
+                        total_P.Text = totalP.ToString();
+                        T_wastageP = double.Parse(total_P.Text);
+                    }
+                }
+
+                if (txt_WY.Text != "")
+                {
+                    totalY = double.Parse(txt_y.Text) + double.Parse(txt_WY.Text);
+                    if (totalY >= 8)
+                    {
+                        resultY = Math.Floor(totalY / 8);
+                        resultY2 = totalY / 8;
+                        resultY3 = Math.Floor((resultY2 - resultY) * 8);
+                        resultY4 = double.Parse(total_P.Text) + resultY;
+                        total_Y.Text = resultY3.ToString();
+                        total_P.Text = resultY4.ToString();
+                        T_wastageY = double.Parse(total_Y.Text);
+                        T_wastageP = double.Parse(total_P.Text);
+                    }
+                    else
+                    {
+                        total_Y.Text = totalY.ToString();
+                        T_wastageY = double.Parse(total_Y.Text);
+                    }
+                }
+
+                if (txt_WC.Text != "")
+                {
+                    totalS = double.Parse(txt_s.Text) + double.Parse(txt_WC.Text);
+                    if (totalS >= 4)
+                    {
+                        resultS = Math.Floor(totalS / 4);
+                        resultS2 = totalS / 4;
+                        resultS3 = Math.Floor((resultS2 - resultS) * 4);
+                        resultS4 = double.Parse(total_Y.Text) + resultS;
+                        total_S.Text = resultS3.ToString();
+                        total_Y.Text = resultS4.ToString();
+                        T_wastageS = double.Parse(total_S.Text);
+                        T_wastageY = double.Parse(total_Y.Text);
+                    }
+                    else
+                    {
+                        total_S.Text = totalS.ToString();
+                        T_wastageS = double.Parse(total_S.Text);
+                    }
+                }
+            }
+            /*------------------------------------------------Total Amount------------------------------------------------*/
+            if (total_K.Text != "" && total_P.Text != "" && total_Y.Text != "" && total_S.Text != "")
+            {
+
+                T_wastageK = double.Parse(total_K.Text); T_wastageP = double.Parse(total_P.Text);
+                T_wastageY = double.Parse(total_Y.Text); T_wastageS = double.Parse(total_S.Text);
+                mcost = double.Parse(txt_mcost.Text); reploss = double.Parse(txt_rep.Text);
+                bbamt= double.Parse(txt_bbamt.Text);include_bbamt=double.Parse(txt_include_bbamt.Text);
+                percentamt=double.Parse(txt_percent_amt.Text);include_percentamt=double.Parse(txt_include_percent.Text);
+                dicountamt = double.Parse(txt_discount.Text);totalcost= double.Parse(txt_totalcost.Text);
+                percent = double.Parse(txt_pernumber.Text);
+
+                wastageamount = Math.Round(((((T_wastageS / 4) + T_wastageY) / 8 + T_wastageP) / 16 + T_wastageK) * double.Parse(txt_goldprice.Text));
+                
+                totalamt = (wastageamount + mcost) + reploss;
+                txt_totalamt.Text = totalamt.ToString();
+                include_bbamt = (totalamt + bbamt);
+                txt_include_bbamt.Text = include_bbamt.ToString();
+
+                
+                percentamt = Math.Round(include_bbamt / 100) * percent;
+                txt_percent_amt.Text = percentamt.ToString();
+
+                include_percentamt = include_bbamt+percentamt;
+                txt_include_percent.Text = include_percentamt.ToString();
+                totalcost = include_percentamt - dicountamt;
+                txt_totalcost.Text = totalcost.ToString();
+
+            }
+
+        }
+
+        private void txt_gm_TextChanged(object sender, EventArgs e)
+        {
+            calculategm();
+        }
+
+        private void txt_WK_TextChanged(object sender, EventArgs e)
+        {
+            calculategm();
+        }
+
+        private void txt_WP_TextChanged(object sender, EventArgs e)
+        {
+            double p = 16;
+            if (txt_WP.Text == "")
+            {
+                txt_WP.Text = "";
+
+            }
+            else if (double.Parse(txt_WP.Text) > p)
+            {
+                MessageBox.Show(" အလျော့တွက် 16 \"ပဲ\" နှင့်အထက် ဖြစ်နေပါသည်");
+                txt_WP.Text = "0";
+                txt_WP.SelectionStart = 0;
+                txt_WP.SelectionLength = txt_WP.Text.Length;
+            }
+            calculategm();
+        }
+
+        private void txt_WY_TextChanged(object sender, EventArgs e)
+        {
+            double p = 8;
+            if (txt_WY.Text == "")
+            {
+                txt_WY.Text = "";
+
+            }
+            else if (double.Parse(txt_WY.Text) > p)
+            {
+                MessageBox.Show(" အလျော့တွက် 8 \"ရွေး\" နှင့်အထက် ဖြစ်နေပါသည်");
+                txt_WY.Text = "0";
+                txt_WY.SelectionStart = 0;
+                txt_WY.SelectionLength = txt_WY.Text.Length;
+            }
+            calculategm();
+        }
+
+        private void txt_WC_TextChanged(object sender, EventArgs e)
+        {
+            double p = 4;
+            if (txt_WC.Text == "")
+            {
+                txt_WC.Text = "";
+
+            }
+            else if (double.Parse(txt_WC.Text) > p)
+            {
+                MessageBox.Show("အလျော့တွက် 4 \"စိတ်\" နှင့်အထက် ဖြစ်နေပါသည်");
+                txt_WC.Text = "0";
+                txt_WC.SelectionStart = 0;
+                txt_WC.SelectionLength = txt_WC.Text.Length;
+            }
+            calculategm();
+        }
+
+        private void txt_mcost_TextChanged(object sender, EventArgs e)
+        {
+            calculategm();
+        }
+
+        private void txt_rep_TextChanged(object sender, EventArgs e)
+        {
+            calculategm();
+        }
+
+        private void txt_discount_TextChanged(object sender, EventArgs e)
+        {
+            calculategm();
+        }
+
+        private void txt_pernumber_TextChanged(object sender, EventArgs e)
+        {
+            
+            if (txt_pernumber.Text == "")
+            {
+                txt_pernumber.Text = "0";
+                txt_pernumber.SelectionStart = 0;
+                txt_pernumber.SelectionLength = txt_pernumber.Text.Length;
+
+            }
+
+            double bbamt, pernumber = 0;
+            bbamt=double.Parse(txt_include_bbamt.Text);
+            pernumber = double.Parse(txt_pernumber.Text);
+
+            txt_percent_amt.Text = Math.Round((bbamt/100)*pernumber).ToString();
+        }
+
+        private void txt_percent_amt_TextChanged(object sender, EventArgs e)
+        {
+            if (txt_percent_amt.Text == "")
+            {
+                txt_percent_amt.Text = "0";
+                txt_percent_amt.SelectionStart = 0;
+                txt_percent_amt.SelectionLength = txt_percent_amt.Text.Length;
+            }
+
+            double bbamt2, percentamt,sum = 0;
+            bbamt2 = double.Parse(txt_include_bbamt.Text);
+            percentamt = double.Parse(txt_percent_amt.Text);
+            sum = double.Parse(txt_include_percent.Text);
+            sum=bbamt2+percentamt;
+            txt_include_percent.Text = sum.ToString();
+        }
+
     }
 }

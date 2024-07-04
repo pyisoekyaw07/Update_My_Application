@@ -59,16 +59,25 @@ namespace MJS
             this.btn_cash = new FontAwesome.Sharp.IconButton();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label34 = new System.Windows.Forms.Label();
+            this.txt_pro_famt = new System.Windows.Forms.TextBox();
+            this.txt_pro_amt = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txt_pro_number = new System.Windows.Forms.TextBox();
+            this.txt_pernumber = new System.Windows.Forms.TextBox();
+            this.txt_percent_amt = new System.Windows.Forms.TextBox();
+            this.txt_rep = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txt_gm = new System.Windows.Forms.TextBox();
             this.edit_goldprice_btn = new System.Windows.Forms.Button();
             this.txt_goldprice = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txt_saleremark = new System.Windows.Forms.TextBox();
+            this.txt_mcost = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
             this.pit_show = new System.Windows.Forms.PictureBox();
             this.label_gm = new System.Windows.Forms.Label();
@@ -76,27 +85,27 @@ namespace MJS
             this.label_goldtype = new System.Windows.Forms.Label();
             this.label_itemname = new System.Windows.Forms.Label();
             this.label_Item = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
+            this.total_S = new System.Windows.Forms.Label();
+            this.total_Y = new System.Windows.Forms.Label();
+            this.total_P = new System.Windows.Forms.Label();
+            this.total_K = new System.Windows.Forms.Label();
+            this.txt_s = new System.Windows.Forms.Label();
+            this.txt_y = new System.Windows.Forms.Label();
+            this.txt_p = new System.Windows.Forms.Label();
+            this.txt_k = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.txt_totalamt = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.txt_totalcost = new System.Windows.Forms.TextBox();
+            this.txt_include_percent = new System.Windows.Forms.TextBox();
+            this.txt_discount = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_bbamt = new System.Windows.Forms.TextBox();
+            this.txt_include_bbamt = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -126,7 +135,7 @@ namespace MJS
             this.txt_date.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
             this.txt_date.ForeColor = System.Drawing.Color.Black;
             this.txt_date.Location = new System.Drawing.Point(12, 14);
-            this.txt_date.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_date.Margin = new System.Windows.Forms.Padding(4);
             this.txt_date.Multiline = true;
             this.txt_date.Name = "txt_date";
             this.txt_date.ReadOnly = true;
@@ -142,7 +151,7 @@ namespace MJS
             this.txt_time.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
             this.txt_time.ForeColor = System.Drawing.Color.Black;
             this.txt_time.Location = new System.Drawing.Point(141, 14);
-            this.txt_time.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_time.Margin = new System.Windows.Forms.Padding(4);
             this.txt_time.Multiline = true;
             this.txt_time.Name = "txt_time";
             this.txt_time.ReadOnly = true;
@@ -158,7 +167,7 @@ namespace MJS
             this.textBox3.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Bold);
             this.textBox3.ForeColor = System.Drawing.Color.Black;
             this.textBox3.Location = new System.Drawing.Point(12, 52);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
@@ -169,32 +178,32 @@ namespace MJS
             // 
             // txt_shop
             // 
-            this.txt_shop.BackColor = System.Drawing.Color.White;
-            this.txt_shop.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_shop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
+            this.txt_shop.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_shop.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
             this.txt_shop.ForeColor = System.Drawing.Color.Black;
-            this.txt_shop.Location = new System.Drawing.Point(461, 11);
-            this.txt_shop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_shop.Location = new System.Drawing.Point(779, 14);
+            this.txt_shop.Margin = new System.Windows.Forms.Padding(4);
             this.txt_shop.Multiline = true;
             this.txt_shop.Name = "txt_shop";
             this.txt_shop.ReadOnly = true;
-            this.txt_shop.Size = new System.Drawing.Size(97, 34);
+            this.txt_shop.Size = new System.Drawing.Size(98, 35);
             this.txt_shop.TabIndex = 300;
             this.txt_shop.TabStop = false;
             this.txt_shop.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox5
             // 
-            this.textBox5.BackColor = System.Drawing.Color.White;
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
+            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox5.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
             this.textBox5.ForeColor = System.Drawing.Color.Black;
-            this.textBox5.Location = new System.Drawing.Point(358, 11);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox5.Location = new System.Drawing.Point(675, 14);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(97, 34);
+            this.textBox5.Size = new System.Drawing.Size(98, 35);
             this.textBox5.TabIndex = 300;
             this.textBox5.TabStop = false;
             this.textBox5.Text = "Gold Sale";
@@ -202,16 +211,16 @@ namespace MJS
             // 
             // textBox6
             // 
-            this.textBox6.BackColor = System.Drawing.Color.White;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
+            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox6.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
             this.textBox6.ForeColor = System.Drawing.Color.Black;
-            this.textBox6.Location = new System.Drawing.Point(252, 11);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox6.Location = new System.Drawing.Point(570, 14);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
             this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
             this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(97, 34);
+            this.textBox6.Size = new System.Drawing.Size(98, 35);
             this.textBox6.TabIndex = 300;
             this.textBox6.TabStop = false;
             this.textBox6.Text = "A Counter";
@@ -220,6 +229,7 @@ namespace MJS
             // timer1
             // 
             this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // label12
             // 
@@ -236,10 +246,11 @@ namespace MJS
             // 
             this.txt_out_no.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
             this.txt_out_no.Location = new System.Drawing.Point(16, 126);
-            this.txt_out_no.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_out_no.Margin = new System.Windows.Forms.Padding(4);
             this.txt_out_no.Name = "txt_out_no";
             this.txt_out_no.Size = new System.Drawing.Size(240, 34);
-            this.txt_out_no.TabIndex = 306;
+            this.txt_out_no.TabIndex = 1;
+            this.txt_out_no.TextChanged += new System.EventHandler(this.txt_out_no_TextChanged);
             // 
             // label7
             // 
@@ -266,53 +277,57 @@ namespace MJS
             // txt_WK
             // 
             this.txt_WK.Font = new System.Drawing.Font("Pyidaungsu", 12F);
-            this.txt_WK.Location = new System.Drawing.Point(776, 548);
-            this.txt_WK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_WK.Location = new System.Drawing.Point(796, 548);
+            this.txt_WK.Margin = new System.Windows.Forms.Padding(4);
             this.txt_WK.Name = "txt_WK";
             this.txt_WK.Size = new System.Drawing.Size(73, 41);
-            this.txt_WK.TabIndex = 311;
+            this.txt_WK.TabIndex = 3;
             this.txt_WK.Text = "0";
             this.txt_WK.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_WK.TextChanged += new System.EventHandler(this.txt_WK_TextChanged);
             // 
             // txt_WP
             // 
             this.txt_WP.Font = new System.Drawing.Font("Pyidaungsu", 12F);
-            this.txt_WP.Location = new System.Drawing.Point(858, 548);
-            this.txt_WP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_WP.Location = new System.Drawing.Point(878, 548);
+            this.txt_WP.Margin = new System.Windows.Forms.Padding(4);
             this.txt_WP.Name = "txt_WP";
             this.txt_WP.Size = new System.Drawing.Size(73, 41);
-            this.txt_WP.TabIndex = 312;
+            this.txt_WP.TabIndex = 4;
             this.txt_WP.Text = "0";
             this.txt_WP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_WP.TextChanged += new System.EventHandler(this.txt_WP_TextChanged);
             // 
             // txt_WY
             // 
             this.txt_WY.Font = new System.Drawing.Font("Pyidaungsu", 12F);
-            this.txt_WY.Location = new System.Drawing.Point(936, 548);
-            this.txt_WY.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_WY.Location = new System.Drawing.Point(956, 548);
+            this.txt_WY.Margin = new System.Windows.Forms.Padding(4);
             this.txt_WY.Name = "txt_WY";
             this.txt_WY.Size = new System.Drawing.Size(73, 41);
-            this.txt_WY.TabIndex = 313;
+            this.txt_WY.TabIndex = 5;
             this.txt_WY.Text = "0";
             this.txt_WY.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_WY.TextChanged += new System.EventHandler(this.txt_WY_TextChanged);
             // 
             // txt_WC
             // 
             this.txt_WC.Font = new System.Drawing.Font("Pyidaungsu", 12F);
-            this.txt_WC.Location = new System.Drawing.Point(1014, 548);
-            this.txt_WC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_WC.Location = new System.Drawing.Point(1034, 548);
+            this.txt_WC.Margin = new System.Windows.Forms.Padding(4);
             this.txt_WC.Name = "txt_WC";
             this.txt_WC.Size = new System.Drawing.Size(73, 41);
-            this.txt_WC.TabIndex = 314;
+            this.txt_WC.TabIndex = 6;
             this.txt_WC.Text = "0";
             this.txt_WC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_WC.TextChanged += new System.EventHandler(this.txt_WC_TextChanged);
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label13.Location = new System.Drawing.Point(794, 450);
+            this.label13.Location = new System.Drawing.Point(814, 450);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(45, 29);
@@ -324,7 +339,7 @@ namespace MJS
             this.label29.AutoSize = true;
             this.label29.BackColor = System.Drawing.Color.Transparent;
             this.label29.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label29.Location = new System.Drawing.Point(885, 450);
+            this.label29.Location = new System.Drawing.Point(905, 450);
             this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(24, 29);
@@ -336,7 +351,7 @@ namespace MJS
             this.label30.AutoSize = true;
             this.label30.BackColor = System.Drawing.Color.Transparent;
             this.label30.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label30.Location = new System.Drawing.Point(959, 449);
+            this.label30.Location = new System.Drawing.Point(979, 449);
             this.label30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(40, 29);
@@ -348,7 +363,7 @@ namespace MJS
             this.label31.AutoSize = true;
             this.label31.BackColor = System.Drawing.Color.Transparent;
             this.label31.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label31.Location = new System.Drawing.Point(1040, 449);
+            this.label31.Location = new System.Drawing.Point(1060, 449);
             this.label31.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(43, 29);
@@ -359,7 +374,7 @@ namespace MJS
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label19.Location = new System.Drawing.Point(4, 731);
+            this.label19.Location = new System.Drawing.Point(4, 781);
             this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(153, 29);
@@ -370,7 +385,7 @@ namespace MJS
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label18.Location = new System.Drawing.Point(1188, 739);
+            this.label18.Location = new System.Drawing.Point(1188, 831);
             this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(75, 29);
@@ -395,13 +410,14 @@ namespace MJS
             this.Btn_BB.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.Btn_BB.IconSize = 25;
             this.Btn_BB.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Btn_BB.Location = new System.Drawing.Point(4, 799);
-            this.Btn_BB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_BB.Location = new System.Drawing.Point(4, 850);
+            this.Btn_BB.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_BB.Name = "Btn_BB";
             this.Btn_BB.Size = new System.Drawing.Size(272, 55);
-            this.Btn_BB.TabIndex = 344;
+            this.Btn_BB.TabIndex = 9;
             this.Btn_BB.Text = "BB";
             this.Btn_BB.UseVisualStyleBackColor = true;
+            this.Btn_BB.Click += new System.EventHandler(this.Btn_BB_Click);
             // 
             // btn_cash
             // 
@@ -410,13 +426,14 @@ namespace MJS
             this.btn_cash.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_cash.IconSize = 25;
             this.btn_cash.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_cash.Location = new System.Drawing.Point(275, 799);
-            this.btn_cash.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_cash.Location = new System.Drawing.Point(275, 850);
+            this.btn_cash.Margin = new System.Windows.Forms.Padding(4);
             this.btn_cash.Name = "btn_cash";
             this.btn_cash.Size = new System.Drawing.Size(284, 55);
-            this.btn_cash.TabIndex = 345;
+            this.btn_cash.TabIndex = 14;
             this.btn_cash.Text = "Cash";
             this.btn_cash.UseVisualStyleBackColor = true;
+            this.btn_cash.Click += new System.EventHandler(this.btn_cash_Click);
             // 
             // label1
             // 
@@ -436,18 +453,9 @@ namespace MJS
             this.label5.Location = new System.Drawing.Point(1188, 511);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(87, 29);
+            this.label5.Size = new System.Drawing.Size(52, 29);
             this.label5.TabIndex = 346;
-            this.label5.Text = "အခွန် ၁ %";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.textBox1.Location = new System.Drawing.Point(1354, 508);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(235, 34);
-            this.textBox1.TabIndex = 347;
+            this.label5.Text = "အခွန်";
             // 
             // panel1
             // 
@@ -455,14 +463,24 @@ namespace MJS
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.label34);
+            this.panel1.Controls.Add(this.txt_pro_famt);
+            this.panel1.Controls.Add(this.txt_pro_amt);
+            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.label14);
+            this.panel1.Controls.Add(this.txt_pro_number);
+            this.panel1.Controls.Add(this.txt_pernumber);
+            this.panel1.Controls.Add(this.txt_percent_amt);
+            this.panel1.Controls.Add(this.txt_rep);
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.iconButton2);
             this.panel1.Controls.Add(this.iconButton1);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.textBox9);
+            this.panel1.Controls.Add(this.txt_gm);
             this.panel1.Controls.Add(this.edit_goldprice_btn);
             this.panel1.Controls.Add(this.txt_goldprice);
-            this.panel1.Controls.Add(this.textBox7);
-            this.panel1.Controls.Add(this.textBox4);
+            this.panel1.Controls.Add(this.txt_saleremark);
+            this.panel1.Controls.Add(this.txt_mcost);
             this.panel1.Controls.Add(this.label33);
             this.panel1.Controls.Add(this.txt_shop);
             this.panel1.Controls.Add(this.textBox6);
@@ -476,27 +494,27 @@ namespace MJS
             this.panel1.Controls.Add(this.label_goldtype);
             this.panel1.Controls.Add(this.label_itemname);
             this.panel1.Controls.Add(this.label_Item);
-            this.panel1.Controls.Add(this.label38);
-            this.panel1.Controls.Add(this.label39);
-            this.panel1.Controls.Add(this.label40);
-            this.panel1.Controls.Add(this.label41);
-            this.panel1.Controls.Add(this.label37);
-            this.panel1.Controls.Add(this.label36);
-            this.panel1.Controls.Add(this.label35);
-            this.panel1.Controls.Add(this.label34);
+            this.panel1.Controls.Add(this.total_S);
+            this.panel1.Controls.Add(this.total_Y);
+            this.panel1.Controls.Add(this.total_P);
+            this.panel1.Controls.Add(this.total_K);
+            this.panel1.Controls.Add(this.txt_s);
+            this.panel1.Controls.Add(this.txt_y);
+            this.panel1.Controls.Add(this.txt_p);
+            this.panel1.Controls.Add(this.txt_k);
             this.panel1.Controls.Add(this.label32);
             this.panel1.Controls.Add(this.label28);
-            this.panel1.Controls.Add(this.textBox14);
+            this.panel1.Controls.Add(this.txt_totalamt);
             this.panel1.Controls.Add(this.label27);
             this.panel1.Controls.Add(this.label26);
             this.panel1.Controls.Add(this.label25);
             this.panel1.Controls.Add(this.label24);
-            this.panel1.Controls.Add(this.textBox13);
-            this.panel1.Controls.Add(this.textBox12);
-            this.panel1.Controls.Add(this.textBox11);
+            this.panel1.Controls.Add(this.txt_totalcost);
+            this.panel1.Controls.Add(this.txt_include_percent);
+            this.panel1.Controls.Add(this.txt_discount);
             this.panel1.Controls.Add(this.label23);
-            this.panel1.Controls.Add(this.textBox10);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.txt_bbamt);
+            this.panel1.Controls.Add(this.txt_include_bbamt);
             this.panel1.Controls.Add(this.label22);
             this.panel1.Controls.Add(this.label21);
             this.panel1.Controls.Add(this.label16);
@@ -512,7 +530,6 @@ namespace MJS
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.label31);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label30);
@@ -532,11 +549,113 @@ namespace MJS
             this.panel1.Controls.Add(this.txt_WP);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.txt_WK);
-            this.panel1.Location = new System.Drawing.Point(16, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Location = new System.Drawing.Point(15, 15);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1754, 600);
+            this.panel1.Size = new System.Drawing.Size(3877, 1234);
             this.panel1.TabIndex = 348;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Pyidaungsu", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Location = new System.Drawing.Point(1188, 672);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(126, 29);
+            this.label34.TabIndex = 431;
+            this.label34.Text = "Promotion(Flat)";
+            // 
+            // txt_pro_famt
+            // 
+            this.txt_pro_famt.Location = new System.Drawing.Point(1365, 672);
+            this.txt_pro_famt.Multiline = true;
+            this.txt_pro_famt.Name = "txt_pro_famt";
+            this.txt_pro_famt.Size = new System.Drawing.Size(238, 34);
+            this.txt_pro_famt.TabIndex = 14;
+            this.txt_pro_famt.Text = "0";
+            // 
+            // txt_pro_amt
+            // 
+            this.txt_pro_amt.Location = new System.Drawing.Point(1455, 618);
+            this.txt_pro_amt.Multiline = true;
+            this.txt_pro_amt.Name = "txt_pro_amt";
+            this.txt_pro_amt.Size = new System.Drawing.Size(145, 33);
+            this.txt_pro_amt.TabIndex = 13;
+            this.txt_pro_amt.Text = "0";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
+            this.textBox1.Location = new System.Drawing.Point(1897, 581);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(83, 34);
+            this.textBox1.TabIndex = 428;
+            this.textBox1.Text = "0";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
+            this.label14.Location = new System.Drawing.Point(1188, 618);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(119, 29);
+            this.label14.TabIndex = 427;
+            this.label14.Text = "Promotion (%)";
+            // 
+            // txt_pro_number
+            // 
+            this.txt_pro_number.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
+            this.txt_pro_number.Location = new System.Drawing.Point(1365, 619);
+            this.txt_pro_number.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_pro_number.Name = "txt_pro_number";
+            this.txt_pro_number.Size = new System.Drawing.Size(83, 34);
+            this.txt_pro_number.TabIndex = 12;
+            this.txt_pro_number.Text = "0";
+            // 
+            // txt_pernumber
+            // 
+            this.txt_pernumber.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_pernumber.Location = new System.Drawing.Point(1365, 509);
+            this.txt_pernumber.Name = "txt_pernumber";
+            this.txt_pernumber.Size = new System.Drawing.Size(68, 41);
+            this.txt_pernumber.TabIndex = 10;
+            this.txt_pernumber.Text = "0";
+            this.txt_pernumber.TextChanged += new System.EventHandler(this.txt_pernumber_TextChanged);
+            // 
+            // txt_percent_amt
+            // 
+            this.txt_percent_amt.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_percent_amt.Location = new System.Drawing.Point(1455, 508);
+            this.txt_percent_amt.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_percent_amt.Name = "txt_percent_amt";
+            this.txt_percent_amt.Size = new System.Drawing.Size(145, 41);
+            this.txt_percent_amt.TabIndex = 11;
+            this.txt_percent_amt.Text = "0";
+            this.txt_percent_amt.TextChanged += new System.EventHandler(this.txt_percent_amt_TextChanged);
+            // 
+            // txt_rep
+            // 
+            this.txt_rep.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
+            this.txt_rep.Location = new System.Drawing.Point(799, 725);
+            this.txt_rep.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_rep.Name = "txt_rep";
+            this.txt_rep.Size = new System.Drawing.Size(230, 34);
+            this.txt_rep.TabIndex = 8;
+            this.txt_rep.Text = "0";
+            this.txt_rep.TextChanged += new System.EventHandler(this.txt_rep_TextChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
+            this.label2.Location = new System.Drawing.Point(611, 729);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(96, 29);
+            this.label2.TabIndex = 421;
+            this.label2.Text = "GPD တန်ဖိုး";
             // 
             // iconButton2
             // 
@@ -545,10 +664,10 @@ namespace MJS
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton2.IconSize = 25;
             this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.Location = new System.Drawing.Point(918, 799);
-            this.iconButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.iconButton2.Location = new System.Drawing.Point(851, 850);
+            this.iconButton2.Margin = new System.Windows.Forms.Padding(4);
             this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(284, 55);
+            this.iconButton2.Size = new System.Drawing.Size(214, 55);
             this.iconButton2.TabIndex = 420;
             this.iconButton2.Text = "crystal print";
             this.iconButton2.UseVisualStyleBackColor = true;
@@ -561,82 +680,86 @@ namespace MJS
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 25;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(610, 799);
-            this.iconButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.iconButton1.Location = new System.Drawing.Point(605, 850);
+            this.iconButton1.Margin = new System.Windows.Forms.Padding(4);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(284, 55);
+            this.iconButton1.Size = new System.Drawing.Size(214, 55);
             this.iconButton1.TabIndex = 419;
             this.iconButton1.Text = "Save";
             this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // button1
             // 
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.Location = new System.Drawing.Point(974, 408);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(994, 408);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(36, 29);
             this.button1.TabIndex = 418;
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // textBox9
+            // txt_gm
             // 
-            this.textBox9.Enabled = false;
-            this.textBox9.Font = new System.Drawing.Font("Pyidaungsu", 12F);
-            this.textBox9.Location = new System.Drawing.Point(776, 404);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(242, 38);
-            this.textBox9.TabIndex = 417;
+            this.txt_gm.Font = new System.Drawing.Font("Pyidaungsu", 12F);
+            this.txt_gm.Location = new System.Drawing.Point(796, 404);
+            this.txt_gm.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_gm.Multiline = true;
+            this.txt_gm.Name = "txt_gm";
+            this.txt_gm.Size = new System.Drawing.Size(242, 38);
+            this.txt_gm.TabIndex = 2;
+            this.txt_gm.TextChanged += new System.EventHandler(this.txt_gm_TextChanged);
             // 
             // edit_goldprice_btn
             // 
             this.edit_goldprice_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("edit_goldprice_btn.BackgroundImage")));
             this.edit_goldprice_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.edit_goldprice_btn.Location = new System.Drawing.Point(462, 129);
-            this.edit_goldprice_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.edit_goldprice_btn.Margin = new System.Windows.Forms.Padding(4);
             this.edit_goldprice_btn.Name = "edit_goldprice_btn";
             this.edit_goldprice_btn.Size = new System.Drawing.Size(36, 29);
             this.edit_goldprice_btn.TabIndex = 416;
             this.edit_goldprice_btn.UseVisualStyleBackColor = true;
+            this.edit_goldprice_btn.Click += new System.EventHandler(this.edit_goldprice_btn_Click);
             // 
             // txt_goldprice
             // 
             this.txt_goldprice.Enabled = false;
             this.txt_goldprice.Font = new System.Drawing.Font("Pyidaungsu", 12F);
             this.txt_goldprice.Location = new System.Drawing.Point(265, 125);
-            this.txt_goldprice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_goldprice.Margin = new System.Windows.Forms.Padding(4);
             this.txt_goldprice.Multiline = true;
             this.txt_goldprice.Name = "txt_goldprice";
             this.txt_goldprice.Size = new System.Drawing.Size(242, 38);
             this.txt_goldprice.TabIndex = 415;
             // 
-            // textBox7
+            // txt_saleremark
             // 
-            this.textBox7.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.textBox7.Location = new System.Drawing.Point(1354, 735);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(306, 66);
-            this.textBox7.TabIndex = 413;
+            this.txt_saleremark.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
+            this.txt_saleremark.Location = new System.Drawing.Point(1365, 827);
+            this.txt_saleremark.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_saleremark.Multiline = true;
+            this.txt_saleremark.Name = "txt_saleremark";
+            this.txt_saleremark.Size = new System.Drawing.Size(306, 78);
+            this.txt_saleremark.TabIndex = 13;
             // 
-            // textBox4
+            // txt_mcost
             // 
-            this.textBox4.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.textBox4.Location = new System.Drawing.Point(779, 671);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(230, 34);
-            this.textBox4.TabIndex = 412;
+            this.txt_mcost.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
+            this.txt_mcost.Location = new System.Drawing.Point(799, 671);
+            this.txt_mcost.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_mcost.Name = "txt_mcost";
+            this.txt_mcost.Size = new System.Drawing.Size(230, 34);
+            this.txt_mcost.TabIndex = 7;
+            this.txt_mcost.Text = "0";
+            this.txt_mcost.TextChanged += new System.EventHandler(this.txt_mcost_TextChanged);
             // 
             // label33
             // 
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Pyidaungsu", 27.75F);
-            this.label33.Location = new System.Drawing.Point(158, 699);
+            this.label33.Location = new System.Drawing.Point(158, 749);
             this.label33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(117, 78);
@@ -645,10 +768,10 @@ namespace MJS
             // 
             // pit_show
             // 
-            this.pit_show.Location = new System.Drawing.Point(159, 468);
-            this.pit_show.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pit_show.Location = new System.Drawing.Point(142, 479);
+            this.pit_show.Margin = new System.Windows.Forms.Padding(4);
             this.pit_show.Name = "pit_show";
-            this.pit_show.Size = new System.Drawing.Size(249, 222);
+            this.pit_show.Size = new System.Drawing.Size(276, 222);
             this.pit_show.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pit_show.TabIndex = 410;
             this.pit_show.TabStop = false;
@@ -715,109 +838,109 @@ namespace MJS
             this.label_Item.TabIndex = 405;
             this.label_Item.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label38
+            // total_S
             // 
-            this.label38.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label38.Font = new System.Drawing.Font("Pyidaungsu", 12F);
-            this.label38.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label38.Location = new System.Drawing.Point(1015, 605);
-            this.label38.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(71, 49);
-            this.label38.TabIndex = 404;
-            this.label38.Text = "0";
-            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.total_S.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.total_S.Font = new System.Drawing.Font("Pyidaungsu", 12F);
+            this.total_S.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.total_S.Location = new System.Drawing.Point(1035, 605);
+            this.total_S.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.total_S.Name = "total_S";
+            this.total_S.Size = new System.Drawing.Size(71, 49);
+            this.total_S.TabIndex = 404;
+            this.total_S.Text = "0";
+            this.total_S.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label39
+            // total_Y
             // 
-            this.label39.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label39.Font = new System.Drawing.Font("Pyidaungsu", 12F);
-            this.label39.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label39.Location = new System.Drawing.Point(936, 605);
-            this.label39.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(71, 49);
-            this.label39.TabIndex = 403;
-            this.label39.Text = "0";
-            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.total_Y.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.total_Y.Font = new System.Drawing.Font("Pyidaungsu", 12F);
+            this.total_Y.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.total_Y.Location = new System.Drawing.Point(956, 605);
+            this.total_Y.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.total_Y.Name = "total_Y";
+            this.total_Y.Size = new System.Drawing.Size(71, 49);
+            this.total_Y.TabIndex = 403;
+            this.total_Y.Text = "0";
+            this.total_Y.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label40
+            // total_P
             // 
-            this.label40.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label40.Font = new System.Drawing.Font("Pyidaungsu", 12F);
-            this.label40.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label40.Location = new System.Drawing.Point(858, 605);
-            this.label40.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(71, 49);
-            this.label40.TabIndex = 402;
-            this.label40.Text = "0";
-            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.total_P.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.total_P.Font = new System.Drawing.Font("Pyidaungsu", 12F);
+            this.total_P.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.total_P.Location = new System.Drawing.Point(878, 605);
+            this.total_P.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.total_P.Name = "total_P";
+            this.total_P.Size = new System.Drawing.Size(71, 49);
+            this.total_P.TabIndex = 402;
+            this.total_P.Text = "0";
+            this.total_P.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label41
+            // total_K
             // 
-            this.label41.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label41.Font = new System.Drawing.Font("Pyidaungsu", 12F);
-            this.label41.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label41.Location = new System.Drawing.Point(779, 605);
-            this.label41.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(71, 49);
-            this.label41.TabIndex = 401;
-            this.label41.Text = "0";
-            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.total_K.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.total_K.Font = new System.Drawing.Font("Pyidaungsu", 12F);
+            this.total_K.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.total_K.Location = new System.Drawing.Point(799, 605);
+            this.total_K.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.total_K.Name = "total_K";
+            this.total_K.Size = new System.Drawing.Size(71, 49);
+            this.total_K.TabIndex = 401;
+            this.total_K.Text = "0";
+            this.total_K.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label37
+            // txt_s
             // 
-            this.label37.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label37.Font = new System.Drawing.Font("Pyidaungsu", 12F);
-            this.label37.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label37.Location = new System.Drawing.Point(1015, 488);
-            this.label37.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(71, 49);
-            this.label37.TabIndex = 400;
-            this.label37.Text = "0";
-            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txt_s.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txt_s.Font = new System.Drawing.Font("Pyidaungsu", 12F);
+            this.txt_s.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.txt_s.Location = new System.Drawing.Point(1035, 488);
+            this.txt_s.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.txt_s.Name = "txt_s";
+            this.txt_s.Size = new System.Drawing.Size(71, 49);
+            this.txt_s.TabIndex = 400;
+            this.txt_s.Text = "0";
+            this.txt_s.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label36
+            // txt_y
             // 
-            this.label36.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label36.Font = new System.Drawing.Font("Pyidaungsu", 12F);
-            this.label36.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label36.Location = new System.Drawing.Point(936, 488);
-            this.label36.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(71, 49);
-            this.label36.TabIndex = 399;
-            this.label36.Text = "0";
-            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txt_y.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txt_y.Font = new System.Drawing.Font("Pyidaungsu", 12F);
+            this.txt_y.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.txt_y.Location = new System.Drawing.Point(956, 488);
+            this.txt_y.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.txt_y.Name = "txt_y";
+            this.txt_y.Size = new System.Drawing.Size(71, 49);
+            this.txt_y.TabIndex = 399;
+            this.txt_y.Text = "0";
+            this.txt_y.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label35
+            // txt_p
             // 
-            this.label35.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label35.Font = new System.Drawing.Font("Pyidaungsu", 12F);
-            this.label35.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label35.Location = new System.Drawing.Point(858, 488);
-            this.label35.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(71, 49);
-            this.label35.TabIndex = 398;
-            this.label35.Text = "0";
-            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txt_p.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txt_p.Font = new System.Drawing.Font("Pyidaungsu", 12F);
+            this.txt_p.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.txt_p.Location = new System.Drawing.Point(878, 488);
+            this.txt_p.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.txt_p.Name = "txt_p";
+            this.txt_p.Size = new System.Drawing.Size(71, 49);
+            this.txt_p.TabIndex = 398;
+            this.txt_p.Text = "0";
+            this.txt_p.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label34
+            // txt_k
             // 
-            this.label34.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label34.Font = new System.Drawing.Font("Pyidaungsu", 12F);
-            this.label34.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label34.Location = new System.Drawing.Point(779, 488);
-            this.label34.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(71, 49);
-            this.label34.TabIndex = 397;
-            this.label34.Text = "0";
-            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txt_k.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txt_k.Font = new System.Drawing.Font("Pyidaungsu", 12F);
+            this.txt_k.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.txt_k.Location = new System.Drawing.Point(799, 488);
+            this.txt_k.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.txt_k.Name = "txt_k";
+            this.txt_k.Size = new System.Drawing.Size(71, 49);
+            this.txt_k.TabIndex = 397;
+            this.txt_k.Text = "0";
+            this.txt_k.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label32
             // 
@@ -834,31 +957,32 @@ namespace MJS
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label28.Location = new System.Drawing.Point(610, 731);
+            this.label28.Location = new System.Drawing.Point(610, 781);
             this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(182, 29);
             this.label28.TabIndex = 374;
             this.label28.Text = "ပစ္စည်းတန်ဖိုး ကျသင့်ငွေ";
             // 
-            // textBox14
+            // txt_totalamt
             // 
-            this.textBox14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
-            this.textBox14.Enabled = false;
-            this.textBox14.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.textBox14.Location = new System.Drawing.Point(776, 728);
-            this.textBox14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox14.Multiline = true;
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(233, 36);
-            this.textBox14.TabIndex = 373;
-            this.textBox14.TabStop = false;
+            this.txt_totalamt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
+            this.txt_totalamt.Enabled = false;
+            this.txt_totalamt.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
+            this.txt_totalamt.Location = new System.Drawing.Point(796, 778);
+            this.txt_totalamt.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_totalamt.Multiline = true;
+            this.txt_totalamt.Name = "txt_totalamt";
+            this.txt_totalamt.Size = new System.Drawing.Size(233, 36);
+            this.txt_totalamt.TabIndex = 373;
+            this.txt_totalamt.TabStop = false;
+            this.txt_totalamt.Text = "0";
             // 
             // label27
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label27.Location = new System.Drawing.Point(1188, 678);
+            this.label27.Location = new System.Drawing.Point(1188, 778);
             this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(153, 29);
@@ -869,7 +993,7 @@ namespace MJS
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label26.Location = new System.Drawing.Point(1188, 621);
+            this.label26.Location = new System.Drawing.Point(1188, 725);
             this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(100, 29);
@@ -883,9 +1007,9 @@ namespace MJS
             this.label25.Location = new System.Drawing.Point(1188, 456);
             this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(160, 29);
+            this.label25.Size = new System.Drawing.Size(175, 29);
             this.label25.TabIndex = 370;
-            this.label25.Text = "အလဲပါပြီး ကျသင့်ငွေ";
+            this.label25.Text = "အလဲနုတ်ပြီး ကျသင့်ငွေ";
             // 
             // label24
             // 
@@ -898,40 +1022,44 @@ namespace MJS
             this.label24.TabIndex = 369;
             this.label24.Text = "အလဲတန်ဖိုး ကျသင့်ငွေ";
             // 
-            // textBox13
+            // txt_totalcost
             // 
-            this.textBox13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
-            this.textBox13.Enabled = false;
-            this.textBox13.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.textBox13.Location = new System.Drawing.Point(1354, 674);
-            this.textBox13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox13.Multiline = true;
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(238, 36);
-            this.textBox13.TabIndex = 368;
-            this.textBox13.TabStop = false;
+            this.txt_totalcost.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
+            this.txt_totalcost.Enabled = false;
+            this.txt_totalcost.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
+            this.txt_totalcost.Location = new System.Drawing.Point(1365, 774);
+            this.txt_totalcost.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_totalcost.Multiline = true;
+            this.txt_totalcost.Name = "txt_totalcost";
+            this.txt_totalcost.Size = new System.Drawing.Size(238, 36);
+            this.txt_totalcost.TabIndex = 368;
+            this.txt_totalcost.TabStop = false;
+            this.txt_totalcost.Text = "0";
             // 
-            // textBox12
+            // txt_include_percent
             // 
-            this.textBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
-            this.textBox12.Enabled = false;
-            this.textBox12.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.textBox12.Location = new System.Drawing.Point(1354, 560);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox12.Multiline = true;
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(238, 36);
-            this.textBox12.TabIndex = 367;
-            this.textBox12.TabStop = false;
+            this.txt_include_percent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
+            this.txt_include_percent.Enabled = false;
+            this.txt_include_percent.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
+            this.txt_include_percent.Location = new System.Drawing.Point(1365, 560);
+            this.txt_include_percent.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_include_percent.Multiline = true;
+            this.txt_include_percent.Name = "txt_include_percent";
+            this.txt_include_percent.Size = new System.Drawing.Size(238, 36);
+            this.txt_include_percent.TabIndex = 367;
+            this.txt_include_percent.TabStop = false;
+            this.txt_include_percent.Text = "0";
             // 
-            // textBox11
+            // txt_discount
             // 
-            this.textBox11.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.textBox11.Location = new System.Drawing.Point(1354, 618);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(235, 34);
-            this.textBox11.TabIndex = 366;
+            this.txt_discount.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
+            this.txt_discount.Location = new System.Drawing.Point(1365, 722);
+            this.txt_discount.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_discount.Name = "txt_discount";
+            this.txt_discount.Size = new System.Drawing.Size(235, 34);
+            this.txt_discount.TabIndex = 15;
+            this.txt_discount.Text = "0";
+            this.txt_discount.TextChanged += new System.EventHandler(this.txt_discount_TextChanged);
             // 
             // label23
             // 
@@ -944,31 +1072,33 @@ namespace MJS
             this.label23.TabIndex = 365;
             this.label23.Text = "အခွန်ပါပြီး ကျသင့်ငွေ";
             // 
-            // textBox10
+            // txt_bbamt
             // 
-            this.textBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
-            this.textBox10.Enabled = false;
-            this.textBox10.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.textBox10.Location = new System.Drawing.Point(1354, 398);
-            this.textBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox10.Multiline = true;
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(238, 36);
-            this.textBox10.TabIndex = 364;
-            this.textBox10.TabStop = false;
+            this.txt_bbamt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
+            this.txt_bbamt.Enabled = false;
+            this.txt_bbamt.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
+            this.txt_bbamt.Location = new System.Drawing.Point(1365, 398);
+            this.txt_bbamt.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_bbamt.Multiline = true;
+            this.txt_bbamt.Name = "txt_bbamt";
+            this.txt_bbamt.Size = new System.Drawing.Size(238, 36);
+            this.txt_bbamt.TabIndex = 364;
+            this.txt_bbamt.TabStop = false;
+            this.txt_bbamt.Text = "0";
             // 
-            // textBox2
+            // txt_include_bbamt
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
-            this.textBox2.Enabled = false;
-            this.textBox2.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.textBox2.Location = new System.Drawing.Point(1354, 452);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(238, 36);
-            this.textBox2.TabIndex = 363;
-            this.textBox2.TabStop = false;
+            this.txt_include_bbamt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
+            this.txt_include_bbamt.Enabled = false;
+            this.txt_include_bbamt.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
+            this.txt_include_bbamt.Location = new System.Drawing.Point(1365, 452);
+            this.txt_include_bbamt.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_include_bbamt.Multiline = true;
+            this.txt_include_bbamt.Name = "txt_include_bbamt";
+            this.txt_include_bbamt.Size = new System.Drawing.Size(238, 36);
+            this.txt_include_bbamt.TabIndex = 363;
+            this.txt_include_bbamt.TabStop = false;
+            this.txt_include_bbamt.Text = "0";
             // 
             // label22
             // 
@@ -978,7 +1108,7 @@ namespace MJS
             this.label22.Location = new System.Drawing.Point(566, 365);
             this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(1168, 2);
+            this.label22.Size = new System.Drawing.Size(3310, 2);
             this.label22.TabIndex = 362;
             // 
             // label21
@@ -1052,12 +1182,12 @@ namespace MJS
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(572, 1);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Location = new System.Drawing.Point(572, 95);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 30;
-            this.dataGridView1.Size = new System.Drawing.Size(1156, 314);
+            this.dataGridView1.Size = new System.Drawing.Size(3298, 220);
             this.dataGridView1.TabIndex = 359;
             // 
             // lbl_totalamt
@@ -1153,14 +1283,15 @@ namespace MJS
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(1785, 922);
+            this.ClientSize = new System.Drawing.Size(1785, 997);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "g_sale";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "g_sale";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.g_sale_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pit_show)).EndInit();
@@ -1196,7 +1327,6 @@ namespace MJS
         private FontAwesome.Sharp.IconButton btn_cash;
         private Label label1;
         private Label label5;
-        private TextBox textBox1;
         private Panel panel1;
         private Label label3;
         private Label label8;
@@ -1213,43 +1343,53 @@ namespace MJS
         private Label lbl_qty;
         private Label label21;
         private Label label22;
-        private TextBox textBox13;
-        private TextBox textBox12;
-        private TextBox textBox11;
+        private TextBox txt_totalcost;
+        private TextBox txt_include_percent;
+        private TextBox txt_discount;
         private Label label23;
-        private TextBox textBox10;
-        private TextBox textBox2;
+        private TextBox txt_bbamt;
+        private TextBox txt_include_bbamt;
         private Label label27;
         private Label label26;
         private Label label25;
         private Label label24;
         private Label label28;
-        private TextBox textBox14;
+        private TextBox txt_totalamt;
         private Label label32;
-        private Label label34;
+        private Label txt_k;
         private Label label_gm;
         private Label label_qty;
         private Label label_goldtype;
         private Label label_itemname;
         private Label label_Item;
-        private Label label38;
-        private Label label39;
-        private Label label40;
-        private Label label41;
-        private Label label37;
-        private Label label36;
-        private Label label35;
+        private Label total_S;
+        private Label total_Y;
+        private Label total_P;
+        private Label total_K;
+        private Label txt_s;
+        private Label txt_y;
+        private Label txt_p;
         private PictureBox pit_show;
         private Label label33;
-        private TextBox textBox4;
-        private TextBox textBox7;
+        private TextBox txt_mcost;
+        private TextBox txt_saleremark;
         private TextBox txt_goldprice;
         private Button edit_goldprice_btn;
         private Button button1;
-        private TextBox textBox9;
+        private TextBox txt_gm;
         private FontAwesome.Sharp.IconButton iconButton1;
         private System.Drawing.Printing.PrintDocument printDocument1;
         private PrintPreviewDialog printPreviewDialog1;
         private FontAwesome.Sharp.IconButton iconButton2;
+        private TextBox txt_rep;
+        private Label label2;
+        private TextBox txt_percent_amt;
+        private TextBox txt_pernumber;
+        private Label label14;
+        private TextBox txt_pro_number;
+        private TextBox txt_pro_amt;
+        private TextBox textBox1;
+        private Label label34;
+        private TextBox txt_pro_famt;
     }
 }
