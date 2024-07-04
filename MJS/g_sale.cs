@@ -499,7 +499,18 @@ namespace MJS
 
         private void txt_discount_TextChanged(object sender, EventArgs e)
         {
-            calculategm();
+            if (txt_discount.Text == "")
+            {
+                txt_discount.Text = "0";
+                txt_discount.SelectionStart = 0;
+                txt_discount.SelectionLength = txt_discount.Text.Length;
+            }
+            double txtpercentamt, discamt, minus = 0;
+            txtpercentamt = double.Parse(txt_include_percent.Text);
+            discamt=double.Parse(txt_discount.Text);
+            minus = double.Parse(txt_totalcost.Text);
+            minus = txtpercentamt - discamt;
+            txt_totalcost.Text=minus.ToString();
         }
 
         private void txt_pernumber_TextChanged(object sender, EventArgs e)
