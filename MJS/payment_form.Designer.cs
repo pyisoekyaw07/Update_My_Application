@@ -86,7 +86,7 @@ namespace MJS
             // txt_payment_amt
             // 
             this.txt_payment_amt.Font = new System.Drawing.Font("Pyidaungsu", 24F, System.Drawing.FontStyle.Bold);
-            this.txt_payment_amt.Location = new System.Drawing.Point(165, 244);
+            this.txt_payment_amt.Location = new System.Drawing.Point(165, 235);
             this.txt_payment_amt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txt_payment_amt.Name = "txt_payment_amt";
             this.txt_payment_amt.Size = new System.Drawing.Size(364, 59);
@@ -182,7 +182,7 @@ namespace MJS
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Pyidaungsu", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(303, 80);
+            this.label6.Location = new System.Drawing.Point(303, 76);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(133, 29);
