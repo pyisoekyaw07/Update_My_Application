@@ -343,7 +343,7 @@ namespace MJS
             this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label11.Location = new System.Drawing.Point(-502, 22);
+            this.label11.Location = new System.Drawing.Point(-536, 22);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(0, 22);
             this.label11.TabIndex = 107;
@@ -356,7 +356,7 @@ namespace MJS
             this.btn_review.ForeColor = System.Drawing.Color.White;
             this.btn_review.Image = ((System.Drawing.Image)(resources.GetObject("btn_review.Image")));
             this.btn_review.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_review.Location = new System.Drawing.Point(848, 781);
+            this.btn_review.Location = new System.Drawing.Point(814, 781);
             this.btn_review.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_review.Name = "btn_review";
             this.btn_review.Size = new System.Drawing.Size(156, 47);
@@ -392,7 +392,7 @@ namespace MJS
             this.btn_cancel.ForeColor = System.Drawing.Color.White;
             this.btn_cancel.Image = ((System.Drawing.Image)(resources.GetObject("btn_cancel.Image")));
             this.btn_cancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_cancel.Location = new System.Drawing.Point(686, 781);
+            this.btn_cancel.Location = new System.Drawing.Point(652, 781);
             this.btn_cancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.Size = new System.Drawing.Size(156, 47);
@@ -410,7 +410,7 @@ namespace MJS
             this.btn_save.ForeColor = System.Drawing.Color.White;
             this.btn_save.Image = ((System.Drawing.Image)(resources.GetObject("btn_save.Image")));
             this.btn_save.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_save.Location = new System.Drawing.Point(524, 781);
+            this.btn_save.Location = new System.Drawing.Point(490, 781);
             this.btn_save.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_save.Name = "btn_save";
             this.btn_save.Size = new System.Drawing.Size(156, 47);
@@ -1076,7 +1076,7 @@ namespace MJS
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dataGridView1.RowTemplate.Height = 30;
-            this.dataGridView1.Size = new System.Drawing.Size(818, 311);
+            this.dataGridView1.Size = new System.Drawing.Size(784, 311);
             this.dataGridView1.TabIndex = 201;
             this.dataGridView1.TabStop = false;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -1565,7 +1565,7 @@ namespace MJS
             // btn_reg_save
             // 
             this.btn_reg_save.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_reg_save.Location = new System.Drawing.Point(830, 563);
+            this.btn_reg_save.Location = new System.Drawing.Point(796, 563);
             this.btn_reg_save.Name = "btn_reg_save";
             this.btn_reg_save.Size = new System.Drawing.Size(170, 35);
             this.btn_reg_save.TabIndex = 294;
@@ -1575,7 +1575,7 @@ namespace MJS
             // btn_reg_cancel
             // 
             this.btn_reg_cancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_reg_cancel.Location = new System.Drawing.Point(1023, 563);
+            this.btn_reg_cancel.Location = new System.Drawing.Point(989, 563);
             this.btn_reg_cancel.Name = "btn_reg_cancel";
             this.btn_reg_cancel.Size = new System.Drawing.Size(170, 35);
             this.btn_reg_cancel.TabIndex = 295;
@@ -1585,7 +1585,7 @@ namespace MJS
             // btn_reg_preview
             // 
             this.btn_reg_preview.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_reg_preview.Location = new System.Drawing.Point(1214, 563);
+            this.btn_reg_preview.Location = new System.Drawing.Point(1180, 563);
             this.btn_reg_preview.Name = "btn_reg_preview";
             this.btn_reg_preview.Size = new System.Drawing.Size(170, 35);
             this.btn_reg_preview.TabIndex = 296;

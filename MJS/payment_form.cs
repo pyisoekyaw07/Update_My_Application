@@ -18,6 +18,14 @@ namespace MJS
         {
             InitializeComponent();
         }
+        public string payment { get; set; }
+        private void payment_form_Load(object sender, EventArgs e)
+        {
+            cash_rdo_btn.Checked = true;
+            txt_payment_amt.Text=payment;
+            txt_dollar_rate.Text = "Currency Rate";
+            txt_dollar_rate.ForeColor = Color.LightGray;
+        }
 
         private void cash_rdo_btn_Click(object sender, EventArgs e)
         {
@@ -52,14 +60,28 @@ namespace MJS
             Mobile_group.Visible = true;
         }
 
-        private void payment_form_Load(object sender, EventArgs e)
+
+        private void txt_phonenumber_KeyPress(object sender, KeyPressEventArgs e)
         {
-            cash_rdo_btn.Checked = true;
+            e.Handled = !char.IsNumber(e.KeyChar);
         }
 
-        private void payment_form_Load_1(object sender, EventArgs e)
+        private void txt_dollar_rate_Leave(object sender, EventArgs e)
         {
+            if (txt_dollar_rate.Text == "")
+            {
+                txt_dollar_rate.Text = "Currency Rate";
+                txt_dollar_rate.ForeColor = Color.LightGray;
+            }
+        }
 
+        private void txt_dollar_rate_Enter(object sender, EventArgs e)
+        {
+            if (txt_dollar_rate.Text == "Currency Rate")
+            {
+                txt_dollar_rate.Text = "";
+                txt_dollar_rate.ForeColor = Color.Black;
+            }
         }
     }
 }

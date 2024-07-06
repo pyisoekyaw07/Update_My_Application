@@ -33,8 +33,6 @@ namespace MJS
         {
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -64,7 +62,7 @@ namespace MJS
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(52, 38);
+            this.label1.Location = new System.Drawing.Point(33, 35);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 0;
@@ -72,6 +70,7 @@ namespace MJS
             // 
             // comboBox1
             // 
+            this.comboBox1.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "-",
@@ -80,34 +79,16 @@ namespace MJS
             "အလျော့မရှုံး",
             "White Gold",
             "Gems"});
-            this.comboBox1.Location = new System.Drawing.Point(52, 53);
+            this.comboBox1.Location = new System.Drawing.Point(33, 50);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(203, 21);
+            this.comboBox1.Size = new System.Drawing.Size(203, 35);
             this.comboBox1.TabIndex = 1;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(283, 53);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(203, 21);
-            this.comboBox2.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(283, 38);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(27, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Item";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(52, 145);
+            this.label4.Location = new System.Drawing.Point(263, 130);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(23, 13);
             this.label4.TabIndex = 5;
@@ -116,7 +97,7 @@ namespace MJS
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(52, 227);
+            this.label5.Location = new System.Drawing.Point(263, 201);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(43, 13);
             this.label5.TabIndex = 6;
@@ -125,7 +106,7 @@ namespace MJS
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(52, 268);
+            this.label6.Location = new System.Drawing.Point(35, 272);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(62, 13);
             this.label6.TabIndex = 7;
@@ -134,7 +115,7 @@ namespace MJS
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(52, 105);
+            this.label7.Location = new System.Drawing.Point(36, 130);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(22, 13);
             this.label7.TabIndex = 8;
@@ -143,7 +124,7 @@ namespace MJS
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(52, 186);
+            this.label8.Location = new System.Drawing.Point(37, 201);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(23, 13);
             this.label8.TabIndex = 9;
@@ -152,7 +133,7 @@ namespace MJS
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 360);
+            this.dataGridView1.Location = new System.Drawing.Point(40, 537);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 30;
@@ -163,7 +144,7 @@ namespace MJS
             // 
             this.label16.AutoSize = true;
             this.label16.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label16.Location = new System.Drawing.Point(283, 339);
+            this.label16.Location = new System.Drawing.Point(311, 516);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(64, 13);
             this.label16.TabIndex = 294;
@@ -172,7 +153,7 @@ namespace MJS
             // lbl_qty
             // 
             this.lbl_qty.BackColor = System.Drawing.Color.White;
-            this.lbl_qty.Location = new System.Drawing.Point(352, 335);
+            this.lbl_qty.Location = new System.Drawing.Point(380, 512);
             this.lbl_qty.Name = "lbl_qty";
             this.lbl_qty.Size = new System.Drawing.Size(45, 20);
             this.lbl_qty.TabIndex = 291;
@@ -183,7 +164,7 @@ namespace MJS
             // 
             this.label9.AutoSize = true;
             this.label9.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label9.Location = new System.Drawing.Point(526, 339);
+            this.label9.Location = new System.Drawing.Point(554, 516);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(92, 13);
             this.label9.TabIndex = 292;
@@ -192,7 +173,7 @@ namespace MJS
             // lbl_gm
             // 
             this.lbl_gm.BackColor = System.Drawing.Color.White;
-            this.lbl_gm.Location = new System.Drawing.Point(471, 335);
+            this.lbl_gm.Location = new System.Drawing.Point(499, 512);
             this.lbl_gm.Name = "lbl_gm";
             this.lbl_gm.Size = new System.Drawing.Size(49, 20);
             this.lbl_gm.TabIndex = 289;
@@ -203,7 +184,7 @@ namespace MJS
             // 
             this.label20.AutoSize = true;
             this.label20.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label20.Location = new System.Drawing.Point(403, 339);
+            this.label20.Location = new System.Drawing.Point(431, 516);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(62, 13);
             this.label20.TabIndex = 293;
@@ -212,7 +193,7 @@ namespace MJS
             // lbl_totalamt
             // 
             this.lbl_totalamt.BackColor = System.Drawing.Color.White;
-            this.lbl_totalamt.Location = new System.Drawing.Point(624, 335);
+            this.lbl_totalamt.Location = new System.Drawing.Point(652, 512);
             this.lbl_totalamt.Name = "lbl_totalamt";
             this.lbl_totalamt.Size = new System.Drawing.Size(104, 20);
             this.lbl_totalamt.TabIndex = 290;
@@ -221,7 +202,7 @@ namespace MJS
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(595, 466);
+            this.button2.Location = new System.Drawing.Point(623, 643);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(135, 25);
@@ -233,7 +214,7 @@ namespace MJS
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Bold);
-            this.label10.Location = new System.Drawing.Point(52, 12);
+            this.label10.Location = new System.Drawing.Point(33, 9);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(91, 27);
             this.label10.TabIndex = 298;
@@ -244,15 +225,15 @@ namespace MJS
             this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.BackColor = System.Drawing.Color.LightGray;
-            this.label11.Location = new System.Drawing.Point(-1, 325);
+            this.label11.Location = new System.Drawing.Point(12, 469);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(746, 1);
+            this.label11.Size = new System.Drawing.Size(809, 1);
             this.label11.TabIndex = 299;
             // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(52, 82);
+            this.radioButton1.Location = new System.Drawing.Point(33, 92);
             this.radioButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(44, 17);
@@ -264,7 +245,7 @@ namespace MJS
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(118, 82);
+            this.radioButton2.Location = new System.Drawing.Point(99, 92);
             this.radioButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(44, 17);
@@ -275,52 +256,52 @@ namespace MJS
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(52, 119);
+            this.textBox1.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(33, 154);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(203, 26);
+            this.textBox1.Size = new System.Drawing.Size(203, 35);
             this.textBox1.TabIndex = 302;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(52, 242);
+            this.textBox2.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(257, 226);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(203, 26);
+            this.textBox2.Size = new System.Drawing.Size(203, 35);
             this.textBox2.TabIndex = 304;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(52, 160);
+            this.textBox3.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(257, 154);
             this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(203, 26);
+            this.textBox3.Size = new System.Drawing.Size(203, 35);
             this.textBox3.TabIndex = 306;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(52, 201);
+            this.textBox4.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(33, 226);
             this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(203, 26);
+            this.textBox4.Size = new System.Drawing.Size(203, 35);
             this.textBox4.TabIndex = 307;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(52, 283);
+            this.textBox5.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.Location = new System.Drawing.Point(33, 296);
             this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(203, 26);
+            this.textBox5.Size = new System.Drawing.Size(203, 35);
             this.textBox5.TabIndex = 308;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(442, 466);
+            this.button1.Location = new System.Drawing.Point(470, 643);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(135, 25);
@@ -333,7 +314,7 @@ namespace MJS
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(742, 499);
+            this.ClientSize = new System.Drawing.Size(805, 707);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
@@ -357,8 +338,6 @@ namespace MJS
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -377,8 +356,6 @@ namespace MJS
 
         private Label label1;
         private ComboBox comboBox1;
-        private ComboBox comboBox2;
-        private Label label2;
         private Label label4;
         private Label label5;
         private Label label6;

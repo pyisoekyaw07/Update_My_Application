@@ -60,10 +60,11 @@ namespace MJS
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label35 = new System.Windows.Forms.Label();
+            this.txt_alltotal_amt = new System.Windows.Forms.TextBox();
             this.label34 = new System.Windows.Forms.Label();
             this.txt_pro_famt = new System.Windows.Forms.TextBox();
             this.txt_pro_amt = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.txt_pro_number = new System.Windows.Forms.TextBox();
             this.txt_pernumber = new System.Windows.Forms.TextBox();
@@ -78,7 +79,7 @@ namespace MJS
             this.txt_goldprice = new System.Windows.Forms.TextBox();
             this.txt_saleremark = new System.Windows.Forms.TextBox();
             this.txt_mcost = new System.Windows.Forms.TextBox();
-            this.label33 = new System.Windows.Forms.Label();
+            this.txt_showamt = new System.Windows.Forms.Label();
             this.pit_show = new System.Windows.Forms.PictureBox();
             this.label_gm = new System.Windows.Forms.Label();
             this.label_qty = new System.Windows.Forms.Label();
@@ -134,12 +135,11 @@ namespace MJS
             this.txt_date.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_date.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
             this.txt_date.ForeColor = System.Drawing.Color.Black;
-            this.txt_date.Location = new System.Drawing.Point(12, 14);
-            this.txt_date.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_date.Location = new System.Drawing.Point(10, 11);
             this.txt_date.Multiline = true;
             this.txt_date.Name = "txt_date";
             this.txt_date.ReadOnly = true;
-            this.txt_date.Size = new System.Drawing.Size(132, 35);
+            this.txt_date.Size = new System.Drawing.Size(106, 28);
             this.txt_date.TabIndex = 300;
             this.txt_date.TabStop = false;
             this.txt_date.Text = "date";
@@ -150,12 +150,11 @@ namespace MJS
             this.txt_time.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_time.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
             this.txt_time.ForeColor = System.Drawing.Color.Black;
-            this.txt_time.Location = new System.Drawing.Point(141, 14);
-            this.txt_time.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_time.Location = new System.Drawing.Point(113, 11);
             this.txt_time.Multiline = true;
             this.txt_time.Name = "txt_time";
             this.txt_time.ReadOnly = true;
-            this.txt_time.Size = new System.Drawing.Size(135, 35);
+            this.txt_time.Size = new System.Drawing.Size(108, 28);
             this.txt_time.TabIndex = 300;
             this.txt_time.TabStop = false;
             this.txt_time.Text = "time";
@@ -166,44 +165,39 @@ namespace MJS
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Bold);
             this.textBox3.ForeColor = System.Drawing.Color.Black;
-            this.textBox3.Location = new System.Drawing.Point(12, 52);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox3.Location = new System.Drawing.Point(10, 42);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(296, 35);
+            this.textBox3.Size = new System.Drawing.Size(237, 28);
             this.textBox3.TabIndex = 300;
             this.textBox3.TabStop = false;
             this.textBox3.Text = "GS/101224-0001";
             // 
             // txt_shop
             // 
-            this.txt_shop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
+            this.txt_shop.BackColor = System.Drawing.SystemColors.Window;
             this.txt_shop.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_shop.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_shop.ForeColor = System.Drawing.Color.Black;
-            this.txt_shop.Location = new System.Drawing.Point(779, 14);
-            this.txt_shop.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_shop.Multiline = true;
+            this.txt_shop.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_shop.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.txt_shop.Location = new System.Drawing.Point(720, 25);
             this.txt_shop.Name = "txt_shop";
             this.txt_shop.ReadOnly = true;
-            this.txt_shop.Size = new System.Drawing.Size(98, 35);
+            this.txt_shop.Size = new System.Drawing.Size(121, 28);
             this.txt_shop.TabIndex = 300;
             this.txt_shop.TabStop = false;
             this.txt_shop.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox5
             // 
-            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
+            this.textBox5.BackColor = System.Drawing.SystemColors.Window;
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.textBox5.ForeColor = System.Drawing.Color.Black;
-            this.textBox5.Location = new System.Drawing.Point(675, 14);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox5.Multiline = true;
+            this.textBox5.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.textBox5.Location = new System.Drawing.Point(593, 25);
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(98, 35);
+            this.textBox5.Size = new System.Drawing.Size(121, 28);
             this.textBox5.TabIndex = 300;
             this.textBox5.TabStop = false;
             this.textBox5.Text = "Gold Sale";
@@ -211,16 +205,14 @@ namespace MJS
             // 
             // textBox6
             // 
-            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
+            this.textBox6.BackColor = System.Drawing.SystemColors.Window;
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.textBox6.ForeColor = System.Drawing.Color.Black;
-            this.textBox6.Location = new System.Drawing.Point(570, 14);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox6.Multiline = true;
+            this.textBox6.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox6.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.textBox6.Location = new System.Drawing.Point(465, 25);
             this.textBox6.Name = "textBox6";
             this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(98, 35);
+            this.textBox6.Size = new System.Drawing.Size(121, 28);
             this.textBox6.TabIndex = 300;
             this.textBox6.TabStop = false;
             this.textBox6.Text = "A Counter";
@@ -235,20 +227,18 @@ namespace MJS
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label12.Location = new System.Drawing.Point(16, 95);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Location = new System.Drawing.Point(13, 76);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(120, 29);
+            this.label12.Size = new System.Drawing.Size(87, 22);
             this.label12.TabIndex = 310;
             this.label12.Text = "ဘားကုဒ်နံပါတ်";
             // 
             // txt_out_no
             // 
-            this.txt_out_no.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_out_no.Location = new System.Drawing.Point(16, 126);
-            this.txt_out_no.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_out_no.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_out_no.Location = new System.Drawing.Point(13, 101);
             this.txt_out_no.Name = "txt_out_no";
-            this.txt_out_no.Size = new System.Drawing.Size(240, 34);
+            this.txt_out_no.Size = new System.Drawing.Size(193, 35);
             this.txt_out_no.TabIndex = 1;
             this.txt_out_no.TextChanged += new System.EventHandler(this.txt_out_no_TextChanged);
             // 
@@ -256,10 +246,9 @@ namespace MJS
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label7.Location = new System.Drawing.Point(610, 555);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(488, 444);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(175, 29);
+            this.label7.Size = new System.Drawing.Size(130, 22);
             this.label7.TabIndex = 316;
             this.label7.Text = "အရောင်း အလျော့တွက်";
             // 
@@ -267,20 +256,18 @@ namespace MJS
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label6.Location = new System.Drawing.Point(610, 495);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(488, 396);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 29);
+            this.label6.Size = new System.Drawing.Size(44, 22);
             this.label6.TabIndex = 315;
             this.label6.Text = "ရွှေချိန်";
             // 
             // txt_WK
             // 
-            this.txt_WK.Font = new System.Drawing.Font("Pyidaungsu", 12F);
-            this.txt_WK.Location = new System.Drawing.Point(796, 548);
-            this.txt_WK.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_WK.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_WK.Location = new System.Drawing.Point(637, 444);
             this.txt_WK.Name = "txt_WK";
-            this.txt_WK.Size = new System.Drawing.Size(73, 41);
+            this.txt_WK.Size = new System.Drawing.Size(59, 35);
             this.txt_WK.TabIndex = 3;
             this.txt_WK.Text = "0";
             this.txt_WK.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -288,11 +275,10 @@ namespace MJS
             // 
             // txt_WP
             // 
-            this.txt_WP.Font = new System.Drawing.Font("Pyidaungsu", 12F);
-            this.txt_WP.Location = new System.Drawing.Point(878, 548);
-            this.txt_WP.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_WP.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_WP.Location = new System.Drawing.Point(702, 444);
             this.txt_WP.Name = "txt_WP";
-            this.txt_WP.Size = new System.Drawing.Size(73, 41);
+            this.txt_WP.Size = new System.Drawing.Size(59, 35);
             this.txt_WP.TabIndex = 4;
             this.txt_WP.Text = "0";
             this.txt_WP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -300,11 +286,10 @@ namespace MJS
             // 
             // txt_WY
             // 
-            this.txt_WY.Font = new System.Drawing.Font("Pyidaungsu", 12F);
-            this.txt_WY.Location = new System.Drawing.Point(956, 548);
-            this.txt_WY.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_WY.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_WY.Location = new System.Drawing.Point(765, 444);
             this.txt_WY.Name = "txt_WY";
-            this.txt_WY.Size = new System.Drawing.Size(73, 41);
+            this.txt_WY.Size = new System.Drawing.Size(59, 35);
             this.txt_WY.TabIndex = 5;
             this.txt_WY.Text = "0";
             this.txt_WY.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -312,11 +297,10 @@ namespace MJS
             // 
             // txt_WC
             // 
-            this.txt_WC.Font = new System.Drawing.Font("Pyidaungsu", 12F);
-            this.txt_WC.Location = new System.Drawing.Point(1034, 548);
-            this.txt_WC.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_WC.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_WC.Location = new System.Drawing.Point(827, 444);
             this.txt_WC.Name = "txt_WC";
-            this.txt_WC.Size = new System.Drawing.Size(73, 41);
+            this.txt_WC.Size = new System.Drawing.Size(59, 35);
             this.txt_WC.TabIndex = 6;
             this.txt_WC.Text = "0";
             this.txt_WC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -327,10 +311,9 @@ namespace MJS
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label13.Location = new System.Drawing.Point(814, 450);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Location = new System.Drawing.Point(651, 360);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(45, 29);
+            this.label13.Size = new System.Drawing.Size(34, 22);
             this.label13.TabIndex = 326;
             this.label13.Text = "ကျပ်";
             // 
@@ -339,10 +322,9 @@ namespace MJS
             this.label29.AutoSize = true;
             this.label29.BackColor = System.Drawing.Color.Transparent;
             this.label29.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label29.Location = new System.Drawing.Point(905, 450);
-            this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label29.Location = new System.Drawing.Point(724, 360);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(24, 29);
+            this.label29.Size = new System.Drawing.Size(18, 22);
             this.label29.TabIndex = 327;
             this.label29.Text = "ပဲ";
             // 
@@ -351,10 +333,9 @@ namespace MJS
             this.label30.AutoSize = true;
             this.label30.BackColor = System.Drawing.Color.Transparent;
             this.label30.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label30.Location = new System.Drawing.Point(979, 449);
-            this.label30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label30.Location = new System.Drawing.Point(783, 359);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(40, 29);
+            this.label30.Size = new System.Drawing.Size(30, 22);
             this.label30.TabIndex = 328;
             this.label30.Text = "ရွေး";
             // 
@@ -363,10 +344,9 @@ namespace MJS
             this.label31.AutoSize = true;
             this.label31.BackColor = System.Drawing.Color.Transparent;
             this.label31.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label31.Location = new System.Drawing.Point(1060, 449);
-            this.label31.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label31.Location = new System.Drawing.Point(848, 359);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(43, 29);
+            this.label31.Size = new System.Drawing.Size(32, 22);
             this.label31.TabIndex = 329;
             this.label31.Text = "စိတ်";
             // 
@@ -374,10 +354,9 @@ namespace MJS
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label19.Location = new System.Drawing.Point(4, 781);
-            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label19.Location = new System.Drawing.Point(3, 625);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(153, 29);
+            this.label19.Size = new System.Drawing.Size(113, 22);
             this.label19.TabIndex = 340;
             this.label19.Text = "စုစုပေါင်း ကျသင့်ငွေ";
             // 
@@ -385,10 +364,9 @@ namespace MJS
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label18.Location = new System.Drawing.Point(1188, 831);
-            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label18.Location = new System.Drawing.Point(950, 707);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(75, 29);
+            this.label18.Size = new System.Drawing.Size(56, 22);
             this.label18.TabIndex = 339;
             this.label18.Text = "မှတ်ချက်";
             // 
@@ -396,10 +374,9 @@ namespace MJS
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label17.Location = new System.Drawing.Point(610, 675);
-            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label17.Location = new System.Drawing.Point(488, 540);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(62, 29);
+            this.label17.Size = new System.Drawing.Size(46, 22);
             this.label17.TabIndex = 338;
             this.label17.Text = "လက်ခ";
             // 
@@ -410,10 +387,9 @@ namespace MJS
             this.Btn_BB.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.Btn_BB.IconSize = 25;
             this.Btn_BB.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Btn_BB.Location = new System.Drawing.Point(4, 850);
-            this.Btn_BB.Margin = new System.Windows.Forms.Padding(4);
+            this.Btn_BB.Location = new System.Drawing.Point(3, 695);
             this.Btn_BB.Name = "Btn_BB";
-            this.Btn_BB.Size = new System.Drawing.Size(272, 55);
+            this.Btn_BB.Size = new System.Drawing.Size(218, 44);
             this.Btn_BB.TabIndex = 9;
             this.Btn_BB.Text = "BB";
             this.Btn_BB.UseVisualStyleBackColor = true;
@@ -426,11 +402,10 @@ namespace MJS
             this.btn_cash.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_cash.IconSize = 25;
             this.btn_cash.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_cash.Location = new System.Drawing.Point(275, 850);
-            this.btn_cash.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_cash.Location = new System.Drawing.Point(220, 695);
             this.btn_cash.Name = "btn_cash";
-            this.btn_cash.Size = new System.Drawing.Size(284, 55);
-            this.btn_cash.TabIndex = 14;
+            this.btn_cash.Size = new System.Drawing.Size(227, 44);
+            this.btn_cash.TabIndex = 17;
             this.btn_cash.Text = "Cash";
             this.btn_cash.UseVisualStyleBackColor = true;
             this.btn_cash.Click += new System.EventHandler(this.btn_cash_Click);
@@ -439,10 +414,9 @@ namespace MJS
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label1.Location = new System.Drawing.Point(610, 610);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(488, 488);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(162, 29);
+            this.label1.Size = new System.Drawing.Size(121, 22);
             this.label1.TabIndex = 334;
             this.label1.Text = "ကျသင့် အလျော့တွက်";
             // 
@@ -450,10 +424,9 @@ namespace MJS
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label5.Location = new System.Drawing.Point(1188, 511);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(950, 409);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 29);
+            this.label5.Size = new System.Drawing.Size(38, 22);
             this.label5.TabIndex = 346;
             this.label5.Text = "အခွန်";
             // 
@@ -463,10 +436,12 @@ namespace MJS
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.AutoScroll = true;
+            this.panel1.BackColor = System.Drawing.SystemColors.Window;
+            this.panel1.Controls.Add(this.label35);
+            this.panel1.Controls.Add(this.txt_alltotal_amt);
             this.panel1.Controls.Add(this.label34);
             this.panel1.Controls.Add(this.txt_pro_famt);
             this.panel1.Controls.Add(this.txt_pro_amt);
-            this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.label14);
             this.panel1.Controls.Add(this.txt_pro_number);
             this.panel1.Controls.Add(this.txt_pernumber);
@@ -481,7 +456,7 @@ namespace MJS
             this.panel1.Controls.Add(this.txt_goldprice);
             this.panel1.Controls.Add(this.txt_saleremark);
             this.panel1.Controls.Add(this.txt_mcost);
-            this.panel1.Controls.Add(this.label33);
+            this.panel1.Controls.Add(this.txt_showamt);
             this.panel1.Controls.Add(this.txt_shop);
             this.panel1.Controls.Add(this.textBox6);
             this.panel1.Controls.Add(this.textBox5);
@@ -549,77 +524,96 @@ namespace MJS
             this.panel1.Controls.Add(this.txt_WP);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.txt_WK);
-            this.panel1.Location = new System.Drawing.Point(15, 15);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(12, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(3877, 1234);
+            this.panel1.Size = new System.Drawing.Size(1374, 763);
             this.panel1.TabIndex = 348;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Pyidaungsu", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Location = new System.Drawing.Point(951, 586);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(38, 22);
+            this.label35.TabIndex = 433;
+            this.label35.Text = "Total";
+            // 
+            // txt_alltotal_amt
+            // 
+            this.txt_alltotal_amt.BackColor = System.Drawing.SystemColors.Window;
+            this.txt_alltotal_amt.Enabled = false;
+            this.txt_alltotal_amt.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_alltotal_amt.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.txt_alltotal_amt.Location = new System.Drawing.Point(1094, 580);
+            this.txt_alltotal_amt.Name = "txt_alltotal_amt";
+            this.txt_alltotal_amt.Size = new System.Drawing.Size(189, 35);
+            this.txt_alltotal_amt.TabIndex = 432;
+            this.txt_alltotal_amt.Text = "0";
+            this.txt_alltotal_amt.TextChanged += new System.EventHandler(this.txt_alltotal_amt_TextChanged);
             // 
             // label34
             // 
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Pyidaungsu", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(1188, 672);
+            this.label34.Location = new System.Drawing.Point(950, 538);
+            this.label34.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(126, 29);
+            this.label34.Size = new System.Drawing.Size(108, 24);
             this.label34.TabIndex = 431;
             this.label34.Text = "Promotion(Flat)";
             // 
             // txt_pro_famt
             // 
-            this.txt_pro_famt.Location = new System.Drawing.Point(1365, 672);
-            this.txt_pro_famt.Multiline = true;
+            this.txt_pro_famt.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_pro_famt.Location = new System.Drawing.Point(1092, 538);
+            this.txt_pro_famt.Margin = new System.Windows.Forms.Padding(2);
             this.txt_pro_famt.Name = "txt_pro_famt";
-            this.txt_pro_famt.Size = new System.Drawing.Size(238, 34);
+            this.txt_pro_famt.Size = new System.Drawing.Size(191, 35);
             this.txt_pro_famt.TabIndex = 14;
             this.txt_pro_famt.Text = "0";
+            this.txt_pro_famt.TextChanged += new System.EventHandler(this.txt_pro_famt_TextChanged);
+            this.txt_pro_famt.Leave += new System.EventHandler(this.txt_pro_famt_Leave);
             // 
             // txt_pro_amt
             // 
-            this.txt_pro_amt.Location = new System.Drawing.Point(1455, 618);
-            this.txt_pro_amt.Multiline = true;
+            this.txt_pro_amt.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_pro_amt.Location = new System.Drawing.Point(1164, 494);
+            this.txt_pro_amt.Margin = new System.Windows.Forms.Padding(2);
             this.txt_pro_amt.Name = "txt_pro_amt";
-            this.txt_pro_amt.Size = new System.Drawing.Size(145, 33);
+            this.txt_pro_amt.Size = new System.Drawing.Size(117, 35);
             this.txt_pro_amt.TabIndex = 13;
             this.txt_pro_amt.Text = "0";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.textBox1.Location = new System.Drawing.Point(1897, 581);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(83, 34);
-            this.textBox1.TabIndex = 428;
-            this.textBox1.Text = "0";
+            this.txt_pro_amt.TextChanged += new System.EventHandler(this.txt_pro_amt_TextChanged);
+            this.txt_pro_amt.Leave += new System.EventHandler(this.txt_pro_amt_Leave);
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label14.Location = new System.Drawing.Point(1188, 618);
-            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Location = new System.Drawing.Point(950, 494);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(119, 29);
+            this.label14.Size = new System.Drawing.Size(93, 22);
             this.label14.TabIndex = 427;
             this.label14.Text = "Promotion (%)";
             // 
             // txt_pro_number
             // 
-            this.txt_pro_number.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_pro_number.Location = new System.Drawing.Point(1365, 619);
-            this.txt_pro_number.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_pro_number.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_pro_number.Location = new System.Drawing.Point(1092, 495);
             this.txt_pro_number.Name = "txt_pro_number";
-            this.txt_pro_number.Size = new System.Drawing.Size(83, 34);
+            this.txt_pro_number.Size = new System.Drawing.Size(55, 35);
             this.txt_pro_number.TabIndex = 12;
             this.txt_pro_number.Text = "0";
+            this.txt_pro_number.TextChanged += new System.EventHandler(this.txt_pro_number_TextChanged);
             // 
             // txt_pernumber
             // 
             this.txt_pernumber.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_pernumber.Location = new System.Drawing.Point(1365, 509);
+            this.txt_pernumber.Location = new System.Drawing.Point(1092, 407);
+            this.txt_pernumber.Margin = new System.Windows.Forms.Padding(2);
             this.txt_pernumber.Name = "txt_pernumber";
-            this.txt_pernumber.Size = new System.Drawing.Size(68, 41);
+            this.txt_pernumber.Size = new System.Drawing.Size(55, 35);
             this.txt_pernumber.TabIndex = 10;
             this.txt_pernumber.Text = "0";
             this.txt_pernumber.TextChanged += new System.EventHandler(this.txt_pernumber_TextChanged);
@@ -627,33 +621,32 @@ namespace MJS
             // txt_percent_amt
             // 
             this.txt_percent_amt.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_percent_amt.Location = new System.Drawing.Point(1455, 508);
-            this.txt_percent_amt.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_percent_amt.Location = new System.Drawing.Point(1164, 406);
             this.txt_percent_amt.Name = "txt_percent_amt";
-            this.txt_percent_amt.Size = new System.Drawing.Size(145, 41);
+            this.txt_percent_amt.Size = new System.Drawing.Size(117, 35);
             this.txt_percent_amt.TabIndex = 11;
             this.txt_percent_amt.Text = "0";
             this.txt_percent_amt.TextChanged += new System.EventHandler(this.txt_percent_amt_TextChanged);
+            this.txt_percent_amt.Leave += new System.EventHandler(this.txt_percent_amt_Leave);
             // 
             // txt_rep
             // 
-            this.txt_rep.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_rep.Location = new System.Drawing.Point(799, 725);
-            this.txt_rep.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_rep.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_rep.Location = new System.Drawing.Point(639, 580);
             this.txt_rep.Name = "txt_rep";
-            this.txt_rep.Size = new System.Drawing.Size(230, 34);
+            this.txt_rep.Size = new System.Drawing.Size(185, 35);
             this.txt_rep.TabIndex = 8;
             this.txt_rep.Text = "0";
             this.txt_rep.TextChanged += new System.EventHandler(this.txt_rep_TextChanged);
+            this.txt_rep.Leave += new System.EventHandler(this.txt_rep_Leave);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label2.Location = new System.Drawing.Point(611, 729);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(489, 583);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 29);
+            this.label2.Size = new System.Drawing.Size(71, 22);
             this.label2.TabIndex = 421;
             this.label2.Text = "GPD တန်ဖိုး";
             // 
@@ -664,10 +657,9 @@ namespace MJS
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton2.IconSize = 25;
             this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.Location = new System.Drawing.Point(851, 850);
-            this.iconButton2.Margin = new System.Windows.Forms.Padding(4);
+            this.iconButton2.Location = new System.Drawing.Point(707, 695);
             this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(214, 55);
+            this.iconButton2.Size = new System.Drawing.Size(205, 44);
             this.iconButton2.TabIndex = 420;
             this.iconButton2.Text = "crystal print";
             this.iconButton2.UseVisualStyleBackColor = true;
@@ -680,10 +672,9 @@ namespace MJS
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 25;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(605, 850);
-            this.iconButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.iconButton1.Location = new System.Drawing.Point(484, 695);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(214, 55);
+            this.iconButton1.Size = new System.Drawing.Size(205, 44);
             this.iconButton1.TabIndex = 419;
             this.iconButton1.Text = "Save";
             this.iconButton1.UseVisualStyleBackColor = true;
@@ -693,21 +684,18 @@ namespace MJS
             // 
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.Location = new System.Drawing.Point(994, 408);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(795, 326);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(36, 29);
+            this.button1.Size = new System.Drawing.Size(29, 23);
             this.button1.TabIndex = 418;
             this.button1.UseVisualStyleBackColor = true;
             // 
             // txt_gm
             // 
-            this.txt_gm.Font = new System.Drawing.Font("Pyidaungsu", 12F);
-            this.txt_gm.Location = new System.Drawing.Point(796, 404);
-            this.txt_gm.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_gm.Multiline = true;
+            this.txt_gm.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_gm.Location = new System.Drawing.Point(637, 323);
             this.txt_gm.Name = "txt_gm";
-            this.txt_gm.Size = new System.Drawing.Size(242, 38);
+            this.txt_gm.Size = new System.Drawing.Size(194, 35);
             this.txt_gm.TabIndex = 2;
             this.txt_gm.TextChanged += new System.EventHandler(this.txt_gm_TextChanged);
             // 
@@ -715,10 +703,9 @@ namespace MJS
             // 
             this.edit_goldprice_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("edit_goldprice_btn.BackgroundImage")));
             this.edit_goldprice_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.edit_goldprice_btn.Location = new System.Drawing.Point(462, 129);
-            this.edit_goldprice_btn.Margin = new System.Windows.Forms.Padding(4);
+            this.edit_goldprice_btn.Location = new System.Drawing.Point(370, 103);
             this.edit_goldprice_btn.Name = "edit_goldprice_btn";
-            this.edit_goldprice_btn.Size = new System.Drawing.Size(36, 29);
+            this.edit_goldprice_btn.Size = new System.Drawing.Size(29, 23);
             this.edit_goldprice_btn.TabIndex = 416;
             this.edit_goldprice_btn.UseVisualStyleBackColor = true;
             this.edit_goldprice_btn.Click += new System.EventHandler(this.edit_goldprice_btn_Click);
@@ -726,52 +713,46 @@ namespace MJS
             // txt_goldprice
             // 
             this.txt_goldprice.Enabled = false;
-            this.txt_goldprice.Font = new System.Drawing.Font("Pyidaungsu", 12F);
-            this.txt_goldprice.Location = new System.Drawing.Point(265, 125);
-            this.txt_goldprice.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_goldprice.Multiline = true;
+            this.txt_goldprice.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_goldprice.Location = new System.Drawing.Point(212, 100);
             this.txt_goldprice.Name = "txt_goldprice";
-            this.txt_goldprice.Size = new System.Drawing.Size(242, 38);
+            this.txt_goldprice.Size = new System.Drawing.Size(194, 35);
             this.txt_goldprice.TabIndex = 415;
             // 
             // txt_saleremark
             // 
-            this.txt_saleremark.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_saleremark.Location = new System.Drawing.Point(1365, 827);
-            this.txt_saleremark.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_saleremark.Multiline = true;
+            this.txt_saleremark.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_saleremark.Location = new System.Drawing.Point(1092, 704);
             this.txt_saleremark.Name = "txt_saleremark";
-            this.txt_saleremark.Size = new System.Drawing.Size(306, 78);
-            this.txt_saleremark.TabIndex = 13;
+            this.txt_saleremark.Size = new System.Drawing.Size(246, 35);
+            this.txt_saleremark.TabIndex = 16;
             // 
             // txt_mcost
             // 
-            this.txt_mcost.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_mcost.Location = new System.Drawing.Point(799, 671);
-            this.txt_mcost.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_mcost.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_mcost.Location = new System.Drawing.Point(639, 537);
             this.txt_mcost.Name = "txt_mcost";
-            this.txt_mcost.Size = new System.Drawing.Size(230, 34);
+            this.txt_mcost.Size = new System.Drawing.Size(185, 35);
             this.txt_mcost.TabIndex = 7;
             this.txt_mcost.Text = "0";
             this.txt_mcost.TextChanged += new System.EventHandler(this.txt_mcost_TextChanged);
+            this.txt_mcost.Leave += new System.EventHandler(this.txt_mcost_Leave);
             // 
-            // label33
+            // txt_showamt
             // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Pyidaungsu", 27.75F);
-            this.label33.Location = new System.Drawing.Point(158, 749);
-            this.label33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(117, 78);
-            this.label33.TabIndex = 411;
-            this.label33.Text = "0 Ks";
+            this.txt_showamt.AutoSize = true;
+            this.txt_showamt.Font = new System.Drawing.Font("Pyidaungsu", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_showamt.Location = new System.Drawing.Point(148, 613);
+            this.txt_showamt.Name = "txt_showamt";
+            this.txt_showamt.Size = new System.Drawing.Size(30, 41);
+            this.txt_showamt.TabIndex = 411;
+            this.txt_showamt.Text = "0";
             // 
             // pit_show
             // 
-            this.pit_show.Location = new System.Drawing.Point(142, 479);
-            this.pit_show.Margin = new System.Windows.Forms.Padding(4);
+            this.pit_show.Location = new System.Drawing.Point(114, 383);
             this.pit_show.Name = "pit_show";
-            this.pit_show.Size = new System.Drawing.Size(276, 222);
+            this.pit_show.Size = new System.Drawing.Size(221, 178);
             this.pit_show.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pit_show.TabIndex = 410;
             this.pit_show.TabStop = false;
@@ -781,10 +762,9 @@ namespace MJS
             this.label_gm.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label_gm.Font = new System.Drawing.Font("Pyidaungsu", 12F);
             this.label_gm.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label_gm.Location = new System.Drawing.Point(258, 300);
-            this.label_gm.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_gm.Location = new System.Drawing.Point(206, 240);
             this.label_gm.Name = "label_gm";
-            this.label_gm.Size = new System.Drawing.Size(241, 42);
+            this.label_gm.Size = new System.Drawing.Size(193, 34);
             this.label_gm.TabIndex = 409;
             this.label_gm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -793,10 +773,9 @@ namespace MJS
             this.label_qty.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label_qty.Font = new System.Drawing.Font("Pyidaungsu", 12F);
             this.label_qty.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label_qty.Location = new System.Drawing.Point(16, 300);
-            this.label_qty.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_qty.Location = new System.Drawing.Point(13, 240);
             this.label_qty.Name = "label_qty";
-            this.label_qty.Size = new System.Drawing.Size(241, 42);
+            this.label_qty.Size = new System.Drawing.Size(193, 34);
             this.label_qty.TabIndex = 408;
             this.label_qty.Text = "1";
             this.label_qty.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -806,10 +785,9 @@ namespace MJS
             this.label_goldtype.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label_goldtype.Font = new System.Drawing.Font("Pyidaungsu", 12F);
             this.label_goldtype.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label_goldtype.Location = new System.Drawing.Point(16, 396);
-            this.label_goldtype.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_goldtype.Location = new System.Drawing.Point(13, 317);
             this.label_goldtype.Name = "label_goldtype";
-            this.label_goldtype.Size = new System.Drawing.Size(241, 42);
+            this.label_goldtype.Size = new System.Drawing.Size(193, 34);
             this.label_goldtype.TabIndex = 407;
             this.label_goldtype.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -819,10 +797,9 @@ namespace MJS
             this.label_itemname.Font = new System.Drawing.Font("Pyidaungsu", 12F);
             this.label_itemname.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.label_itemname.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label_itemname.Location = new System.Drawing.Point(256, 209);
-            this.label_itemname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_itemname.Location = new System.Drawing.Point(205, 167);
             this.label_itemname.Name = "label_itemname";
-            this.label_itemname.Size = new System.Drawing.Size(241, 42);
+            this.label_itemname.Size = new System.Drawing.Size(193, 34);
             this.label_itemname.TabIndex = 406;
             this.label_itemname.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -831,22 +808,20 @@ namespace MJS
             this.label_Item.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label_Item.Font = new System.Drawing.Font("Pyidaungsu", 12F);
             this.label_Item.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label_Item.Location = new System.Drawing.Point(16, 209);
-            this.label_Item.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_Item.Location = new System.Drawing.Point(13, 167);
             this.label_Item.Name = "label_Item";
-            this.label_Item.Size = new System.Drawing.Size(241, 42);
+            this.label_Item.Size = new System.Drawing.Size(193, 34);
             this.label_Item.TabIndex = 405;
             this.label_Item.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // total_S
             // 
             this.total_S.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.total_S.Font = new System.Drawing.Font("Pyidaungsu", 12F);
+            this.total_S.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.total_S.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.total_S.Location = new System.Drawing.Point(1035, 605);
-            this.total_S.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.total_S.Location = new System.Drawing.Point(828, 490);
             this.total_S.Name = "total_S";
-            this.total_S.Size = new System.Drawing.Size(71, 49);
+            this.total_S.Size = new System.Drawing.Size(57, 33);
             this.total_S.TabIndex = 404;
             this.total_S.Text = "0";
             this.total_S.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -854,12 +829,11 @@ namespace MJS
             // total_Y
             // 
             this.total_Y.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.total_Y.Font = new System.Drawing.Font("Pyidaungsu", 12F);
+            this.total_Y.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.total_Y.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.total_Y.Location = new System.Drawing.Point(956, 605);
-            this.total_Y.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.total_Y.Location = new System.Drawing.Point(765, 490);
             this.total_Y.Name = "total_Y";
-            this.total_Y.Size = new System.Drawing.Size(71, 49);
+            this.total_Y.Size = new System.Drawing.Size(57, 33);
             this.total_Y.TabIndex = 403;
             this.total_Y.Text = "0";
             this.total_Y.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -867,12 +841,11 @@ namespace MJS
             // total_P
             // 
             this.total_P.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.total_P.Font = new System.Drawing.Font("Pyidaungsu", 12F);
+            this.total_P.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.total_P.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.total_P.Location = new System.Drawing.Point(878, 605);
-            this.total_P.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.total_P.Location = new System.Drawing.Point(702, 490);
             this.total_P.Name = "total_P";
-            this.total_P.Size = new System.Drawing.Size(71, 49);
+            this.total_P.Size = new System.Drawing.Size(57, 33);
             this.total_P.TabIndex = 402;
             this.total_P.Text = "0";
             this.total_P.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -880,12 +853,11 @@ namespace MJS
             // total_K
             // 
             this.total_K.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.total_K.Font = new System.Drawing.Font("Pyidaungsu", 12F);
+            this.total_K.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.total_K.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.total_K.Location = new System.Drawing.Point(799, 605);
-            this.total_K.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.total_K.Location = new System.Drawing.Point(639, 490);
             this.total_K.Name = "total_K";
-            this.total_K.Size = new System.Drawing.Size(71, 49);
+            this.total_K.Size = new System.Drawing.Size(57, 33);
             this.total_K.TabIndex = 401;
             this.total_K.Text = "0";
             this.total_K.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -893,12 +865,11 @@ namespace MJS
             // txt_s
             // 
             this.txt_s.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txt_s.Font = new System.Drawing.Font("Pyidaungsu", 12F);
+            this.txt_s.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_s.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.txt_s.Location = new System.Drawing.Point(1035, 488);
-            this.txt_s.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.txt_s.Location = new System.Drawing.Point(828, 396);
             this.txt_s.Name = "txt_s";
-            this.txt_s.Size = new System.Drawing.Size(71, 49);
+            this.txt_s.Size = new System.Drawing.Size(57, 33);
             this.txt_s.TabIndex = 400;
             this.txt_s.Text = "0";
             this.txt_s.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -906,12 +877,11 @@ namespace MJS
             // txt_y
             // 
             this.txt_y.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txt_y.Font = new System.Drawing.Font("Pyidaungsu", 12F);
+            this.txt_y.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_y.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.txt_y.Location = new System.Drawing.Point(956, 488);
-            this.txt_y.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.txt_y.Location = new System.Drawing.Point(765, 396);
             this.txt_y.Name = "txt_y";
-            this.txt_y.Size = new System.Drawing.Size(71, 49);
+            this.txt_y.Size = new System.Drawing.Size(57, 33);
             this.txt_y.TabIndex = 399;
             this.txt_y.Text = "0";
             this.txt_y.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -919,12 +889,11 @@ namespace MJS
             // txt_p
             // 
             this.txt_p.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txt_p.Font = new System.Drawing.Font("Pyidaungsu", 12F);
+            this.txt_p.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_p.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.txt_p.Location = new System.Drawing.Point(878, 488);
-            this.txt_p.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.txt_p.Location = new System.Drawing.Point(702, 396);
             this.txt_p.Name = "txt_p";
-            this.txt_p.Size = new System.Drawing.Size(71, 49);
+            this.txt_p.Size = new System.Drawing.Size(57, 33);
             this.txt_p.TabIndex = 398;
             this.txt_p.Text = "0";
             this.txt_p.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -932,12 +901,11 @@ namespace MJS
             // txt_k
             // 
             this.txt_k.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txt_k.Font = new System.Drawing.Font("Pyidaungsu", 12F);
+            this.txt_k.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_k.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.txt_k.Location = new System.Drawing.Point(799, 488);
-            this.txt_k.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.txt_k.Location = new System.Drawing.Point(639, 396);
             this.txt_k.Name = "txt_k";
-            this.txt_k.Size = new System.Drawing.Size(71, 49);
+            this.txt_k.Size = new System.Drawing.Size(57, 33);
             this.txt_k.TabIndex = 397;
             this.txt_k.Text = "0";
             this.txt_k.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -946,10 +914,9 @@ namespace MJS
             // 
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label32.Location = new System.Drawing.Point(16, 358);
-            this.label32.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label32.Location = new System.Drawing.Point(13, 286);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(131, 29);
+            this.label32.Size = new System.Drawing.Size(97, 22);
             this.label32.TabIndex = 376;
             this.label32.Text = "အရောင်း ‌ရွှေရည်";
             // 
@@ -957,35 +924,33 @@ namespace MJS
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label28.Location = new System.Drawing.Point(610, 781);
-            this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label28.Location = new System.Drawing.Point(488, 625);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(182, 29);
+            this.label28.Size = new System.Drawing.Size(134, 22);
             this.label28.TabIndex = 374;
             this.label28.Text = "ပစ္စည်းတန်ဖိုး ကျသင့်ငွေ";
             // 
             // txt_totalamt
             // 
-            this.txt_totalamt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
+            this.txt_totalamt.BackColor = System.Drawing.SystemColors.Window;
             this.txt_totalamt.Enabled = false;
-            this.txt_totalamt.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_totalamt.Location = new System.Drawing.Point(796, 778);
-            this.txt_totalamt.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_totalamt.Multiline = true;
+            this.txt_totalamt.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_totalamt.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.txt_totalamt.Location = new System.Drawing.Point(637, 622);
             this.txt_totalamt.Name = "txt_totalamt";
-            this.txt_totalamt.Size = new System.Drawing.Size(233, 36);
+            this.txt_totalamt.Size = new System.Drawing.Size(187, 35);
             this.txt_totalamt.TabIndex = 373;
             this.txt_totalamt.TabStop = false;
             this.txt_totalamt.Text = "0";
+            this.txt_totalamt.TextChanged += new System.EventHandler(this.txt_totalamt_TextChanged);
             // 
             // label27
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label27.Location = new System.Drawing.Point(1188, 778);
-            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label27.Location = new System.Drawing.Point(950, 664);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(153, 29);
+            this.label27.Size = new System.Drawing.Size(113, 22);
             this.label27.TabIndex = 372;
             this.label27.Text = "စုစုပေါင်း ကျသင့်ငွေ";
             // 
@@ -993,10 +958,9 @@ namespace MJS
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label26.Location = new System.Drawing.Point(1188, 725);
-            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label26.Location = new System.Drawing.Point(950, 622);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(100, 29);
+            this.label26.Size = new System.Drawing.Size(76, 22);
             this.label26.TabIndex = 371;
             this.label26.Text = "လျှော့ပေးငွေ";
             // 
@@ -1004,10 +968,9 @@ namespace MJS
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label25.Location = new System.Drawing.Point(1188, 456);
-            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label25.Location = new System.Drawing.Point(950, 365);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(175, 29);
+            this.label25.Size = new System.Drawing.Size(129, 22);
             this.label25.TabIndex = 370;
             this.label25.Text = "အလဲနုတ်ပြီး ကျသင့်ငွေ";
             // 
@@ -1015,129 +978,123 @@ namespace MJS
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label24.Location = new System.Drawing.Point(1188, 401);
-            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label24.Location = new System.Drawing.Point(950, 321);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(172, 29);
+            this.label24.Size = new System.Drawing.Size(127, 22);
             this.label24.TabIndex = 369;
             this.label24.Text = "အလဲတန်ဖိုး ကျသင့်ငွေ";
             // 
             // txt_totalcost
             // 
-            this.txt_totalcost.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
+            this.txt_totalcost.BackColor = System.Drawing.SystemColors.Window;
             this.txt_totalcost.Enabled = false;
-            this.txt_totalcost.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_totalcost.Location = new System.Drawing.Point(1365, 774);
-            this.txt_totalcost.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_totalcost.Multiline = true;
+            this.txt_totalcost.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_totalcost.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.txt_totalcost.Location = new System.Drawing.Point(1092, 661);
             this.txt_totalcost.Name = "txt_totalcost";
-            this.txt_totalcost.Size = new System.Drawing.Size(238, 36);
+            this.txt_totalcost.Size = new System.Drawing.Size(191, 35);
             this.txt_totalcost.TabIndex = 368;
             this.txt_totalcost.TabStop = false;
             this.txt_totalcost.Text = "0";
+            this.txt_totalcost.TextChanged += new System.EventHandler(this.txt_totalcost_TextChanged);
             // 
             // txt_include_percent
             // 
-            this.txt_include_percent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
+            this.txt_include_percent.BackColor = System.Drawing.SystemColors.Window;
             this.txt_include_percent.Enabled = false;
-            this.txt_include_percent.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_include_percent.Location = new System.Drawing.Point(1365, 560);
-            this.txt_include_percent.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_include_percent.Multiline = true;
+            this.txt_include_percent.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_include_percent.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.txt_include_percent.Location = new System.Drawing.Point(1092, 448);
             this.txt_include_percent.Name = "txt_include_percent";
-            this.txt_include_percent.Size = new System.Drawing.Size(238, 36);
+            this.txt_include_percent.Size = new System.Drawing.Size(191, 35);
             this.txt_include_percent.TabIndex = 367;
             this.txt_include_percent.TabStop = false;
             this.txt_include_percent.Text = "0";
+            this.txt_include_percent.TextChanged += new System.EventHandler(this.txt_include_percent_TextChanged);
             // 
             // txt_discount
             // 
-            this.txt_discount.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_discount.Location = new System.Drawing.Point(1365, 722);
-            this.txt_discount.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_discount.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_discount.Location = new System.Drawing.Point(1092, 620);
             this.txt_discount.Name = "txt_discount";
-            this.txt_discount.Size = new System.Drawing.Size(235, 34);
+            this.txt_discount.Size = new System.Drawing.Size(189, 35);
             this.txt_discount.TabIndex = 15;
             this.txt_discount.Text = "0";
             this.txt_discount.TextChanged += new System.EventHandler(this.txt_discount_TextChanged);
+            this.txt_discount.Leave += new System.EventHandler(this.txt_discount_Leave);
             // 
             // label23
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label23.Location = new System.Drawing.Point(1188, 564);
-            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label23.Location = new System.Drawing.Point(950, 451);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(163, 29);
+            this.label23.Size = new System.Drawing.Size(119, 22);
             this.label23.TabIndex = 365;
             this.label23.Text = "အခွန်ပါပြီး ကျသင့်ငွေ";
             // 
             // txt_bbamt
             // 
-            this.txt_bbamt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
+            this.txt_bbamt.BackColor = System.Drawing.SystemColors.Window;
             this.txt_bbamt.Enabled = false;
-            this.txt_bbamt.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_bbamt.Location = new System.Drawing.Point(1365, 398);
-            this.txt_bbamt.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_bbamt.Multiline = true;
+            this.txt_bbamt.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_bbamt.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.txt_bbamt.Location = new System.Drawing.Point(1092, 318);
             this.txt_bbamt.Name = "txt_bbamt";
-            this.txt_bbamt.Size = new System.Drawing.Size(238, 36);
+            this.txt_bbamt.Size = new System.Drawing.Size(191, 35);
             this.txt_bbamt.TabIndex = 364;
             this.txt_bbamt.TabStop = false;
             this.txt_bbamt.Text = "0";
+            this.txt_bbamt.TextChanged += new System.EventHandler(this.txt_bbamt_TextChanged);
             // 
             // txt_include_bbamt
             // 
-            this.txt_include_bbamt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
+            this.txt_include_bbamt.BackColor = System.Drawing.SystemColors.Window;
             this.txt_include_bbamt.Enabled = false;
-            this.txt_include_bbamt.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_include_bbamt.Location = new System.Drawing.Point(1365, 452);
-            this.txt_include_bbamt.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_include_bbamt.Multiline = true;
+            this.txt_include_bbamt.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_include_bbamt.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.txt_include_bbamt.Location = new System.Drawing.Point(1092, 362);
             this.txt_include_bbamt.Name = "txt_include_bbamt";
-            this.txt_include_bbamt.Size = new System.Drawing.Size(238, 36);
+            this.txt_include_bbamt.Size = new System.Drawing.Size(191, 35);
             this.txt_include_bbamt.TabIndex = 363;
             this.txt_include_bbamt.TabStop = false;
             this.txt_include_bbamt.Text = "0";
+            this.txt_include_bbamt.TextChanged += new System.EventHandler(this.txt_include_bbamt_TextChanged);
             // 
             // label22
             // 
             this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label22.BackColor = System.Drawing.Color.Gainsboro;
-            this.label22.Location = new System.Drawing.Point(566, 365);
-            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label22.Location = new System.Drawing.Point(453, 292);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(3310, 2);
+            this.label22.Size = new System.Drawing.Size(903, 2);
             this.label22.TabIndex = 362;
             // 
             // label21
             // 
             this.label21.BackColor = System.Drawing.Color.Gainsboro;
-            this.label21.Location = new System.Drawing.Point(566, 0);
-            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label21.Location = new System.Drawing.Point(453, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(2, 1196);
+            this.label21.Size = new System.Drawing.Size(2, 957);
             this.label21.TabIndex = 361;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label16.Location = new System.Drawing.Point(572, 332);
-            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label16.Location = new System.Drawing.Point(458, 268);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(79, 16);
+            this.label16.Size = new System.Drawing.Size(64, 13);
             this.label16.TabIndex = 288;
             this.label16.Text = "TOTALQTY";
             // 
             // lbl_qty
             // 
-            this.lbl_qty.BackColor = System.Drawing.Color.White;
-            this.lbl_qty.Location = new System.Drawing.Point(659, 324);
-            this.lbl_qty.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_qty.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_qty.Location = new System.Drawing.Point(527, 259);
             this.lbl_qty.Name = "lbl_qty";
-            this.lbl_qty.Size = new System.Drawing.Size(74, 41);
+            this.lbl_qty.Size = new System.Drawing.Size(59, 33);
             this.lbl_qty.TabIndex = 2;
             this.lbl_qty.Text = "0";
             this.lbl_qty.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1146,20 +1103,18 @@ namespace MJS
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label4.Location = new System.Drawing.Point(932, 331);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(746, 269);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(113, 16);
+            this.label4.Size = new System.Drawing.Size(92, 13);
             this.label4.TabIndex = 286;
             this.label4.Text = "TOTAL AMOUNT";
             // 
             // lbl_gm
             // 
-            this.lbl_gm.BackColor = System.Drawing.Color.White;
-            this.lbl_gm.Location = new System.Drawing.Point(825, 324);
-            this.lbl_gm.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_gm.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_gm.Location = new System.Drawing.Point(660, 259);
             this.lbl_gm.Name = "lbl_gm";
-            this.lbl_gm.Size = new System.Drawing.Size(108, 41);
+            this.lbl_gm.Size = new System.Drawing.Size(86, 33);
             this.lbl_gm.TabIndex = 0;
             this.lbl_gm.Text = "0";
             this.lbl_gm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1168,10 +1123,9 @@ namespace MJS
             // 
             this.label20.AutoSize = true;
             this.label20.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label20.Location = new System.Drawing.Point(740, 332);
-            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label20.Location = new System.Drawing.Point(592, 269);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(75, 16);
+            this.label20.Size = new System.Drawing.Size(62, 13);
             this.label20.TabIndex = 287;
             this.label20.Text = "TOTAL GM";
             // 
@@ -1182,21 +1136,19 @@ namespace MJS
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(572, 95);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView1.Location = new System.Drawing.Point(463, 76);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 30;
-            this.dataGridView1.Size = new System.Drawing.Size(3298, 220);
+            this.dataGridView1.Size = new System.Drawing.Size(876, 176);
             this.dataGridView1.TabIndex = 359;
             // 
             // lbl_totalamt
             // 
-            this.lbl_totalamt.BackColor = System.Drawing.Color.White;
-            this.lbl_totalamt.Location = new System.Drawing.Point(1055, 324);
-            this.lbl_totalamt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_totalamt.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_totalamt.Location = new System.Drawing.Point(844, 259);
             this.lbl_totalamt.Name = "lbl_totalamt";
-            this.lbl_totalamt.Size = new System.Drawing.Size(164, 41);
+            this.lbl_totalamt.Size = new System.Drawing.Size(131, 33);
             this.lbl_totalamt.TabIndex = 1;
             this.lbl_totalamt.Text = "0";
             this.lbl_totalamt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1205,10 +1157,9 @@ namespace MJS
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label11.Location = new System.Drawing.Point(260, 266);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Location = new System.Drawing.Point(208, 213);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(70, 29);
+            this.label11.Size = new System.Drawing.Size(52, 22);
             this.label11.TabIndex = 358;
             this.label11.Text = "ဂရမ်ချိန်";
             // 
@@ -1216,10 +1167,9 @@ namespace MJS
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label15.Location = new System.Drawing.Point(600, 411);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Location = new System.Drawing.Point(480, 329);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(143, 29);
+            this.label15.Size = new System.Drawing.Size(106, 22);
             this.label15.TabIndex = 352;
             this.label15.Text = "အရောင်း  ဂရမ်ချိန်";
             // 
@@ -1227,10 +1177,9 @@ namespace MJS
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label10.Location = new System.Drawing.Point(19, 262);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(15, 210);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(62, 29);
+            this.label10.Size = new System.Drawing.Size(46, 22);
             this.label10.TabIndex = 356;
             this.label10.Text = "အခုရေ";
             // 
@@ -1238,10 +1187,9 @@ namespace MJS
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label3.Location = new System.Drawing.Point(265, 95);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(212, 76);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(131, 29);
+            this.label3.Size = new System.Drawing.Size(98, 22);
             this.label3.TabIndex = 349;
             this.label3.Text = "အရောင်း ရွှေစျေး";
             // 
@@ -1249,10 +1197,9 @@ namespace MJS
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label9.Location = new System.Drawing.Point(258, 175);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(206, 140);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(105, 29);
+            this.label9.Size = new System.Drawing.Size(76, 22);
             this.label9.TabIndex = 354;
             this.label9.Text = "ပစ္စည်းအမည်";
             // 
@@ -1260,10 +1207,9 @@ namespace MJS
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label8.Location = new System.Drawing.Point(19, 175);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(15, 140);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(59, 29);
+            this.label8.Size = new System.Drawing.Size(43, 22);
             this.label8.TabIndex = 352;
             this.label8.Text = "ပစ္စည်း";
             // 
@@ -1280,13 +1226,13 @@ namespace MJS
             // 
             // g_sale
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(1785, 997);
+            this.ClientSize = new System.Drawing.Size(1386, 776);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "g_sale";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "g_sale";
@@ -1370,7 +1316,7 @@ namespace MJS
         private Label txt_y;
         private Label txt_p;
         private PictureBox pit_show;
-        private Label label33;
+        private Label txt_showamt;
         private TextBox txt_mcost;
         private TextBox txt_saleremark;
         private TextBox txt_goldprice;
@@ -1388,8 +1334,9 @@ namespace MJS
         private Label label14;
         private TextBox txt_pro_number;
         private TextBox txt_pro_amt;
-        private TextBox textBox1;
         private Label label34;
         private TextBox txt_pro_famt;
+        private Label label35;
+        private TextBox txt_alltotal_amt;
     }
 }

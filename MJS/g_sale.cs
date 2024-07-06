@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.IO;
+using System.Globalization;
 
 
 
@@ -70,7 +71,7 @@ namespace MJS
 
 
         }
-
+     
         private void btn_cash_Click(object sender, EventArgs e)
         {
             Form formbackground = new Form();
@@ -87,7 +88,7 @@ namespace MJS
                     formbackground.Location = this.Location;
                     formbackground.ShowInTaskbar = false;
                     formbackground.Show();
-
+                    pay_Form.payment=txt_showamt.Text;
                     pay_Form.Owner = formbackground;
                     pay_Form.ShowDialog();
 
@@ -400,7 +401,7 @@ namespace MJS
                 mcost = double.Parse(txt_mcost.Text); reploss = double.Parse(txt_rep.Text);
                 bbamt= double.Parse(txt_bbamt.Text);include_bbamt=double.Parse(txt_include_bbamt.Text);
                 percentamt=double.Parse(txt_percent_amt.Text);include_percentamt=double.Parse(txt_include_percent.Text);
-                dicountamt = double.Parse(txt_discount.Text);totalcost= double.Parse(txt_totalcost.Text);
+                dicountamt = double.Parse(txt_discount.Text);totalcost= double.Parse(txt_alltotal_amt.Text);
                 percent = double.Parse(txt_pernumber.Text);
 
                 wastageamount = Math.Round(((((T_wastageS / 4) + T_wastageY) / 8 + T_wastageP) / 16 + T_wastageK) * double.Parse(txt_goldprice.Text));
@@ -417,7 +418,7 @@ namespace MJS
                 include_percentamt = include_bbamt+percentamt;
                 txt_include_percent.Text = include_percentamt.ToString();
                 totalcost = include_percentamt - dicountamt;
-                txt_totalcost.Text = totalcost.ToString();
+                txt_alltotal_amt.Text = totalcost.ToString();
 
             }
 
@@ -490,11 +491,13 @@ namespace MJS
         private void txt_mcost_TextChanged(object sender, EventArgs e)
         {
             calculategm();
+           
         }
 
         private void txt_rep_TextChanged(object sender, EventArgs e)
         {
             calculategm();
+            
         }
 
         private void txt_discount_TextChanged(object sender, EventArgs e)
@@ -505,12 +508,13 @@ namespace MJS
                 txt_discount.SelectionStart = 0;
                 txt_discount.SelectionLength = txt_discount.Text.Length;
             }
-            double txtpercentamt, discamt, minus = 0;
-            txtpercentamt = double.Parse(txt_include_percent.Text);
+            double txttotalamt, discamt, minus = 0;
+            txttotalamt = double.Parse(txt_alltotal_amt.Text);
             discamt=double.Parse(txt_discount.Text);
             minus = double.Parse(txt_totalcost.Text);
-            minus = txtpercentamt - discamt;
+            minus = txttotalamt - discamt;
             txt_totalcost.Text=minus.ToString();
+            
         }
 
         private void txt_pernumber_TextChanged(object sender, EventArgs e)
@@ -546,7 +550,145 @@ namespace MJS
             sum = double.Parse(txt_include_percent.Text);
             sum=bbamt2+percentamt;
             txt_include_percent.Text = sum.ToString();
+            
         }
 
+        private void txt_pro_number_TextChanged(object sender, EventArgs e)
+        {
+            if (txt_pro_number.Text == "")
+            {
+                txt_pro_number.Text = "0";
+                txt_pro_number.SelectionStart = 0;
+                txt_pro_number.SelectionLength = txt_pro_number.Text.Length;
+
+            }
+
+            double bbamt, pronumber = 0;
+            bbamt = double.Parse(txt_include_bbamt.Text);
+            pronumber = double.Parse(txt_pro_number.Text);
+
+            txt_pro_amt.Text = Math.Round((bbamt / 100) * pronumber).ToString();
+        }
+
+        private void txt_pro_amt_TextChanged(object sender, EventArgs e)
+        {
+            if (txt_pro_amt.Text == "")
+            {
+                txt_pro_amt.Text = "0";
+                txt_pro_amt.SelectionStart = 0;
+                txt_pro_amt.SelectionLength = txt_pro_amt.Text.Length;
+
+            }
+            double pro_peramt, Pro_flatamt,includeperamt,calculate = 0;
+            pro_peramt = double.Parse(txt_pro_amt.Text);
+            Pro_flatamt = double.Parse(txt_pro_famt.Text);
+            includeperamt=double.Parse(txt_include_percent.Text);
+            calculate = includeperamt-(pro_peramt+Pro_flatamt);
+            txt_alltotal_amt.Text = calculate.ToString();
+            
+        }
+
+        private void txt_pro_famt_TextChanged(object sender, EventArgs e)
+        {
+            if (txt_pro_famt.Text == "")
+            {
+                txt_pro_famt.Text = "0";
+                txt_pro_famt.SelectionStart = 0;
+                txt_pro_famt.SelectionLength = txt_pro_famt.Text.Length;
+            }
+            double pro_peramt, Pro_flatamt, includeperamt, calculate = 0;
+            pro_peramt = double.Parse(txt_pro_amt.Text);
+            Pro_flatamt = double.Parse(txt_pro_famt.Text);
+            includeperamt = double.Parse(txt_include_percent.Text);
+            calculate = includeperamt-(pro_peramt + Pro_flatamt);
+            txt_alltotal_amt.Text = calculate.ToString();
+            
+        }
+
+        private void txt_include_percent_TextChanged(object sender, EventArgs e)
+        {
+            if (txt_include_percent.Text == "")
+            {
+                txt_include_percent.Text = "0";
+                txt_include_percent.SelectionStart = 0;
+                txt_include_percent.SelectionLength = txt_include_percent.Text.Length;
+            }
+            double pro_peramt, Pro_flatamt, includeperamt, calculate = 0;
+            pro_peramt = double.Parse(txt_pro_amt.Text);
+            Pro_flatamt = double.Parse(txt_pro_famt.Text);
+            includeperamt = double.Parse(txt_include_percent.Text);
+            calculate = includeperamt-(pro_peramt + Pro_flatamt) ;
+            txt_alltotal_amt.Text = calculate.ToString();
+            txt_include_percent.Text = string.Format("{0:n0}", double.Parse(txt_include_percent.Text));
+        }
+
+        private void txt_alltotal_amt_TextChanged(object sender, EventArgs e)
+        {
+            if (txt_alltotal_amt.Text == "")
+            {
+                txt_alltotal_amt.Text = "0";
+                txt_alltotal_amt.SelectionStart = 0;
+                txt_alltotal_amt.SelectionLength = txt_alltotal_amt.Text.Length;
+            }
+            double txttotalamt, discamt, minus = 0;
+            txttotalamt = double.Parse(txt_alltotal_amt.Text);
+            discamt = double.Parse(txt_discount.Text);
+            minus = double.Parse(txt_totalcost.Text);
+            minus = txttotalamt - discamt;
+            txt_totalcost.Text = minus.ToString();
+            txt_alltotal_amt.Text = string.Format("{0:n0}", double.Parse(txt_alltotal_amt.Text));
+        }
+
+        private void txt_totalcost_TextChanged(object sender, EventArgs e)
+        {          
+            txt_showamt.Text = txt_totalcost.Text;
+            /*txt_showamt.Text = string.Format("{0:n0}", double.Parse(txt_showamt.Text) +" "+ "Ks");*/
+            txt_showamt.Text = string.Format("{0:n0}", double.Parse(txt_showamt.Text))+" "+"Ks";
+        }
+
+        private void txt_totalamt_TextChanged(object sender, EventArgs e)
+        {
+            txt_totalamt.Text = string.Format("{0:n0}", double.Parse(txt_totalamt.Text));
+        }
+
+        private void txt_bbamt_TextChanged(object sender, EventArgs e)
+        {
+            txt_bbamt.Text = string.Format("{0:n0}", double.Parse(txt_bbamt.Text));
+        }
+
+        private void txt_include_bbamt_TextChanged(object sender, EventArgs e)
+        {
+            txt_include_bbamt.Text = string.Format("{0:n0}", double.Parse(txt_include_bbamt.Text));
+        }
+
+        private void txt_mcost_Leave(object sender, EventArgs e)
+        {
+            txt_mcost.Text = string.Format("{0:n0}", double.Parse(txt_mcost.Text));
+        }
+
+        private void txt_rep_Leave(object sender, EventArgs e)
+        {
+            txt_rep.Text = string.Format("{0:n0}", double.Parse(txt_rep.Text));
+        }
+
+        private void txt_percent_amt_Leave(object sender, EventArgs e)
+        {
+            txt_percent_amt.Text = string.Format("{0:n0}", double.Parse(txt_percent_amt.Text));
+        }
+
+        private void txt_pro_amt_Leave(object sender, EventArgs e)
+        {
+            txt_pro_amt.Text = string.Format("{0:n0}", double.Parse(txt_pro_amt.Text));
+        }
+
+        private void txt_pro_famt_Leave(object sender, EventArgs e)
+        {
+            txt_pro_famt.Text = string.Format("{0:n0}", double.Parse(txt_pro_famt.Text));
+        }
+
+        private void txt_discount_Leave(object sender, EventArgs e)
+        {
+            txt_discount.Text = string.Format("{0:n0}", double.Parse(txt_discount.Text));
+        }
     }
 }

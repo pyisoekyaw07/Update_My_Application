@@ -139,23 +139,21 @@ namespace MJS
             // 
             // txt_password
             // 
-            this.txt_password.Font = new System.Drawing.Font("Pyidaungsu", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_password.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_password.Location = new System.Drawing.Point(46, 228);
             this.txt_password.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_password.Multiline = true;
             this.txt_password.Name = "txt_password";
             this.txt_password.PasswordChar = '#';
-            this.txt_password.Size = new System.Drawing.Size(301, 34);
+            this.txt_password.Size = new System.Drawing.Size(301, 35);
             this.txt_password.TabIndex = 3;
             // 
             // txt_username
             // 
-            this.txt_username.Font = new System.Drawing.Font("Pyidaungsu", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_username.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_username.Location = new System.Drawing.Point(46, 166);
             this.txt_username.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_username.Multiline = true;
             this.txt_username.Name = "txt_username";
-            this.txt_username.Size = new System.Drawing.Size(301, 34);
+            this.txt_username.Size = new System.Drawing.Size(301, 35);
             this.txt_username.TabIndex = 2;
             // 
             // label1
@@ -227,7 +225,7 @@ namespace MJS
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Location = new System.Drawing.Point(1, 1);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(250, 445);
             this.panel1.TabIndex = 13;
