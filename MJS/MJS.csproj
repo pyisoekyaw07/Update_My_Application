@@ -29,7 +29,7 @@
     <InstallUrl>https://raw.githubusercontent.com/pyisoekyaw07/Update_My_Application/main/Installer/</InstallUrl>
     <UpdateUrl>https://raw.githubusercontent.com/pyisoekyaw07/Update_My_Application/main/Installer/</UpdateUrl>
     <MinimumRequiredVersion>1.0.0.0</MinimumRequiredVersion>
-    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationRevision>2</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
